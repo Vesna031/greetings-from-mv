@@ -1,4 +1,14 @@
 $(document).ready(function() {
-  console.log('does this work?');
-  console.log('Hey vesna!  We are on your computer and we want to get out!!!');
+  var data = {
+    term: 'Greetings from martha\'s vineyard',
+    location: 'Martha\'s Vineyard'
+  };
+
+  $.ajax({
+    url: 'https://api.yelp.com/v3/businesses/search',
+    data: data,
+    crossDomain: true
+  }).done(function(data) {
+    console.log(data);
+  });
 });
