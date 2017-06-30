@@ -6,6 +6,8 @@
 #navigation {
   position: fixed;
   z-index: 1000;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
 }
 
 #hero, #reviews, #info-map {
@@ -112,4 +114,28 @@
 
 .background-image#edgartown-representer {
   background-image: url('../images/pro-gallery/harbour-fourkids.jpg');
+}
+
+#about-contact {
+  background: url('../images/about-contact/post-card-back.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 63.625%;
+}
+
+#about-contact * {
+  background: transparent;
+}
+
+#about-contact p {
+  margin-top: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 150%;
+}
+
+#about-contact h3 {
+  margin-top: 70%;  
 }
