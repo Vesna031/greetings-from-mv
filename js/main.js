@@ -16,7 +16,8 @@ $(document).ready(function() {
 
   $('map').imageMapResize();
 
-  closePopups();
+  //closePopups();
+  $('.pop-up').fadeOut(0);
 
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -53,13 +54,42 @@ $(document).ready(function() {
         }
       }
     });
+
+  $('#pro-gallery').slickLightbox({
+    src: 'src',
+    itemSelector: '.item img'
+  });
+
+  $(window).load(proGalleryButton);
+  $(window).resize(proGalleryButton);
 });
 
 function showPopup(id) {
-  $('.pop-up').hide();
-  $('#' + id).show();
+  $('.pop-up').fadeOut(300);
+  $('#' + id).fadeIn(300);
 }
 
 function closePopups() {
-  $('.pop-up').hide();
+  $('.pop-up').fadeOut(300);
+}
+
+function openLightbox() {
+  console.log('does the lightbox work?');
+  $('#pro-gallery').slickLightbox({
+    images: ['http://placekitten.com/1000/600', 'http://placekitten.com/1010/606', 'http://placekitten.com/1060/636']
+  });
+}
+
+function proGalleryButton() {
+  var $this = $('#pro-gallery'),
+      $btn = $this.find('.btn-viewgallery'),
+      containerHeight = $this.outerHeight(),
+      containerWidth = $this.outerWidth(),
+      buttonHeight = $btn.outerHeight(),
+      buttonWidth = $btn.outerWidth();
+
+  $btn.css({
+    'top': (containerHeight / 2) - (buttonHeight / 2),
+    'left': (containerWidth / 2) - (buttonWidth / 2)
+  });
 }

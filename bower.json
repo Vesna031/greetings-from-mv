@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "image-map-resizer": "^1.0.3",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "slick-lightbox": "^0.2.10"
   }
 }

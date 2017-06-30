@@ -1,7 +1,11 @@
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
+@import '../bower_components/slick-carousel/slick/slick.css';
+@import '../bower_components/slick-carousel/slick/slick-theme.css';
+@import '../bower_components/slick-lightbox/dist/slick-lightbox.css';
 
 #navigation {
   position: fixed;
+  z-index: 1000;
 }
 
 #hero, #reviews, #info-map {
@@ -49,4 +53,63 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+#pro-gallery {
+  position: relative;
+}
+
+#pro-gallery .btn-viewgallery {
+  position: absolute;
+
+  border-radius: 0;
+  background: #fff;
+  border: solid 3px gray;
+  font-size: 150%;
+  color: gray;
+  transition: color 0.3s, background 0.3s;
+}
+
+#pro-gallery .btn-viewgallery:hover,
+#pro-gallery .btn-viewgallery:active,
+#pro-gallery .btn-viewgallery:focus {
+  background: gray;
+  color: white;
+  outline: none;
+}
+
+#pro-gallery .item img {
+  width: 60%;
+  @extend .center-block;
+  height: auto;
+}
+
+.background-image {
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 33.25%;
+}
+
+@media screen and (max-width: 768px) {
+  .background-image {
+    padding-bottom: 56%;
+  }
+}
+
+.background-image#oakbluffs-representer {
+  background-image: url('../images/pro-gallery/gingerbread-houses.jpg');
+}
+
+.background-image#menemsha-representer {
+  background-image: url('../images/pro-gallery/menemsha-statue.jpg');
+}
+
+.background-image#aquinnah-representer {
+  background-image: url('../images/pro-gallery/lifeguard-post.jpg');
+}
+
+.background-image#edgartown-representer {
+  background-image: url('../images/pro-gallery/harbour-fourkids.jpg');
 }
