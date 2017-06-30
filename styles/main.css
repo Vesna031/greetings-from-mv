@@ -4,6 +4,10 @@
   position: fixed;
 }
 
+#hero, #reviews, #info-map {
+  outline: none;
+}
+
 #hero {
   width: 100%;
   padding: 10%;
@@ -12,4 +16,37 @@
 }
 
 #hero-content {
+}
+
+#info-map {
+  position: relative;
+}
+
+#map {
+  width: 100%;
+}
+
+.pop-up {
+  position: absolute;
+
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  padding: 10%;
+  color: #fff;
+}
+
+.pop-up p {
+  font-size: 150%;
+}
+
+.pop-up .glyphicon-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }

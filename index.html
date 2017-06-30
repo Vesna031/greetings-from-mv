@@ -25,7 +25,7 @@
       <ul class="nav nav-pills">
         <li role="presentation" class="active"><a href="#hero">Home</a></li>
         <li role="presentation"><a href="#reviews">Reviews</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
+        <li role="presentation"><a href="#info-map">Map</a></li>
       </ul>
     </div>
 
@@ -69,10 +69,49 @@
     </div>
     <!-- Reviews end -->
 
+    <!-- Info Map start -->
+    <div id="info-map">
+      <img id="map" src="images/marthas-vineyard-map-placeholder.jpg" usemap="#mapiconslocations" class="img-responsive" onclick="closePopups();">
+
+      <map name="mapiconslocations">
+        <area shape="circle" coords="520,136,30" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
+        <area shape="circle" coords="590,275,30" alt="Edgartown" onclick="showPopup('edgartown');">
+        <area shape="circle" coords="205,332,30" alt="Aquinnah" onclick="showPopup('aquinnah');">
+      </map>
+
+      <div class="pop-up" id="oak-bluffs">
+        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
+
+        <h1>Oak Bluffs</h1>
+
+        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
+      </div>
+
+      <div class="pop-up" id="edgartown">
+        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
+
+        <h1>Edgartown</h1>
+
+        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
+      </div>
+
+      <div class="pop-up" id="aquinnah">
+        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
+
+        <h1>Aquinnah</h1>
+
+        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
+      </div>
+    </div>
+    <!-- Info Map end -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
 
     <script src="js/main.js"></script>
   </body>

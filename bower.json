@@ -1,0 +1,19 @@
+{
+  "name": "greetings-from-mv",
+  "homepage": "https://github.com/Vesna031/greetings-from-mv",
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "image-map-resizer": "^1.0.3",
+    "bootstrap": "^3.3.7"
+  }
+}
