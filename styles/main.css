@@ -1,7 +1,9 @@
+/* bower:css */
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
 @import '../bower_components/slick-carousel/slick/slick.css';
 @import '../bower_components/slick-carousel/slick/slick-theme.css';
 @import '../bower_components/slick-lightbox/dist/slick-lightbox.css';
+/* endbower */
 
 #navigation {
   position: fixed;
@@ -82,7 +84,7 @@
 
 #pro-gallery .item img {
   width: 60%;
-  @extend .center-block;
+  margin: 0 auto;
   height: auto;
 }
 
