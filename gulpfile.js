@@ -74,6 +74,7 @@ gulp.task('watch', function() {
   gulp.watch('styles/main.css', {ignoreInitial: false}, ['styles', 'reload']);
   gulp.watch('js/main.js', {ignoreInitial: false}, ['js', 'reload']);
   gulp.watch('index.html', {ignoreInitial: false}, ['reload']);
+  gulp.watch('php/*.php', {ignoreInitial: false}, ['reload']);
 })
 
 gulp.task('default', ['wiredep', 'styles', 'js'], function() {

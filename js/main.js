@@ -1,18 +1,10 @@
 $(document).ready(function() {
   var smoothScrollSpeed = 500;
 
-  // var data = {
-  //   term: 'Greetings from martha\'s vineyard',
-  //   location: 'Martha\'s Vineyard'
-  // };
-
-  // $.ajax({
-  //   url: 'https://api.yelp.com/v3/businesses/search',
-  //   data: data,
-  //   crossDomain: true
-  // }).done(function(data) {
-  //   console.log(data);
-  // });
+  var data = {
+    term: 'Greetings from martha\'s vineyard',
+    location: 'Martha\'s Vineyard'
+  };
 
   $('map').imageMapResize();
 
@@ -62,6 +54,49 @@ $(document).ready(function() {
 
   $(window).load(proGalleryButton);
   $(window).resize(proGalleryButton);
+
+  // FACEBOOK REVIEWS
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '318059708651553',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        console.log('Logged in.');
+      }
+      else {
+        FB.login();
+      }
+    });
+
+    /* make the API call */
+    FB.api(
+      "/marthasvineyardtours/ratings",
+      function (response) {
+        console.log('anything?');
+        if(response && !response.error) {
+          console.log('facebook reviews:');
+          console.log(response);
+        } else if(response && response.error) {
+          console.log(response.error);
+        } else {
+          console.log('not working');
+        }
+      }
+    );
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 });
 
 function showPopup(id) {
