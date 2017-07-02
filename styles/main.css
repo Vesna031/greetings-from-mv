@@ -23,7 +23,16 @@
   display: table;
 }
 
-#hero-content {
+.uil-default-css {
+  margin: 0 auto;
+}
+
+.reviews-slider {
+  cursor: default;
+}
+
+.reviews-slider a {
+  cursor: pointer;
 }
 
 #info-map {
@@ -140,4 +149,23 @@
 
 #about-contact h3 {
   margin-top: 70%;  
+}
+
+#facebook-posts {
+  padding: 2.5%;
+  display: block;
+  text-align: center;
+  background: #222;
+  color: #eee;
+}
+
+.facebook-post {
+  display: inline-block;
+  width: 7.5%;
+  padding-bottom: 7.5%;
+  margin: 1.25%;
+
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

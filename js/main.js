@@ -1,16 +1,49 @@
 $(document).ready(function() {
-  var smoothScrollSpeed = 500;
-
-  var data = {
-    term: 'Greetings from martha\'s vineyard',
-    location: 'Martha\'s Vineyard'
-  };
-
+  smoothScrolling();
   $('map').imageMapResize();
 
-  //closePopups();
   $('.pop-up').fadeOut(0);
 
+  $(window).load(proGalleryButton);
+  $(window).resize(proGalleryButton);
+
+  $('#pro-gallery').slickLightbox({
+    src: 'src',
+    itemSelector: '.item img'
+  });
+
+  $.get('reviews_and_posts.php', function (data) {
+    console.log(data);
+    // Yelp and Facebook Reviews
+    var yelpReviews = JSON.parse(data).yelp_reviews,
+        facebookReviews = JSON.parse(data).facebook_reviews,
+        facebookPosts = JSON.parse(data).facebook_posts;
+
+    for(var i = 0; i < yelpReviews.length; i++) {
+      $('<blockquote><p>' + yelpReviews[i].text + '</p><footer><a href="' + yelpReviews[i].url + '" target="_blank">' + yelpReviews[i].name + ' <cite title="Yelp">Yelp</cite></a></footer></blockquote></div>').appendTo('#yelp-reviews');
+    }
+
+    for(var j = 0; j < facebookReviews.length; j++) {
+      $('<blockquote><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote></div>').appendTo('#facebook-reviews');
+    }
+
+    $('.reviews-slider').slick({
+      autoplay: true,
+      arrows: false
+    });
+
+    $('#reviews-loader').hide();
+
+    // Facebook Posts
+    for(var k = 0; k < facebookPosts.length; k++) {
+      $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts');;
+    }
+  });
+});
+
+function smoothScrolling() {
+  var smoothScrollSpeed = 500;
+  
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -46,58 +79,7 @@ $(document).ready(function() {
         }
       }
     });
-
-  $('#pro-gallery').slickLightbox({
-    src: 'src',
-    itemSelector: '.item img'
-  });
-
-  $(window).load(proGalleryButton);
-  $(window).resize(proGalleryButton);
-
-  // FACEBOOK REVIEWS
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '318059708651553',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-
-    FB.getLoginStatus(function(response) {
-      if (response.status === 'connected') {
-        console.log('Logged in.');
-      }
-      else {
-        FB.login();
-      }
-    });
-
-    /* make the API call */
-    FB.api(
-      "/marthasvineyardtours/ratings",
-      function (response) {
-        console.log('anything?');
-        if(response && !response.error) {
-          console.log('facebook reviews:');
-          console.log(response);
-        } else if(response && response.error) {
-          console.log(response.error);
-        } else {
-          console.log('not working');
-        }
-      }
-    );
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-});
+}
 
 function showPopup(id) {
   $('.pop-up').fadeOut(300);
