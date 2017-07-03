@@ -19,7 +19,6 @@
   ];
 
   $reviews = $client->getBusinessReviews('greetings-from-marthas-vineyard-tours-oak-bluffs', $parameters);
-  // echo 'YELP REVIEWS:<br>';
 
   foreach($reviews->reviews as $review) {
     array_push($yelp_reviews, array(
@@ -28,10 +27,6 @@
       'text' => $review->text,
       'name' => $review->user->name
     ));
-    // echo '<a target="_blank" href="' . $review->url . '">';
-    // echo $review->rating . '<br>';
-    // echo $review->text . '<br>';
-    // echo $review->user->name . '</a><br><br>';
   }
 
   // FACEBOOK
@@ -42,8 +37,18 @@
     'app_id'                => '318059708651553',
     'app_secret'            => '645272c21a8d0871339d40b518593de6',
     'default_graph_version' => 'v2.9',
-    'default_access_token'  => 'EAAEhRgvzmCEBANKEKw3nfY0Wezm71v2kSgnLz42AddNItb45ArxltArKwX7YBrZCpsuRHNXbV2fpzMxwuC4zkDPJsT4UTMrmAJ7PdqwE9Vj7sc7sEWuTzZBFeNdoJOIWPiUqCzJPsrExzv0CFFGZB5ZB0pYVDnlWkhV1oS6ylZAAT4BZCLecS7k4PGq0iJrRDRMpw93t3tZCwZDZD',
+    'default_access_token'  => 'EAAEhRgvzmCEBAAfrfupwO0zLKP40ZB6ieHbtMrfISp4dZCW2kbEG4ublGZChJB8llRBpz7ejkNQO4gn6psqAn5mj6xREnIDyw2bZAZCZBI28ZBVkZCyUZAh9SZCDXAP81qw0Q161Xy8b7Y4SJ8jKdHwnRjr0BuZBfqb1gTgWkAv4ZC0GqgZDZD',
   ]);
+
+  // try {
+  //   $longlivetoken = $fb->get('/oath/access_token?grant_type=fb_exchange_token&client_id=318059708651553&client_secret=645272c21a8d0871339d40b518593de6&fb_exchange_token=318059708651553|Kin75eTt-cTUEota2CdTzPwVbJU');
+  // } catch(\Facebook\Exceptions\FacebookResponseException $e) {
+  //   echo 'Graph returned an error: ' . $e->getMessage();
+  //   exit;
+  // } catch(\Facebook\Exceptions\FacebookSDKException $e) {
+  //   echo 'Facebook SDK returned an error: ' . $e->getMessage();
+  //   exit;
+  // }
 
   try {
     $response = $fb->get('/marthasvineyardtours/ratings');
@@ -65,10 +70,6 @@
         'text' => $graphNode->getField('review_text'),
         'name' => $graphNode->getField('reviewer')->getField('name'),
       ));
-      // echo '<a target="_blank" href="https://www.facebook.com/pg/marthasvineyardtours/reviews/">';
-      // echo $graphNode->getField('rating') . '<br>';
-      // echo $graphNode->getField('review_text') . '<br>';
-      // echo $graphNode->getField('reviewer')->getField('name') . '</a><br><br>';
     }
   }
 
@@ -87,20 +88,15 @@
   }
 
   $graphEdge = $response->getGraphEdge();
-  // var_dump($graphEdge);
-
   do {
     if($graphEdge[0] == null) {
       break;
     } else {
       $image = $graphEdge[0]->getField('images');
-      // var_dump($image);
       $image_array_item = array(
         'image' => $image[0]->getField('source'),
         'link'  => $facebook_pagelink
       );
-
-      // var_dump($image_array_item);
 
       if(count($facebook_posts) < 10) {
         array_push($facebook_posts, $image_array_item);
@@ -109,22 +105,6 @@
       $graphEdge = $fb->next($graphEdge);
     }
   } while(count($facebook_posts) < 10);
-
-  // foreach($graphEdge as $graphNode) {
-  //   $images = $graphNode->getField('images');
-
-  //   // foreach($images as $image) {
-  //     // var_dump($image);
-  //     $image_array_item = array(
-  //       'image' => $image->getField('source'),
-  //       'link'  => $facebook_pagelink
-  //     );
-
-  //     if(count($facebook_posts) < 10) {
-  //       array_push($facebook_posts, $image_array_item);
-  //     }
-  //   // }
-  // }
 
   // RETURN VALUE
   $output = array(
