@@ -149,12 +149,19 @@
     </div>
     <!-- Facebook Posts end -->
 
+    <!-- Footer start -->
+    <div id="footer" class="text-center">
+      <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
+    </div>
+    <!-- Footer end -->
+
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <script src="bower_components/slick-lightbox/dist/slick-lightbox.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
 
     <script src="js/main.min.js"></script>
