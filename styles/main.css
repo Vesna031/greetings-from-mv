@@ -18,8 +18,8 @@
 
 #hero {
   width: 100%;
-  padding: 10%;
-  background: #444;
+/*  padding: 10%;
+*/  background: #444;
   display: table;
 }
 
@@ -108,6 +108,16 @@
 @media screen and (max-width: 768px) {
   .background-image {
     padding-bottom: 56%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .visible-lg{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1921px) {
+  .visible-xlg{
+    display: none !important;
   }
 }
 
