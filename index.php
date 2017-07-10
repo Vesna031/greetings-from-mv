@@ -172,22 +172,6 @@
         Many houses in Edgartown predate the whaling era. Most are private residences, but three notable ones are serving other needs.There are excellent public beaches in the township of Edgartown. Norton’s Point, known as Katama, is a barrier beach providing surf bathing and the opportunity to explore Katama Bay on the other side of the dunes. Wasque and Cape Poge on Chappaquiddick are both unspoiled areas owned and maintained by The Trustees of Reservations. They are favorite spots for bluefish and bass fishermen. Lighthouse Beach, located off North Water Street near the town center, offers calm water and views of harbor activities.</p>
       </div>
 
-      <div class="pop-up" id="menemsha">
-        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
-
-        <h1>Menemsha</h1>
-
-        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
-      </div>
-
-      <div class="pop-up" id="vineyard-haven">
-        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
-
-        <h1>Vineyard Haven</h1>
-
-        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
-      </div>
-
       <div class="pop-up" id="aquinnah">
         <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
@@ -218,12 +202,24 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div id="pro-gallery-slick">
-              <img class="img-responsive" src="images/pro-gallery/gingerbread-houses.jpg">
-              <img class="img-responsive" src="images/pro-gallery/harbour-fourkids.jpg">
-              <img class="img-responsive" src="images/pro-gallery/lifeguard-post.jpg">
-              <img class="img-responsive" src="images/pro-gallery/menemsha-statue.jpg">
-              <img class="img-responsive" src="images/pro-gallery/menemsha-sunset.jpg">
-              <img class="img-responsive" src="images/pro-gallery/ob-harbour.jpg">
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/gingerbread-houses.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/harbour-fourkids.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/lifeguard-post.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/menemsha-statue.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/menemsha-sunset.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/ob-harbour.jpg">
+              </div>
             </div>
           </div>
         </div>

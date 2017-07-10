@@ -7,9 +7,15 @@ $(document).ready(function() {
   $(window).load(proGalleryButton);
   $(window).resize(proGalleryButton);
 
-  $('#pro-gallery').slickLightbox({
-    src: 'src',
-    itemSelector: '.item img'
+  // $('#pro-gallery').slickLightbox({
+  //   src: 'src',
+  //   itemSelector: '.item img'
+  // });
+
+  $('#pro-gallery-modal').on('shown.bs.modal', function (event) {
+    $('#pro-gallery-slick').slick({
+      // fade: true
+    });
   });
 
   $.get('reviews_and_posts.php', function (data) {
