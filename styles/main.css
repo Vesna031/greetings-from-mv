@@ -179,3 +179,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+}

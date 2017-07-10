@@ -82,6 +82,6 @@ gulp.task('default', ['wiredep', 'styles', 'js'], function() {
   gulp.watch('composer.json', {ignoreInitial: false}, ['reload']);
   gulp.watch('styles/main.css', {ignoreInitial: false}, ['styles', 'reload']);
   gulp.watch('js/main.js', {ignoreInitial: false}, ['js', 'reload']);
-  gulp.watch('index.html', {ignoreInitial: false}, ['reload']);
+  gulp.watch('*.html', {ignoreInitial: false}, ['reload']);
   gulp.watch('*.php', {ignoreInitial: false}, ['reload']);
 });
