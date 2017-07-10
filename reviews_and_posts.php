@@ -30,8 +30,8 @@
   }
 
   // FACEBOOK
-  $facebook_reviews = array();
-  $facebook_review_url = 'https://www.facebook.com/pg/marthasvineyardtours/reviews/';
+  // $facebook_reviews = array();
+  // $facebook_review_url = 'https://www.facebook.com/pg/marthasvineyardtours/reviews/';
 
   $fb = new \Facebook\Facebook([
     'app_id'                => '318059708651553',
@@ -50,28 +50,28 @@
   //   exit;
   // }
 
-  try {
-    $response = $fb->get('/marthasvineyardtours/ratings');
-  } catch(\Facebook\Exceptions\FacebookResponseException $e) {
-    echo 'Graph returned an error: ' . $e->getMessage();
-    exit;
-  } catch(\Facebook\Exceptions\FacebookSDKException $e) {
-    echo 'Facebook SDK returned an error: ' . $e->getMessage();
-    exit;
-  }
+  // try {
+  //   $response = $fb->get('/marthasvineyardtours/ratings');
+  // } catch(\Facebook\Exceptions\FacebookResponseException $e) {
+  //   echo 'Graph returned an error: ' . $e->getMessage();
+  //   exit;
+  // } catch(\Facebook\Exceptions\FacebookSDKException $e) {
+  //   echo 'Facebook SDK returned an error: ' . $e->getMessage();
+  //   exit;
+  // }
 
   // echo 'FACEBOOK REVIEWS:<br>';
-  $graphEdge = $response->getGraphEdge();
-  foreach($graphEdge as $graphNode) {
-    if($graphNode->getField('review_text') != null) {
-      array_push($facebook_reviews, array(
-        'url' => $facebook_review_url,
-        'rating' => $graphNode->getField('rating'),
-        'text' => $graphNode->getField('review_text'),
-        'name' => $graphNode->getField('reviewer')->getField('name'),
-      ));
-    }
-  }
+  // $graphEdge = $response->getGraphEdge();
+  // foreach($graphEdge as $graphNode) {
+  //   if($graphNode->getField('review_text') != null) {
+  //     array_push($facebook_reviews, array(
+  //       'url' => $facebook_review_url,
+  //       'rating' => $graphNode->getField('rating'),
+  //       'text' => $graphNode->getField('review_text'),
+  //       'name' => $graphNode->getField('reviewer')->getField('name'),
+  //     ));
+  //   }
+  // }
 
   // FACEBOOK POSTS
   $facebook_posts = array();
@@ -109,8 +109,8 @@
   // RETURN VALUE
   $output = array(
     'yelp_reviews' => $yelp_reviews,
-    'facebook_reviews' => $facebook_reviews,
-    'facebook_posts' => $facebook_posts
+    // 'facebook_reviews' => $facebook_reviews,
+    // 'facebook_posts' => $facebook_posts
   );
   echo json_encode($output);
 ?>

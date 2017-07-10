@@ -1,49 +1,48 @@
 $(document).ready(function() {
+  // SMOOTH SCROLLING
   smoothScrolling();
+
+  // IMAGE MAP RESIZING
   $('map').imageMapResize();
 
+  // POP-UP INITIALIZATION
   $('.pop-up').fadeOut(0);
 
+  // PRO GALLERY BUTTON POSITIONING
   $(window).load(proGalleryButton);
   $(window).resize(proGalleryButton);
 
-  // $('#pro-gallery').slickLightbox({
-  //   src: 'src',
-  //   itemSelector: '.item img'
-  // });
-
+  // PRO GALLERY MODAL + SLICK
   $('#pro-gallery-modal').on('shown.bs.modal', function (event) {
-    $('#pro-gallery-slick').slick({
-      // fade: true
-    });
+    $('#pro-gallery-slick').slick();
   });
 
   $.get('reviews_and_posts.php', function (data) {
     console.log(data);
-    // Yelp and Facebook Reviews
-    var yelpReviews = JSON.parse(data).yelp_reviews,
-        facebookReviews = JSON.parse(data).facebook_reviews,
-        facebookPosts = JSON.parse(data).facebook_posts;
+    // // Yelp and Facebook Reviews
+    // var yelpReviews = JSON.parse(data).yelp_reviews,
+    //     facebookReviews = JSON.parse(data).facebook_reviews,
+    //     facebookPosts = JSON.parse(data).facebook_posts;
 
-    for(var i = 0; i < yelpReviews.length; i++) {
-      $('<blockquote><p>' + yelpReviews[i].text + '</p><footer><a href="' + yelpReviews[i].url + '" target="_blank">' + yelpReviews[i].name + ' <cite title="Yelp">Yelp</cite></a></footer></blockquote></div>').appendTo('#yelp-reviews');
-    }
+    // for(var i = 0; i < yelpReviews.length; i++) {
+    //   $('<blockquote><p>' + yelpReviews[i].text + '</p><footer><a href="' + yelpReviews[i].url + '" target="_blank">' + yelpReviews[i].name + ' <cite title="Yelp">Yelp</cite></a></footer></blockquote></div>').appendTo('#yelp-reviews');
+    // }
 
-    for(var j = 0; j < facebookReviews.length; j++) {
-      $('<blockquote><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote></div>').appendTo('#facebook-reviews');
-    }
+    // for(var j = 0; j < facebookReviews.length; j++) {
+    //   $('<blockquote><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote></div>').appendTo('#facebook-reviews');
+    // }
 
-    $('.reviews-slider').slick({
-      autoplay: true,
-      arrows: false
-    });
+    // $('.reviews-slider').slick({
+    //   autoplay: true,
+    //   arrows: false
+    // });
 
-    $('#reviews-loader').hide();
+    // $('#reviews-loader').hide();
 
-    // Facebook Posts
-    for(var k = 0; k < facebookPosts.length; k++) {
-      $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts');;
-    }
+    // // Facebook Posts
+    // for(var k = 0; k < facebookPosts.length; k++) {
+    //   $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts');;
+    // }
   });
 });
 
@@ -96,12 +95,12 @@ function closePopups() {
   $('.pop-up').fadeOut(300);
 }
 
-function openLightbox() {
-  console.log('does the lightbox work?');
-  $('#pro-gallery').slickLightbox({
-    images: ['http://placekitten.com/1000/600', 'http://placekitten.com/1010/606', 'http://placekitten.com/1060/636']
-  });
-}
+// function openLightbox() {
+//   console.log('does the lightbox work?');
+//   $('#pro-gallery').slickLightbox({
+//     images: ['http://placekitten.com/1000/600', 'http://placekitten.com/1010/606', 'http://placekitten.com/1060/636']
+//   });
+// }
 
 function proGalleryButton() {
   var $this = $('#pro-gallery'),

@@ -2,6 +2,8 @@
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
 /* endbower */
 
+@import 'spinner.css';
+
 .navbar-default {
   position: fixed;
   background: transparent;
