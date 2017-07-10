@@ -16,17 +16,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-    <div class="container" id="navigation">
-      <ul class="nav nav-tabs">
-     
-        <li role="presentation" class="active"><a href="#hero">Home</a></li>
-        <li role="presentation"><a href="#reviews">Reviews</a></li>
-        <li role="presentation"><a href="#info-map">Map</a></li>
-        <li role="presentation"><a href="#pro-gallery">Gallery</a></li>
-        <li role="presentation"><a href="#about-contact">About</a></li>
-        <li role="presentation" class="pull-right"><a href="tel:6173599298" class="glyphicon glyphicon-earphone"></a></li>
-      </ul>
-    </div>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gfmv-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="img-responsive brand" src="images/navigation/nav-logo.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="gfmv-navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#hero">Home</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#info-map">Map</a></li>
+            <li><a href="#pro-gallery">Gallery</a></li>
+            <li><a href="#about-contact">About</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="tel:6173599298" class="glyphicon glyphicon-earphone"></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
     <!-- Hero start -->
     <div id="hero">
@@ -176,7 +196,22 @@
         </div>
       </div>
 
-      <button class="btn btn-large btn-viewgallery" onclick="openLightbox();">View Gallery</button>
+      <button class="btn btn-large btn-viewgallery" data-toggle="modal" data-target="#pro-gallery-modal">View Gallery</button>
+
+      <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div id="pro-gallery-slick">
+              <img class="img-responsive" src="images/pro-gallery/gingerbread-houses.jpg">
+              <img class="img-responsive" src="images/pro-gallery/harbour-fourkids.jpg">
+              <img class="img-responsive" src="images/pro-gallery/lifeguard-post.jpg">
+              <img class="img-responsive" src="images/pro-gallery/menemsha-statue.jpg">
+              <img class="img-responsive" src="images/pro-gallery/menemsha-sunset.jpg">
+              <img class="img-responsive" src="images/pro-gallery/ob-harbour.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Pro Gallery end -->
 
@@ -193,9 +228,9 @@
     <!-- About Contact end -->
 
     <!-- Facebook Posts start -->
-    <div id="facebook-posts">
+    <!-- <div id="facebook-posts">
       <h3>Latest Posts</h3>
-    </div>
+    </div> -->
     <!-- Facebook Posts end -->
 
     <!-- Footer start -->

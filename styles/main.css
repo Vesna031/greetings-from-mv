@@ -5,11 +5,30 @@
 @import '../bower_components/slick-lightbox/dist/slick-lightbox.css';
 /* endbower */
 
-#navigation {
+.navbar-default {
   position: fixed;
-  z-index: 1000;
-  background: rgba(255, 255, 255);
+  background: transparent;
   width: 100%;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: red;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: blue;
+  background: transparent;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  max-height: 3em;
 }
 
 #hero, #reviews, #info-map {
@@ -184,4 +203,24 @@
   background: #222;
   color: white;
   padding: 15px;
+}
+
+#pro-gallery-modal .modal-dialog {
+  max-width: 90%;
+  min-width: 80%;
+  max-height: 100%;
+}
+
+#pro-gallery-modal .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#pro-gallery-slick {
+  visibility: hidden;
+}
+
+#pro-gallery-slick.slick-initialized {
+  visibility: visible;
 }
