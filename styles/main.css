@@ -8,7 +8,7 @@
 #navigation {
   position: fixed;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255);
   width: 100%;
 }
 
@@ -138,7 +138,7 @@
 }
 
 #about-contact {
-  background: url('../images/about-contact/post-card-back.jpg');
+  background: url('../images/about-contact/about-postcard copy.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
@@ -146,16 +146,16 @@
   padding-bottom: 63.625%;
 }
 
-#about-contact * {
+/*#about-contact * {
   background: transparent;
-}
+}*/
 
-#about-contact p {
+/*#about-contact p {
   margin-top: 50%;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 150%;
-}
+}*/
 
 #about-contact h3 {
   margin-top: 70%;  
