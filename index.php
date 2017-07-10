@@ -83,7 +83,7 @@
       <img src="images/map_sizes/map_1200.png" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
       <img src="images/map_sizes/map_992.png" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
 
-      <map name="mapiconslocations_3840">  
+      <map name="mapiconslocations_3840">
         <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
         <area shape="circle" coords="3075,1227,300" alt="Edgartown" onclick="showPopup('edgartown');">
         <area shape="circle" coords="299,1771,300" alt="Aquinnah" onclick="showPopup('aquinnah');">
@@ -150,6 +150,22 @@
         Main Street is a picture-book setting with its harbor and waterfront. The tall square-rigged ships that sailed all the world’s oceans have passed from the Edgartown scene, but the heritage of those vessels and their captains has continued. For the past hundred years Edgartown has been one of the world’s great yachting centers.
         To view and appreciate this town fully, you must walk its streets. North Water Street has a row of captains’ houses not equaled anywhere. Study the fanlights and widows walks by day and stroll down the streets after the lamps are lit.
         Many houses in Edgartown predate the whaling era. Most are private residences, but three notable ones are serving other needs.There are excellent public beaches in the township of Edgartown. Norton’s Point, known as Katama, is a barrier beach providing surf bathing and the opportunity to explore Katama Bay on the other side of the dunes. Wasque and Cape Poge on Chappaquiddick are both unspoiled areas owned and maintained by The Trustees of Reservations. They are favorite spots for bluefish and bass fishermen. Lighthouse Beach, located off North Water Street near the town center, offers calm water and views of harbor activities.</p>
+      </div>
+
+      <div class="pop-up" id="menemsha">
+        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
+
+        <h1>Menemsha</h1>
+
+        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
+      </div>
+
+      <div class="pop-up" id="vineyard-haven">
+        <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
+
+        <h1>Vineyard Haven</h1>
+
+        <p>Some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some shit some</p>
       </div>
 
       <div class="pop-up" id="aquinnah">
