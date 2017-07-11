@@ -41,7 +41,6 @@ a{
   font-size: 30px;
   font-weight: 400;
   font-variant: small-caps;
-
 }
 
 .navbar-default .navbar-nav:not(.navbar-right) > li:not(:last-child):after{
@@ -76,6 +75,7 @@ ul.navbar-nav{
 
 .navbar-brand {
   padding: 15px, 15px;
+  position: absolute; /* VESNA->this will need a media query to remove absolute positioning and look work right on mobile */
 }
 .nav{
   padding: 0px;
@@ -83,6 +83,22 @@ ul.navbar-nav{
 
 .navbar-brand img {
   max-height: 8em;
+  /* VESNA->height to 3em makes it look good on mobile */
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-right {
+  position: absolute;
+  right: 15px;/* VESNA->this will need a media query to remove absolute positioning and look right on mobile */
 }
 
 #hero, #reviews, #info-map {
@@ -103,6 +119,7 @@ ul.navbar-nav{
 #reviews {
   background: #222222;
   color: #eeeeee;
+  padding: 10% 0;
 }
 
 .reviews-slider {
@@ -310,13 +327,19 @@ ul.navbar-nav{
   padding: 15px;
 }
 
-
-
 #scroll-up{
   position: fixed;
   z-index: 1000;
   top: 75%;
   right: 35px;
+  font-size: 200%;
+}
+
+#scroll-up:hover,
+#scroll-up:focus,
+#scroll-up:visited {
+  text-decoration: none;
+  outline: none;
 }
 
 /*#pro-gallery-slick .slick-track {

@@ -2,6 +2,19 @@ $(document).ready(function() {
   // SMOOTH SCROLLING
   smoothScrolling();
 
+  // SCROLL UP ARROW
+  $('#scroll-up').fadeOut();
+  var waypoint = new Waypoint({
+    element: document.getElementById('reviews'),
+    handler: function(direction) {
+      if(direction === 'down') {
+        $('#scroll-up').fadeIn(400);
+      } else {
+        $('#scroll-up').fadeOut(400);
+      }
+    }
+  });
+
   // IMAGE MAP RESIZING
   $('map').imageMapResize();
 
