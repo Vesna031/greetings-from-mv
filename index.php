@@ -34,11 +34,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="gfmv-navbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#hero">Home</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#info-map">Map</a></li>
-            <li><a href="#pro-gallery">Gallery</a></li>
-            <li><a href="#about-contact">About</a></li>
+            <li class="active"><a class="ubuntu-font" href="#hero">HOME</a></li>
+            <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li>
+            <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
+            <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
+            <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -119,18 +119,18 @@
         <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
       </map>
       <map name="mapiconslocations_1200">  
-        <area shape="circle" coords="1364,249,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-        <area shape="circle" coords="1522,609,200" alt="Edgartown" onclick="showPopup('edgartown');">
-        <area shape="circle" coords="142,880,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-        <area shape="circle" coords="1135,229,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
-        <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
+        <area shape="circle" coords="841,148,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
+        <area shape="circle" coords="942,379,200" alt="Edgartown" onclick="showPopup('edgartown');">
+        <area shape="circle" coords="93,548,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
+        <area shape="circle" coords="844,147,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
+        <area shape="circle" coords="264,483,200" alt="Menemsha" onclick="showPopup('menemsha');">
       </map>
       <map name="mapiconslocations_992">  
-        <area shape="circle" coords="1364,249,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-        <area shape="circle" coords="1522,609,200" alt="Edgartown" onclick="showPopup('edgartown');">
-        <area shape="circle" coords="142,880,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-        <area shape="circle" coords="1135,229,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
-        <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
+        <area shape="circle" coords="701,120,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
+        <area shape="circle" coords="782,314,200" alt="Edgartown" onclick="showPopup('edgartown');">
+        <area shape="circle" coords="71,453,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
+        <area shape="circle" coords="583,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
+        <area shape="circle" coords="220,397,200" alt="Menemsha" onclick="showPopup('menemsha');">
       </map>
 
       <div class="pop-up" id="oak-bluffs">
@@ -234,7 +234,10 @@
     <!-- About Contact start -->
     <div id="about-contact">
       <div class="col-xs-12 col-sm-6">
-        <p>Craig is a great guy and he gives tours of Martha's Vineyard.  They are very personal and customized.  Vesna is reading this, stop Vesna!  This is my text!  Don't you dare say this aloud or I will....</p>
+        <p>Greetings from Martha's Vineyard Tours will cater to your schedule, taking as little or as much time as you wish. 
+        See the locations where Jaws was filmed, dine on the catch of the day in the quaint fishing village of Menemsha or walk through the camp meeting grounds and marvel at the gingerbread cottages. 
+        Learn the history of the independent-minded Islanders. And see what continues to attract artists, celebrities, tycoons and world leaders to this magic island. 
+        Relax in the comfort of our 6 person conversion vans, equipped with air-conditioning and leather seats in our 4-hour tour.</p>
       </div>
       <div class="col-xs-12 col-sm-6">
         <h3>Telephone: <a href="tel:6173599298" >617-359-9298</a></h3>
@@ -253,6 +256,7 @@
     <div id="footer" class="text-center">
       <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
     </div>
+    <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
     <!-- Footer end -->
 
     <!-- bower:js -->

@@ -4,31 +4,59 @@
 @import '../bower_components/slick-carousel/slick/slick-theme.css';
 @import '../bower_components/slick-lightbox/dist/slick-lightbox.css';
 /* endbower */
-
+body{
+  font-family: "Ubuntu";
+}
 .navbar-default {
-  position: fixed;
-  background: transparent;
+  position: absolute;
+    background: transparent;
   width: 100%;
   border: none;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: red;
+  color: #394a59;
+  font-size: 30px;
+  font-weight: 400;
+  font-variant: small-caps;;
+}
+
+.navbar-default .navbar-nav:not(.navbar-right) > li:not(:last-child):after{
+  position: absolute; 
+  display: inline-block;
+  right: -1px;
+  top: 7px;
+  content: "";
+  height:38px;
+  width: 6px;
+  background-image: url(../images/navigation/nav-ornament.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
+}
+.ubuntu-font{
+  font-family: "Ubuntu";
 }
 
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-  color: blue;
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #394a59;
   background: transparent;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+  color: #395a58;
+}
+ul.navbar-nav{
+  letter-spacing: 2px;
+  margin: 40px auto;
 }
 
 .navbar-brand {
-  padding: 0;
+  padding: 15px, 15px;
 }
 
 .navbar-brand img {
-  max-height: 3em;
+  max-height: 8em;
 }
 
 #hero, #reviews, #info-map {
@@ -157,7 +185,7 @@
 }
 
 #about-contact {
-  background: url('../images/about-contact/about-postcard copy.jpg');
+  background: url('../images/about-contact/about-postcard.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
@@ -223,4 +251,10 @@
 
 #pro-gallery-slick.slick-initialized {
   visibility: visible;
+}
+#scroll-up{
+  position: fixed;
+  z-index: 1000;
+  top: 75%;
+  right: 35px;
 }
