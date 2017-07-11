@@ -16,6 +16,6 @@
     "image-map-resizer": "^1.0.3",
     "bootstrap": "^3.3.7",
     "waypoints": "^4.0.1",
-    "slick": "*"
+    "slick-carousel": "^1.6.0"
   }
 }

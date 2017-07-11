@@ -72,18 +72,42 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-            <img class="img-responsive center-block" src="/images/reviews/Yelp_trademark_RGB.png">
-            
-            <br>
-
-            <div id="yelp-reviews" class="reviews-slider"></div>
+            <div class="row">
+              <div class="col-xs-2">
+                <img class="img-responsive center-block" src="/images/reviews/Yelp_burst_positive_RGB.png">
+              </div>
+              <div class="col-xs-10">
+                <div id="yelp-reviews" class="reviews-slider"></div>
+              </div>
+            </div>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <img class="img-responsive center-block" src="/images/reviews/FB-f-Logo__blue_144.png">
-            
-            <br>
+            <div class="row">
+              <div class="col-xs-2">
+                <img class="img-responsive center-block" src="/images/reviews/FB-f-Logo__blue_144.png">
+              </div>
 
-            <div id="facebook-reviews" class="reviews-slider"></div>
+              <div class="col-xs-10">
+                <div id="facebook-reviews" class="reviews-slider">
+                  <blockquote>
+                    <p>We went on a tour of Martha's Vineyard this morning - what an amazing experience! Despite the wet weather the beauty of the area shone through as we drove around the island and listened to Craig's stories about the famous (and not so famous) people and places that make this island so special. Thank you Craig - it was the highlight of my stay at MV.</p>
+                    <footer><a href="https://www.facebook.com/pg/marthasvineyardtours/reviews" target="_blank">Linda Hall <cite title="Facebook">Facebook</cite></a></footer>
+                  </blockquote>
+                  <blockquote>
+                    <p>We had a fantastic tour of Martha's Vineyard yesterday. Craig has extensive knowledge and a lot of stories to tell. He's also a really nice guy! He's really helped us get the most out of our trip in the time that we had. Thanks again, Craig!</p>
+                    <footer><a href="https://www.facebook.com/pg/marthasvineyardtours/reviews" target="_blank">Jonathan Lee <cite title="Facebook">Facebook</cite></a></footer>
+                  </blockquote>
+                  <blockquote>
+                    <p>Always a good time with Craig! A gentleman and a scholar</p>
+                    <footer><a href="https://www.facebook.com/pg/marthasvineyardtours/reviews" target="_blank">Nina Lisa Maria <cite title="Facebook">Facebook</cite></a></footer>
+                  </blockquote>
+                  <blockquote>
+                    <p>Best tour ever ! I laughed, I cried. Much better than "CATS" or Alcatraz tour. THANKS CRAIG !</p>
+                    <footer><a href="https://www.facebook.com/pg/marthasvineyardtours/reviews" target="_blank">Bill Feldman <cite title="Facebook">Facebook</cite></a></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -262,7 +286,7 @@
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
-    <script src="bower_components/slick/dist/slick.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
 
     <script src="js/main.min.js"></script>

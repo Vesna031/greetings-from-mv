@@ -1,13 +1,15 @@
 /* bower:css */
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
+@import '../bower_components/slick-carousel/slick/slick.css';
 /* endbower */
+
+@import '../bower_components/slick-carousel/slick/slick-theme.css';
+@import 'spinner.css';
 
 body{
   font-family: "Ubuntu";
 }
 
-
-@import 'spinner.css';
 
 a{
   color: #394a59;
@@ -26,9 +28,10 @@ a{
   padding: 5px 5px;
   display: inline-block;
 }
+
 .navbar-default {
   position: absolute;
-    background: transparent;
+  background: transparent;
   width: 100%;
   border: none;
 }
@@ -97,8 +100,14 @@ ul.navbar-nav{
   margin: 0 auto;
 }
 
+#reviews {
+  background: #222222;
+  color: #eeeeee;
+}
+
 .reviews-slider {
   cursor: default;
+  outline: none;
 }
 
 .reviews-slider a {
@@ -144,7 +153,6 @@ ul.navbar-nav{
 
 #pro-gallery .btn-viewgallery {
   position: absolute;
-
   border-radius: 0;
   background: #fff;
   border: solid 3px gray;
@@ -164,7 +172,48 @@ ul.navbar-nav{
 #pro-gallery .item img {
   width: 60%;
   margin: 0 auto;
+}
+
+#pro-gallery-modal .modal-dialog {
+  max-width: 90%;
+  min-width: 80%;
+  margin: 0 auto;
+  /*margin: 10% auto;*/
+}
+
+@media screen and (max-width: 767px) {
+  #pro-gallery-modal .modal-dialog {
+    max-width: 80%;
+    min-width: 70%;
+  }
+}
+
+#pro-gallery-modal .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#pro-gallery-slick,
+.reviews-slider {
+  visibility: hidden;
+  height: 0;
+}
+
+#pro-gallery-slick.slick-initialized,
+.reviews-slider.slick-initialized {
+  visibility: visible;
   height: auto;
+}
+
+#pro-gallery-slick.slick-initialized .slick-slide {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#pro-gallery-slick.slick-initialized .slick-slide img {
+  margin: 0 auto;
 }
 
 .background-image {
@@ -261,50 +310,13 @@ ul.navbar-nav{
   padding: 15px;
 }
 
-#pro-gallery-modal .modal-dialog {
-  max-width: 90%;
-  min-width: 80%;
-  max-height: 80%;
-  margin: 10% auto;
-}
 
-@media screen and (max-width: 767px) {
-  #pro-gallery-modal .modal-dialog {
-    max-width: 80%;
-    min-width: 70%;
-  }
-}
-
-#pro-gallery-modal .modal-content {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
-
-#pro-gallery-slick {
-  visibility: hidden;
-}
-
-#pro-gallery-slick.slick-initialized {
-  visibility: visible;
-}
 
 #scroll-up{
   position: fixed;
   z-index: 1000;
   top: 75%;
   right: 35px;
-}
-
-
-#pro-gallery-slick.slick-initialized .slick-slide {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#pro-gallery-slick.slick-initialized .slick-slide img {
-  margin: 0 auto;
 }
 
 /*#pro-gallery-slick .slick-track {
@@ -329,4 +341,29 @@ ul.navbar-nav{
   /*top: 50%;
   transform: translateY(-50%);*
 }*/
->>>>>>> origin/develop
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
