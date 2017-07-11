@@ -11,14 +11,14 @@ var gulp   = require('gulp'),
     connect = require('gulp-connect-php');
 
 gulp.task('wiredep', function() {
-  gulp.src('index.html')
-    .pipe(wiredep({
+  gulp.src('index.php')
+    .pipe(wiredep(/*{
       overrides: {
         'slick-lightbox': {
           'main': 'dist/slick-lightbox.js'
         }
       }
-    }))
+    }*/))
     .pipe(gulp.dest('.'));
 
   gulp.src('styles/main.css')
