@@ -1,15 +1,15 @@
 /* bower:css */
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
 /* endbower */
-<<<<<<< HEAD
+
 body{
   font-family: "Ubuntu";
 }
-=======
+
 
 @import 'spinner.css';
 
->>>>>>> origin/develop
+
 .navbar-default {
   position: absolute;
     background: transparent;
@@ -21,7 +21,8 @@ body{
   color: #394a59;
   font-size: 30px;
   font-weight: 400;
-  font-variant: small-caps;;
+  font-variant: small-caps;
+
 }
 
 .navbar-default .navbar-nav:not(.navbar-right) > li:not(:last-child):after{
@@ -56,6 +57,9 @@ ul.navbar-nav{
 
 .navbar-brand {
   padding: 15px, 15px;
+}
+.nav{
+  padding: 0px;
 }
 
 .navbar-brand img {
@@ -263,14 +267,14 @@ ul.navbar-nav{
 #pro-gallery-slick.slick-initialized {
   visibility: visible;
 }
-<<<<<<< HEAD
+
 #scroll-up{
   position: fixed;
   z-index: 1000;
   top: 75%;
   right: 35px;
 }
-=======
+
 
 #pro-gallery-slick.slick-initialized .slick-slide {
   float: none;
