@@ -186,7 +186,7 @@
     <div id="pro-gallery">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 background-image" id="edgartown-representer"></div>
+          <div class="col-xs-12 col-sm-6 background-image " id="edgartown-representer"></div>
           <div class="hidden-xs col-sm-6 background-image" id="oakbluffs-representer"></div>
         </div>
 
@@ -229,15 +229,17 @@
 
     <!-- About Contact start -->
     <div id="about-contact">
-      <div class="col-xs-12 col-sm-6">
-        <p>Greetings from Martha's Vineyard Tours will cater to your schedule, taking as little or as much time as you wish. 
+      <div id="contact-text" class="col-xs-12 col-sm-6 col-md-offset-3">
+
+        <p class="text-center">Greetings from Martha's Vineyard Tours will cater to your schedule, taking as little or as much time as you wish. 
         See the locations where Jaws was filmed, dine on the catch of the day in the quaint fishing village of Menemsha or walk through the camp meeting grounds and marvel at the gingerbread cottages. 
         Learn the history of the independent-minded Islanders. And see what continues to attract artists, celebrities, tycoons and world leaders to this magic island. 
         Relax in the comfort of our 6 person conversion vans, equipped with air-conditioning and leather seats in our 4-hour tour.</p>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <h3>Telephone: <a href="tel:6173599298" >617-359-9298</a></h3>
-        <h4>Email: <a href="hello@toursmv.com">hello [at] toursmv.com</a></h4>
+      <div class="col-xs-12 text-center">
+
+        <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
+        <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
       </div>
     </div>
     <!-- About Contact end -->
