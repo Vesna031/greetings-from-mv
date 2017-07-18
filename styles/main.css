@@ -1,32 +1,39 @@
 /* bower:css */
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
 @import '../bower_components/slick-carousel/slick/slick.css';
-@import '../bower_components/slick-carousel/slick/slick-theme.css';
 /* endbower */
 
 @import 'spinner.css';
 
 body{
   font-family: "Ubuntu";
+  background: url(../images/backgrounds/purty_wood.png);
+  background-repeat: repeat;
 }
 
-
-a{
+a {
   color: #394a59;
 }
-.glyphicon{
+
+.glyphicon {
   padding: 20px;
 }
-#contact-text p{
-  padding-top: 6em;
+
+#contact-text p {
+  /*padding-top: 6em;*/
   font-size: 1.3em; 
 }
-#about-contact h3, #about-contact h4{
+
+#about-contact h3, #about-contact h4 {
   font-family: "Ubuntu";
   font-size: 28px;
   text-align: center;
   padding: 5px 5px;
   display: inline-block;
+}
+
+.container {
+  position: relative;
 }
 
 .navbar-default {
@@ -98,7 +105,7 @@ ul.navbar-nav{
 
 .navbar-right {
   position: absolute;
-  right: 15px;/* VESNA->this will need a media query to remove absolute positioning and look right on mobile */
+  right: 5%;
 }
 
 #hero, #reviews, #info-map {
@@ -117,9 +124,35 @@ ul.navbar-nav{
 }
 
 #reviews {
-  background: #222222;
-  color: #eeeeee;
+  /*background: #222222;*/
+  /*color: #eeeeee;*/
   padding: 10% 0;
+}
+
+#reviews blockquote {
+  border-left: none;
+}
+
+#reviews blockquote:before {
+  content: ' ';
+  display: inline-block;
+  width: 22px;
+  height: 185px;
+  margin-left: 5px;
+  vertical-align: top;
+  background: url(../images/hand-drawns/every-tuesday-hand-drawn-decorative-divider-1.gif);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#reviews blockquote p {
+  display: inline-block;
+  width: calc(100% - 44px);
+}
+
+#reviews blockquote footer {
+  text-align: right;
 }
 
 .reviews-slider {
@@ -133,6 +166,14 @@ ul.navbar-nav{
 
 #info-map {
   position: relative;
+}
+
+#info-map, #about-contact {
+  transform: rotate(2deg);
+}
+
+#pro-gallery {
+  transform: rotate(-2deg);
 }
 
 .map {
@@ -241,7 +282,7 @@ ul.navbar-nav{
   padding-bottom: 33.25%;
 }
 #contact-text{
-  width: 6 0%;
+  /*width: 60%;*/
   padding: 10em 10px 0px;
   font-size: 1.3em;
 }
@@ -298,7 +339,7 @@ ul.navbar-nav{
 }*/
 
 #about-contact h3 {
-  margin-top: 10%;  
+  margin-top: 5%;
 }
 
 
@@ -322,9 +363,13 @@ ul.navbar-nav{
 }
 
 #footer {
-  background: #222;
-  color: white;
+  /*background: #222;*/
+  /*color: white;*/
   padding: 15px;
+}
+
+#footer a {
+  color: darkred;
 }
 
 #scroll-up{

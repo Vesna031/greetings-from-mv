@@ -50,7 +50,8 @@ $(document).ready(function() {
 
     $('.reviews-slider').slick({
       autoplay: true,
-      arrows: false
+      arrows: false,
+      autoplaySpeed: 7500
     });
 
     $('#reviews-loader').hide();
