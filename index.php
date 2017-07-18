@@ -164,10 +164,10 @@
         <h1>Oak Bluffs</h1>
 
         <p>Before there was even a town named Oak Bluffs – back in the 1830s – Methodist congregations across New England would organize summer retreats to the outlying woods north of Edgartown, where they would spend a week in revival meetings, hearing as many as four sermons a day. Many found this setting so delightful, they started coming early on their camping trips and staying late. That early tradition of the “camp-meeting” really gave Martha’s Vineyard its start as a summer resort community.
-        As the Methodists expanded their summer visits, they first built wooden platforms for their tents, and then began building a community of colorful cottages around their open-air meeting center. Thus was born the Island’s only truly original architectural style, known today as Campground Gothic Revival. Some 300 cottages with “gingerbread” scrollwork details and gaily-colored paint schemes still stand at the heart of Oak Bluffs, around the central Tabernacle with its graceful arches of wrought iron. 
+        As the Methodists expanded their summer visits, they first built wooden platforms for their tents and then began building a community of colorful cottages around their open-air meeting center. Thus was born the Island’s only truly original architectural style, known today as Campground Gothic Revival. 
         The historic path of this burgeoning summer resort so departed from Edgartown that in 1880 its residents split away, forming the town of Cottage City. The town took on the new name of Oak Bluffs in 1907.
         From its revivalist beginnings, Oak Bluffs has grown to become the Island’s liveliest center for after-hours entertainment, with a downtown district, called Circuit Avenue, bustling well into the wee hours on summer weekends. Oak Bluffs is also home to such landmarks as the Flying Horses, among the nation’s oldest operating carousels, and Union Chapel, a remarkable octagonal structure that dates to 1870.
-        The Oak Bluffs harbor is known as the Island’s favorite center for power boaters, with its long concrete dock and electrical hookup services. Oak Bluffs is also home to the Island’s most impressive collection of public parks. The jewel of them all is Ocean Park, with a bandstand at the center from which concerts are given on alternating Sunday nights throughout the summer. Ocean Park is also the center for the August fireworks display which traditionally draws the biggest crowds of any single Island event, and which marks the conclusion of the high summer season. 
+        The Oak Bluffs harbor is known as the Island’s favorite center for power boaters, with its long concrete dock and electrical hookup services. Ocean Park is the center for the August fireworks display which traditionally draws the biggest crowds of any single Island event, and which marks the conclusion of the high summer season. 
  </p>
       </div>
       <div class="pop-up" id="vineyard-haven">
@@ -202,7 +202,8 @@
 
         <h1>Aquinnah</h1>
 
-        <p>Many year-round residents of Aquinnah are descendants of the Wampanoag Indians who showed the colonial settlers how to kill whales, plant corn, and find clay for the early brickyards. The Aquinnah Wampanoaq were judged to be the most skillful and courageous boatsteerers of that era.he courage of the early residents of Aquinnah demonstrated itself in the many instances when they took to the seas in deadly weather to aid survivors of wrecks that took place off the Aquinnah Cliffs. As further testament to their valor, a plaque on the schoolhouse commemorates the fact that Aquinnah sent more men, in proportion to its size, to fight in World War I than did any other town in New England.The brilliant colors of the mile-long expanse of the Aquinnah Cliffs astonished early explorers and have continued to be a source of intense interest to scientists and visitors alike. Here layers of sands, gravels, and clays of various hues tell a hundred-million year-old story of a land first covered with forests, then flooded and laid bare, then covered with new growth, time and again. The seas, glaciers, and land itself have contorted these once-level layers into waving bands of color that stream above the sea. Erosion continues as it has for centuries, turning the seas red and revealing fossil secrets. From the fossils revealed by erosion we know of the great sharks that swam over what is now Chilmark, of the clams and crabs that inhabited ancient seas. Pieces of lignite from the Cretaceous period are found on the beach, looking like nothing so much as the remnants of recent campfires. Fossil bones of camels and wild horses, as well as those of ancient whales, have been found in the Cliffs. The Aquinnah Cliffs are a national landmark; yet they are seriously threatened by erosion. To protect the Cliffs, climbing and the removal of clay are both prohibited by law.Because of the extremely dangerous rocky ledge offshore, the seas around Aquinnah have always been a place of great peril to the mariner. One of the first revolving lighthouses in the country was erected atop the Cliffs in 1799. It had wooden works that became swollen in damp or cold weather, when the lighthouse keeper and his wife would be obliged to stand all night and turn the light by hand. The current red-brick, electrified Gay Head Light stands in its place.</p>
+        <p>Many year-round residents of Aquinnah are descendants of the Wampanoag Indians who showed the colonial settlers how to kill whales, plant corn and find clay for the early brickyards. The Aquinnah Wampanoag were judged to be the most skillful and courageous boat-steerers of that era. 
+		The brilliant colors of the mile-long expanse of the Aquinnah Cliffs astonished early explorers and have continued to be a source of intense interest to scientists and visitors alike. Here layers of sands, gravels, and clays of various hues tell a hundred-million-year-old story of a land first covered with forests, then flooded and laid bare, then covered with new growth, time and again. The seas, glaciers, and land itself have contorted these once-level layers into waving bands of color that stream above the sea. Erosion continues as it has for centuries, turning the seas red and revealing fossil secrets. From the fossils revealed by erosion, we know of the great sharks that swam over what is now Chilmark, of the clams and crabs that inhabited ancient seas. Fossil bones of camels and wild horses, as well as those of ancient whales, have been found in the Cliffs. The Aquinnah Cliffs are a national landmark, yet they are seriously threatened by erosion. To protect the Cliffs, climbing and the removal of clay are both prohibited by law. Because of the extremely dangerous rocky ledge offshore, the seas around Aquinnah have always been a place of great peril to the mariner. One of the first revolving lighthouses in the country was erected atop the Cliffs in 1799. The current red-brick electrified Gay Head Light stands in its place.</p>
       </div>
     </div>
     <!-- Info Map end -->
@@ -228,23 +229,51 @@
           <div class="modal-content">
             <div id="pro-gallery-slick">
               <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/gingerbread-houses.jpg">
+                <img class="img-responsive" src="images/pro-gallery/1920/gingerbread-houses.jpg">
               </div>
               <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/harbour-fourkids.jpg">
+                <img class="img-responsive" src="images/pro-gallery/1920/harbour-fourkids.jpg">
               </div>
               <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/lifeguard-post.jpg">
+                <img class="img-responsive" src="images/pro-gallery/1920/lifeguard-post.jpg">
               </div>
               <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/menemsha-statue.jpg">
+                <img class="img-responsive" src="images/pro-gallery/1920/menemsha-statue.jpg">
               </div>
               <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/menemsha-sunset.jpg">
+                <img class="img-responsive" src="images/pro-gallery/1920/menemsha-sunset.jpg">
               </div>
               <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/ob-harbour.jpg">
+                <img class="img-responsive" src="images/pro-gallery/1920/ob-harbour.jpg">
               </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_80.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_81.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_82.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_83.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_84.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_85.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_86.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_87.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
+              </div>
+             
             </div>
           </div>
         </div>
@@ -287,7 +316,7 @@
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
-    <script src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- endbower -->
 
     <script src="js/main.min.js"></script>
