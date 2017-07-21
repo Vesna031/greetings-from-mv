@@ -53,13 +53,11 @@
       <!-- Hero start -->
       <div id="hero">
         <div id="hero-content">
-          <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_3840.png" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_1920.png" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-md" src="/images/hero_sizes/hero_1200.png" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.png" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_768.png" alt="Greetings From Martha's Vineyard">
-          
-          
+          <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_3840.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_1920.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-md" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_7681.gif" alt="Greetings From Martha's Vineyard">
           
           <!-- <h4>Scroll for more</h4>
           <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> -->
@@ -122,10 +120,10 @@
 
       <!-- Info Map start -->
       <div id="info-map">
-        <img src="images/map_sizes/map_3840.png" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
-        <img src="images/map_sizes/map_1920.png" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
-        <img src="images/map_sizes/map_1200.png" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
-        <img src="images/map_sizes/map_992.png" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
+        <img src="images/map_sizes/map_3840.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
+        <img src="images/map_sizes/map_1920.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
+        <img src="images/map_sizes/map_1200.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
+        <img src="images/map_sizes/map_992.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
 
         <map name="mapiconslocations_3840">
           <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
@@ -161,16 +159,14 @@
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Oak Bluffs</h1>
-
-          <p>Before there was even a town named Oak Bluffs – back in the 1830s – Methodist congregations across New England would organize summer retreats to the outlying woods north of Edgartown, where they would spend a week in revival meetings, hearing as many as four sermons a day. Many found this setting so delightful, they started coming early on their camping trips and staying late. That early tradition of the “camp-meeting” really gave Martha’s Vineyard its start as a summer resort community. As the Methodists expanded their summer visits, they first built wooden platforms for their tents, and then began building a community of colorful cottages around their open-air meeting center. Thus was born the Island’s only truly original architectural style, known today as Campground Gothic Revival. Some 300 cottages with “gingerbread” scrollwork details and gaily-colored paint schemes still stand at the heart of Oak Bluffs, around the central Tabernacle with its graceful arches of wrought iron.  The historic path of this burgeoning summer resort so departed from Edgartown that in 1880 its residents split away, forming the town of Cottage City. The town took on the new name of Oak Bluffs in 1907. From its revivalist beginnings, Oak Bluffs has grown to become the Island’s liveliest center for after-hours entertainment, with a downtown district, called Circuit Avenue, bustling well into the wee hours on summer weekends. Oak Bluffs is also home to such landmarks as the Flying Horses, among the nation’s oldest operating carousels, and Union Chapel, a remarkable octagonal structure that dates to 1870. The Oak Bluffs harbor is known as the Island’s favorite center for power boaters, with its long concrete dock and electrical hookup services. Oak Bluffs is also home to the Island’s most impressive collection of public parks. The jewel of them all is Ocean Park, with a bandstand at the center from which concerts are given on alternating Sunday nights throughout the summer. Ocean Park is also the center for the August fireworks display which traditionally draws the biggest crowds of any single Island event, and which marks the conclusion of the high summer season. </p>
+          <p>Before there was even a town named Oak Bluffs – back in the 1830s – Methodist congregations across New England would organize summer retreats to the outlying woods north of Edgartown, where they would spend a week in revival meetings, hearing as many as four sermons a day. As the Methodists expanded their summer visits, they first built wooden platforms for their tents, and then began building a community of colorful cottages around their open-air meeting center. Thus was born the Island’s only truly original architectural style, known today as Campground Gothic Revival. Some 300 cottages with “gingerbread” scrollwork details and gaily-colored paint schemes still stand at the heart of Oak Bluffs, around the central Tabernacle. The historic path of this burgeoning summer resort so departed from Edgartown that in 1880 its residents split away, forming the town of Cottage City. The town took on the new name of Oak Bluffs in 1907. From its revivalist beginnings, Oak Bluffs has grown to become the Island’s liveliest center for after-hours entertainment, with a downtown district, called Circuit Avenue, bustling well into the wee hours on summer weekends. Oak Bluffs is also home to such landmarks as the Flying Horses, among the nation’s oldest operating carousels, and Union Chapel, a remarkable octagonal structure that dates to 1870. The Oak Bluffs harbor is known as the Island’s favorite center for power boaters, with it's long concrete dock and electrical hookup services.</p>
         </div>
 
         <div class="pop-up" id="vineyard-haven">
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Vineyard Haven</h1>
-
-          <p>Excellent shops, fine restaurants, and a beautiful harbor are only a few of the attractions that make Vineyard Haven so special to tourists and residents alike.The town that incorporates Vineyard Haven is called Tisbury, after a parish in England near the birthplace of the Island’s first governor, Thomas Mayhew. English settlement of the area dates from the mid-1600s, when Mayhew purchased the settlement rights from the Crown.Owen Park, off Main Street (just beyond the shopping district), honors one of Vineyard Haven’s whaling captains. The town beach here is a fine place to watch the harbor.When ships were powered by wind and canvas, Vineyard Haven was one of New England’s busiest ports because of its strategic location on the sailing routes. Most of the coastwise shipping traveled through Vineyard Sound (13,814 vessels were counted in 1845). Holmes Hole, as this harbor community was called, provided a convenient anchorage. Here a ship and its crew could lay over com­fortably to wait out bad weather, pick up provisions, or take on an experienced local pilot who could negotiate the rips and shoals that were the special perils of this sea route.In addition to Owen Park, the town main­tains War Veterans’ Memorial Park off Causeway Road (located just behind the fire station). The park includes playground equipment for young children and playing fields used by local ball teams.There are many scenic places around the town: in addition to Main Street and the harbor, the Tashmoo Lake overlook on State Road, the nearby Tisbury Water Works, West Chop Lighthouse, and the area around the drawbridge on Beach Road are favorite spots for photographers.</p>
+          <p>Excellent shops, fine restaurants, and a beautiful harbor are only a few of the attractions that make Vineyard Haven so special to tourists and residents alike.The town that incorporates Vineyard Haven is called Tisbury, after a parish in England near the birthplace of the Island’s first governor, Thomas Mayhew. English settlement of the area dates from the mid-1600s, when Mayhew purchased the settlement rights from the Crown. The town beach here is a fine place to watch the harbor. Vineyard Haven was one of New England’s busiest ports because of its strategic location on the sailing routes. Most of the coastwise shipping traveled through Vineyard Sound. Holmes Hole, as this harbor community was called, provided a convenient anchorage. Here a ship and its crew could lay over com­fortably to wait out bad weather, pick up provisions, or take on an experienced local pilot who could negotiate the rips and shoals that were the special perils of this sea route.There are many scenic places around the town: in addition to Main Street and the harbor, the Tashmoo Lake overlook on State Road, the nearby Tisbury Water Works, West Chop Lighthouse, and the area around the drawbridge on Beach Road are favorite spots for photographers.</p>
         </div>
 
         <div class="pop-up" id="menemsha">
@@ -185,8 +181,8 @@
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Edgartown</h1>
-
-          <p>One of New England’s most elegant com­munities, Edgartown was the Island’s first colonial settlement and it has been the county seat since 1642. The stately white Greek Revival houses built by the whaling captains have been carefully maintained. They make the town a museum-piece community, a seaport village preserved from the early 19th century. Main Street is a picture-book setting with its harbor and waterfront. The tall square-rigged ships that sailed all the world’s oceans have passed from the Edgartown scene, but the heritage of those vessels and their captains has continued. For the past hundred years Edgartown has been one of the world’s great yachting centers. To view and appreciate this town fully, you must walk its streets. North Water Street has a row of captains’ houses not equaled anywhere. Study the fanlights and widows walks by day and stroll down the streets after the lamps are lit. Many houses in Edgartown predate the whaling era. Most are private residences, but three notable ones are serving other needs.There are excellent public beaches in the township of Edgartown. Norton’s Point, known as Katama, is a barrier beach providing surf bathing and the opportunity to explore Katama Bay on the other side of the dunes. Wasque and Cape Poge on Chappaquiddick are both unspoiled areas owned and maintained by The Trustees of Reservations. They are favorite spots for bluefish and bass fishermen. Lighthouse Beach, located off North Water Street near the town center, offers calm water and views of harbor activities.</p>
+          
+          <p>One of New England’s most elegant com­munities, Edgartown was the Island’s first colonial settlement and it has been the county seat since 1642. The stately white Greek Revival houses built by the whaling captains have been carefully maintained. They make the town a museum-piece community, a seaport village preserved from the early 19th century. Main Street is a picture-book setting with its harbor and waterfront. The tall square-rigged ships that sailed all the world’s oceans have passed from the Edgartown scene, but the heritage of those vessels and their captains has continued. To view and appreciate this town fully, you must walk it's streets. North Water Street has a row of captains’ houses not equaled anywhere. Study the fanlights and widows walks by day and stroll down the streets after the lamps are lit. There are excellent public beaches in the township of Edgartown. Norton’s Point, known as Katama, is a barrier beach providing surf bathing and the opportunity to explore Katama Bay on the other side of the dunes. Wasque and Cape Poge on Chappaquiddick are both unspoiled areas owned and maintained by The Trustees of Reservations. They are favorite spots for bluefish and bass fishermen. Lighthouse Beach, located off North Water Street near the town center, offers calm water and views of harbor activities.</p>
         </div>
 
         <div class="pop-up" id="aquinnah">
@@ -194,7 +190,7 @@
 
           <h1>Aquinnah</h1>
 
-          <p>Many year-round residents of Aquinnah are descendants of the Wampanoag Indians who showed the colonial settlers how to kill whales, plant corn and find clay for the early brickyards. The Aquinnah Wampanoag were judged to be the most skillful and courageous boat-steerers of that era.  The brilliant colors of the mile-long expanse of the Aquinnah Cliffs astonished early explorers and have continued to be a source of intense interest to scientists and visitors alike. Here layers of sands, gravels, and clays of various hues tell a hundred-million-year-old story of a land first covered with forests, then flooded and laid bare, then covered with new growth, time and again. The seas, glaciers, and land itself have contorted these once-level layers into waving bands of color that stream above the sea. Erosion continues as it has for centuries, turning the seas red and revealing fossil secrets. From the fossils revealed by erosion, we know of the great sharks that swam over what is now Chilmark, of the clams and crabs that inhabited ancient seas. Fossil bones of camels and wild horses, as well as those of ancient whales, have been found in the Cliffs. The Aquinnah Cliffs are a national landmark, yet they are seriously threatened by erosion. To protect the Cliffs, climbing and the removal of clay are both prohibited by law. Because of the extremely dangerous rocky ledge offshore, the seas around Aquinnah have always been a place of great peril to the mariner. One of the first revolving lighthouses in the country was erected atop the Cliffs in 1799. The current red-brick electrified Gay Head Light stands in its place.</p>
+          <p>Many year-round residents of Aquinnah are descendants of the Wampanoag Indians who showed the colonial settlers how to kill whales, plant corn and find clay for the early brickyards. The Aquinnah Wampanoag were judged to be the most skillful and courageous boat-steerers of that era.  The brilliant colors of the mile-long expanse of the Aquinnah Cliffs astonished early explorers and have continued to be a source of intense interest to scientists and visitors alike. Here layers of sands, gravels, and clays of various hues tell a hundred-million-year-old story of a land first covered with forests, then flooded and laid bare, then covered with new growth, time and again. The seas, glaciers, and land itself have contorted these once-level layers into waving bands of color that stream above the sea. Erosion continues as it has for centuries, turning the seas red and revealing fossil secrets. The Aquinnah Cliffs are a national landmark, yet they are seriously threatened by erosion. To protect the Cliffs, climbing and the removal of clay are both prohibited by law. Because of the extremely dangerous rocky ledge offshore, the seas around Aquinnah have always been a place of great peril to the mariner. One of the first revolving lighthouses in the country was erected atop the Cliffs in 1799. The current red-brick electrified Gay Head Light stands in it's place.</p>
         </div>
       </div>
       <!-- Info Map end -->
@@ -263,6 +259,39 @@
                 </div>
                 <div class="pro-gallery-slide">
                   <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_89.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_90.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_91.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_92.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_93.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_94.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_95.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_96.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_97.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_98.jpg">
+                </div>
+                <div class="pro-gallery-slide">
+                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_99.jpg">
                 </div>
               </div>
             </div>
