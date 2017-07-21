@@ -11,14 +11,14 @@ var gulp   = require('gulp'),
     connect = require('gulp-connect-php');
 
 gulp.task('wiredep', function() {
-  gulp.src('index.html')
-    .pipe(wiredep({
+  gulp.src('index.php')
+    .pipe(wiredep(/*{
       overrides: {
         'slick-lightbox': {
           'main': 'dist/slick-lightbox.js'
         }
       }
-    }))
+    }*/))
     .pipe(gulp.dest('.'));
 
   gulp.src('styles/main.css')
@@ -69,14 +69,6 @@ gulp.task('reload', function() {
   browserSync.reload();
 });
 
-gulp.task('watch', function() {
-  gulp.watch('bower.json', {ignoreInitial: false}, ['wiredep']);
-  gulp.watch('styles/main.css', {ignoreInitial: false}, ['styles', 'reload']);
-  gulp.watch('js/main.js', {ignoreInitial: false}, ['js', 'reload']);
-  gulp.watch('index.html', {ignoreInitial: false}, ['reload']);
-  gulp.watch('php/*.php', {ignoreInitial: false}, ['reload']);
-})
-
 gulp.task('default', ['wiredep', 'styles', 'js'], function() {
   connect.server({
     port: 3000
@@ -86,7 +78,10 @@ gulp.task('default', ['wiredep', 'styles', 'js'], function() {
     });
   });
 
+  gulp.watch('bower.json', {ignoreInitial: false}, ['wiredep']);
+  gulp.watch('composer.json', {ignoreInitial: false}, ['reload']);
   gulp.watch('styles/main.css', {ignoreInitial: false}, ['styles', 'reload']);
   gulp.watch('js/main.js', {ignoreInitial: false}, ['js', 'reload']);
-  gulp.watch('index.html', {ignoreInitial: false}, ['reload']);
+  gulp.watch('*.html', {ignoreInitial: false}, ['reload']);
+  gulp.watch('*.php', {ignoreInitial: false}, ['reload']);
 });

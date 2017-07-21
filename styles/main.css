@@ -2,14 +2,114 @@
 @import '../bower_components/bootstrap/dist/css/bootstrap.css';
 @import '../bower_components/slick-carousel/slick/slick.css';
 @import '../bower_components/slick-carousel/slick/slick-theme.css';
-@import '../bower_components/slick-lightbox/dist/slick-lightbox.css';
 /* endbower */
 
-#navigation {
-  position: fixed;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.75);
+@import 'spinner.css';
+
+body{
+  font-family: "Ubuntu";
+  background: url(../images/backgrounds/resources-background.jpg);
+  background-repeat: repeat;
+}
+
+a {
+  color: #394a59;
+}
+
+.glyphicon {
+  padding: 20px;
+}
+
+#about-contact h3, #about-contact h4 {
+  font-family: "Ubuntu";
+  font-size: 28px;
+  text-align: center;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
+.container {
+  position: relative;
+}
+
+.navbar-default {
+  position: absolute;
+  background: transparent;
   width: 100%;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #394a59;
+  font-size: 30px;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+  background-color: transparent;
+
+}
+
+.navbar-default .navbar-nav:not(.navbar-right) > li:not(:last-child):after{
+  position: absolute; 
+  display: inline-block;
+  right: -1px;
+  top: 7px;
+  content: "";
+  height:38px;
+  width: 6px;
+  background-image: url(../images/navigation/nav-ornament.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
+}
+.ubuntu-font{
+  font-family: "Ubuntu";
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #394a59;
+  background: transparent;
+}
+.navbar-default .navbar-nav>.active>a {
+  background-color: none;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+  color: #395a58;
+}
+ul.navbar-nav{
+  letter-spacing: 2px;
+  margin: 40px auto;
+}
+
+.navbar-brand {
+  padding: 15px, 15px;
+  position: absolute;
+}
+.nav{
+  padding: 0px;
+}
+
+.navbar-brand img {
+  max-height: 8em;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-right {
+  position: absolute;
+  right: 5%;
 }
 
 #hero, #reviews, #info-map {
@@ -18,19 +118,68 @@
 
 #hero {
   width: 100%;
-  padding: 10%;
-  background: #444;
   display: table;
 }
 
-#hero-content {
+.uil-default-css {
+  margin: 0 auto;
+}
+
+#reviews {
+  /*background: #222222;*/
+  /*color: #eeeeee;*/
+  padding: 10% 0;
+}
+
+#reviews blockquote {
+  border-left: none;
+}
+
+#reviews blockquote:before {
+  content: ' ';
+  display: inline-block;
+  width: 22px;
+  height: 185px;
+  margin-left: 5px;
+  vertical-align: top;
+  background: url(../images/hand-drawns/every-tuesday-hand-drawn-decorative-divider-1.gif);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#reviews blockquote p {
+  display: inline-block;
+  width: calc(100% - 44px);
+  color: wheat;
+}
+
+#reviews blockquote footer {
+  text-align: right;
+}
+
+.reviews-slider {
+  cursor: default;
+  outline: none;
+}
+
+.reviews-slider a {
+  cursor: pointer;
 }
 
 #info-map {
   position: relative;
 }
 
-#map {
+#info-map, #about-contact {
+  transform: rotate(2deg);
+}
+
+#pro-gallery {
+  transform: rotate(-2deg);
+}
+
+.map {
   width: 100%;
 }
 
@@ -44,12 +193,12 @@
 
   background: rgba(0, 0, 0, 0.8);
 
-  padding: 10%;
+  padding: 5%;
   color: #fff;
 }
 
 .pop-up p {
-  font-size: 150%;
+  font-size: 130%;
 }
 
 .pop-up .glyphicon-remove {
@@ -65,7 +214,6 @@
 
 #pro-gallery .btn-viewgallery {
   position: absolute;
-
   border-radius: 0;
   background: #fff;
   border: solid 3px gray;
@@ -85,7 +233,76 @@
 #pro-gallery .item img {
   width: 60%;
   margin: 0 auto;
+}
+
+#pro-gallery-modal .modal-dialog {
+  max-width: 90%;
+  min-width: 80%;
+  margin: 0 auto;
+  /*margin: 10% auto;*/
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  #pro-gallery-modal .modal-dialog {
+    max-width: 80%;
+    min-width: 70%;
+  }
+  .nav>li {
+    position: static;
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
+    background-color: rgba(252, 248, 227, 0.8);
+  }
+  .navbar-brand img {
+    max-height: 5em;
+  }
+  .navbar-default .navbar-toggle{
+  background-color: rgba(134, 144, 137, 0.8);
+  border-color: #fcf8e3;
+  }
+  .navbar-toggle{
+    margin-top: 38px;
+    margin-right: 75px;
+    margin-bottom: 18px;
+  }
+  .navbar-default .navbar-toggle:focus, 
+  .navbar-default .navbar-toggle:hover {
+    background-color: #fcf8e3;
+  }
+   
+}
+
+#pro-gallery-modal .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#pro-gallery-slick,
+.reviews-slider {
+  visibility: hidden;
+  height: 0;
+}
+
+#pro-gallery-slick.slick-initialized,
+.reviews-slider.slick-initialized {
+  visibility: visible;
   height: auto;
+}
+
+#pro-gallery-slick.slick-initialized .slick-slide {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#pro-gallery-slick.slick-initialized .slick-slide img {
+  margin: 0 auto;
 }
 
 .background-image {
@@ -95,31 +312,84 @@
   background-position: center;
   padding-bottom: 33.25%;
 }
-
+#contact-text{
+  /*width: 60%;*/
+  padding: 12em 10px 0px;
+  font-size: 1.3em;
+}
 @media screen and (max-width: 768px) {
   .background-image {
     padding-bottom: 56%;
   }
+  #contact-text{
+    padding: 10em 10px 0px;
+    font-size: .9em;
+    width: 90%;
+    left:30px;
+}
+
+}
+@media screen and (max-width: 991px){
+.navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+  } 
+  .navbar-brand img {
+    max-height: 5em;
+  }
+  #contact-text{
+    padding: 6em 10px 0px;
+    font-size: 1.1em;
+    width: 90%;
+    left:30px;
+}
+#about-contact h3, #about-contact h4 {
+  font-size: 17px;
+}
+.glyphicon{
+  padding: 10px;
+}
+
+
+}
+@media screen and (max-width: 1999px){
+.navbar .navbar-nav{
+  font-size: 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .visible-lg{
+    display: none !important;
+  } 
+  .navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+  }  
+}
+@media screen and (max-width: 1921px) {
+  .visible-xlg{
+    display: none !important;
+  }
+
+
 }
 
 .background-image#oakbluffs-representer {
-  background-image: url('../images/pro-gallery/gingerbread-houses.jpg');
+  background-image: url('../images/pro-gallery/photo-lighthouse.gif');
 }
 
 .background-image#menemsha-representer {
-  background-image: url('../images/pro-gallery/menemsha-statue.jpg');
+  background-image: url('../images/pro-gallery/photo-menemsha-harbor.gif');
 }
 
 .background-image#aquinnah-representer {
-  background-image: url('../images/pro-gallery/lifeguard-post.jpg');
+  background-image: url('../images/pro-gallery/photo-sunset.gif');
 }
 
 .background-image#edgartown-representer {
-  background-image: url('../images/pro-gallery/harbour-fourkids.jpg');
+  background-image: url('../images/pro-gallery/photo-boat.gif');
 }
 
 #about-contact {
-  background: url('../images/about-contact/post-card-back.jpg');
+  background: url('../images/about-contact/about-postcard.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
@@ -127,17 +397,111 @@
   padding-bottom: 63.625%;
 }
 
-#about-contact * {
+/*#about-contact * {
   background: transparent;
-}
+}*/
 
-#about-contact p {
+/*#about-contact p {
   margin-top: 50%;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 150%;
-}
+}*/
 
 #about-contact h3 {
-  margin-top: 70%;  
+  margin-top: 5%;
+}
+
+
+#facebook-posts {
+  padding: 2.5%;
+  display: block;
+  text-align: center;
+  background: #222;
+  color: #eee;
+}
+
+.facebook-post {
+  display: inline-block;
+  width: 7.5%;
+  padding-bottom: 7.5%;
+  margin: 1.25%;
+
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer {
+  /*background: #222;*/
+  /*color: white;*/
+  padding: 15px;
+}
+
+#footer a {
+  color: darkred;
+}
+
+#scroll-up{
+  position: fixed;
+  z-index: 1000;
+  top: 75%;
+  right: 35px;
+  font-size: 200%;
+}
+
+#scroll-up:hover,
+#scroll-up:focus,
+#scroll-up:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+/*#pro-gallery-slick .slick-track {
+  /*height: 100vh;*
+}
+
+.pro-gallery-slide {
+  text-align: center;
+}
+
+.pro-gallery-slide::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.pro-gallery-slide img {
+  vertical-align: middle;
+  display: inline-block;
+
+  /*top: 50%;
+  transform: translateY(-50%);*
+}*/
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
 }
