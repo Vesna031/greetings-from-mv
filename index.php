@@ -192,6 +192,9 @@
 
           <p>Many year-round residents of Aquinnah are descendants of the Wampanoag Indians who showed the colonial settlers how to kill whales, plant corn and find clay for the early brickyards. The Aquinnah Wampanoag were judged to be the most skillful and courageous boat-steerers of that era.  The brilliant colors of the mile-long expanse of the Aquinnah Cliffs astonished early explorers and have continued to be a source of intense interest to scientists and visitors alike. Here layers of sands, gravels, and clays of various hues tell a hundred-million-year-old story of a land first covered with forests, then flooded and laid bare, then covered with new growth, time and again. The seas, glaciers, and land itself have contorted these once-level layers into waving bands of color that stream above the sea. Erosion continues as it has for centuries, turning the seas red and revealing fossil secrets. The Aquinnah Cliffs are a national landmark, yet they are seriously threatened by erosion. To protect the Cliffs, climbing and the removal of clay are both prohibited by law. Because of the extremely dangerous rocky ledge offshore, the seas around Aquinnah have always been a place of great peril to the mariner. One of the first revolving lighthouses in the country was erected atop the Cliffs in 1799. The current red-brick electrified Gay Head Light stands in it's place.</p>
         </div>
+        <div class="visible-xs">
+        	
+        </div>
       </div>
       <!-- Info Map end -->
 

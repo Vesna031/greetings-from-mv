@@ -553,7 +553,7 @@ ul.navbar-nav{
   background: url('../images/about-contact/about-postcard-768.gif');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding-bottom: 63.625%;
 }
