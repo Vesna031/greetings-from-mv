@@ -251,140 +251,7 @@ ul.navbar-nav{
   /*margin: 10% auto;*/
 }
 
-@media screen and (max-width: 767px) {
-  #pro-gallery-modal .modal-dialog {
-    max-width: 80%;
-    min-width: 70%;
-  }
-  .nav>li {
-    position: static;
-  }
-  .navbar-default .navbar-collapse {
-    border-color: transparent;
-    background-color: rgba(252, 248, 227, 0.8);
-  }
-  .navbar-brand img {
-    max-height: 5em;
-  }
-  .navbar-default .navbar-toggle{
-  background-color: rgba(134, 144, 137, 0.8);
-  border-color: #fcf8e3;
-  }
-  .navbar-toggle{
-    margin-top: 38px;
-    margin-right: 75px;
-    margin-bottom: 18px;
-  }
-  .navbar-default .navbar-toggle:focus, 
-  .navbar-default .navbar-toggle:hover {
-    background-color: #fcf8e3;
-  }
-}
 
-#pro-gallery-modal .modal-content {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
-
-#pro-gallery-slick,
-.reviews-slider {
-  visibility: hidden;
-  height: 0;
-}
-
-#pro-gallery-slick.slick-initialized,
-.reviews-slider.slick-initialized {
-  visibility: visible;
-  height: auto;
-}
-
-#pro-gallery-slick.slick-initialized .slick-slide {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#pro-gallery-slick.slick-initialized .slick-slide img {
-  margin: 0 auto;
-}
-
-.background-image {
-  background-size: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-bottom: 33.25%;
-}
-#contact-text{
-  /*width: 60%;*/
-  padding: 12em 10px 0px;
-  font-size: 1.3em;
-}
-@media screen and (max-width: 768px) {
-  .background-image {
-    padding-bottom: 56%;
-  }
-  #contact-text{
-    padding: 10em 10px 0px;
-    font-size: .9em;
-    width: 90%;
-    left:30px;
-}
-
-}
-@media screen and (max-width: 991px){
-.navbar-default .navbar-nav>li>a {
-    font-size: 20px;
-  } 
-  .navbar-brand img {
-    max-height: 5em;
-  }
-  #contact-text{
-    padding: 6em 10px 0px;
-    font-size: 1.1em;
-    width: 90%;
-    left:30px;
-}
-#about-contact h3, #about-contact h4 {
-  font-size: 17px;
-}
-.glyphicon{
-  padding: 10px;
-}
-
-
-}
-@media screen and (max-width: 1999px){
-.navbar .navbar-nav{
-  font-size: 20px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .visible-lg{
-    display: none !important;
-  } 
-  .navbar-default .navbar-nav>li>a {
-    font-size: 20px;
-  }  
-}
-@media screen and (max-width: 1921px) {
-  .visible-xlg{
-    display: none !important;
-  }
-
-
-}
-@media screen and (min-width: 1920px) {
-  .visible-lg{
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1921px) {
-  .visible-xlg{
-    display: none !important;
-  }
-}
 
 .background-image#oakbluffs-representer {
   background-image: url('../images/pro-gallery/photo-lighthouse.gif');
@@ -518,4 +385,181 @@ ul.navbar-nav{
     .text-lg-right { text-align: right; }
     .text-lg-center { text-align: center; }
     .text-lg-justify { text-align: justify; }
+}
+@media screen and (max-width: 767px) {
+  #pro-gallery-modal .modal-dialog {
+    max-width: 80%;
+    min-width: 70%;
+  }
+  .nav>li {
+    position: static;
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
+    background-color: rgba(252, 248, 227, 0.8);
+  }
+  .navbar-brand img {
+    max-height: 5em;
+  }
+  .navbar-default .navbar-toggle{
+  background-color: rgba(134, 144, 137, 0.8);
+  border-color: #fcf8e3;
+  }
+  .navbar-toggle{
+    margin-top: 38px;
+    margin-right: 75px;
+    margin-bottom: 18px;
+  }
+  .navbar-default .navbar-toggle:focus, 
+  .navbar-default .navbar-toggle:hover {
+    background-color: #fcf8e3;
+  }
+}
+
+#pro-gallery-modal .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#pro-gallery-slick,
+.reviews-slider {
+  visibility: hidden;
+  height: 0;
+}
+
+#pro-gallery-slick.slick-initialized,
+.reviews-slider.slick-initialized {
+  visibility: visible;
+  height: auto;
+}
+
+#pro-gallery-slick.slick-initialized .slick-slide {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#pro-gallery-slick.slick-initialized .slick-slide img {
+  margin: 0 auto;
+}
+
+.background-image {
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 33.25%;
+}
+#contact-text{
+  /*width: 60%;*/
+  padding: 12em 10px 0px;
+  font-size: 1.3em;
+}
+
+/*Small devices (landscape phones, 767px and up)*/
+@media screen and (max-width: 767px) {
+  .background-image {
+    padding-bottom: 56%;
+  }
+  #contact-text{
+    padding: 10em 10px 0px;
+    font-size: .9em;
+    width: 90%;
+    left:30px;
+}
+
+}
+@media screen and (max-width: 991px){
+.navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+  } 
+  .navbar-brand img {
+    max-height: 5em;
+  }
+  #contact-text{
+    padding: 6em 10px 0px;
+    font-size: 1.1em;
+    width: 90%;
+    left:30px;
+}
+#about-contact h3, #about-contact h4 {
+  font-size: 17px;
+}
+.glyphicon{
+  padding: 10px;
+}
+
+
+}
+@media screen and (max-width: 1999px){
+.navbar .navbar-nav{
+  font-size: 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .visible-lg{
+    display: none !important;
+  } 
+  .navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+  }  
+}
+@media screen and (max-width: 1921px) {
+  .visible-xlg{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .visible-lg{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1921px) {
+  .visible-xlg{
+    display: none !important;
+  }
+}
+/*Small devices (landscape phones, 767px and up)*/
+@media screen and (max-width: 767px) {
+  .background-image {
+    padding-bottom: 56%;
+  }
+  #contact-text{
+    padding: 10em 10px 0px;
+    font-size: .9em;
+    width: 90%;
+    left:30px;
+}
+
+}
+@media screen and (max-width: 991px){
+.navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+  } 
+  .navbar-brand img {
+    max-height: 5em;
+  }
+  #contact-text{
+    padding: 6em 10px 0px;
+    font-size: 1.1em;
+    width: 90%;
+    left:30px;
+}
+#about-contact h3, #about-contact h4 {
+  font-size: 17px;
+}
+#about-contact {
+  background: url('../images/about-contact/about-postcard-768.gif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 63.625%;
+}
+.glyphicon{
+  padding: 10px;
+}
+
+
 }
