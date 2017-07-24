@@ -35,8 +35,8 @@ $(document).ready(function() {
     console.log(data);
     // Yelp and Facebook Reviews
     var yelpReviews = JSON.parse(data).yelp_reviews;
-    //     facebookReviews = JSON.parse(data).facebook_reviews,
-    //     facebookPosts = JSON.parse(data).facebook_posts;
+        facebookReviews = JSON.parse(data).facebook_reviews,
+        facebookPosts = JSON.parse(data).facebook_posts;
 
     for(var i = 0; i < yelpReviews.length; i++) {
       if(yelpReviews[i].rating === 5) {
@@ -44,9 +44,9 @@ $(document).ready(function() {
       }
     }
 
-    // for(var j = 0; j < facebookReviews.length; j++) {
-    //   $('<blockquote><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote></div>').appendTo('#facebook-reviews');
-    // }
+    for(var j = 0; j < facebookReviews.length; j++) {
+      $('<blockquote><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote></div>').appendTo('#facebook-reviews');
+    }
 
     $('.reviews-slider').slick({
       autoplay: true,
@@ -56,10 +56,10 @@ $(document).ready(function() {
 
     $('#reviews-loader').hide();
 
-    // // Facebook Posts
-    // for(var k = 0; k < facebookPosts.length; k++) {
-    //   $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts');;
-    // }
+    // Facebook Posts
+    for(var k = 0; k < facebookPosts.length; k++) {
+      $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts');;
+    }
   });
 });
 

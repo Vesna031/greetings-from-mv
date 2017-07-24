@@ -26,6 +26,9 @@ gulp.task('wiredep', function() {
       overrides: {
         'bootstrap': {
           'main': 'dist/css/bootstrap.css'
+        },
+        'slick-carousel': {
+          'main': ['slick/slick.css','slick/slick-theme.css']
         }
       },
       fileTypes: {
