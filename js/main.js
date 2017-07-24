@@ -26,9 +26,7 @@ $(document).ready(function() {
   $(window).resize(proGalleryButton);
 
   // PRO GALLERY MODAL + SLICK
-  $('#pro-gallery-modal').on('shown.bs.modal', function (event) {
-    $('#pro-gallery-slick').slick();
-  });
+  $('#pro-gallery-slick').slick();
 
   $.get('reviews_and_posts.php', function (data) {
     // Yelp and Facebook Reviews

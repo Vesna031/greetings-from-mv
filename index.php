@@ -179,93 +179,6 @@
   
         <span id="viewgallery-button" data-toggle="modal" data-target="#pro-gallery-modal"></span>
       </div>
-
-      <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div id="pro-gallery-slick">
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/gingerbread-houses.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/harbour-fourkids.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/lifeguard-post.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/menemsha-statue.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/menemsha-sunset.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/ob-harbour.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_80.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_81.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_82.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_83.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_84.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_85.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_86.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_87.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_89.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_90.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_91.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_92.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_93.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_94.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_95.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_96.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_97.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_98.jpg">
-              </div>
-              <div class="pro-gallery-slide">
-                <img class="img-responsive" src="images/pro-gallery/1920/IMG_99.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Pro Gallery end -->
 
       <!-- About Contact start -->
@@ -309,6 +222,95 @@
     <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
     <!-- Footer end -->
     
+    <!-- Pro Gallery Modal start -->
+    <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
+      <span class="glyphicon glyphicon-remove" id="close-gallery" data-dismiss="modal" data-target="#pro-gallery-modal" aria-label="Close"></span>
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div id="pro-gallery-slick">
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/gingerbread-houses.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/harbour-fourkids.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/lifeguard-post.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/menemsha-statue.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/menemsha-sunset.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/ob-harbour.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_80.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_81.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_82.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_83.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_84.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_85.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_86.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_87.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_89.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_90.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_91.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_92.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_93.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_94.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_95.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_96.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_97.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_98.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/IMG_99.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pro Gallery end -->
 
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>

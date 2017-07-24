@@ -307,13 +307,55 @@ ul.navbar-nav{
 }
 
 #pro-gallery-modal .modal-dialog {
+  width: 100%;
+}
+
+#pro-gallery-modal .modal-content {
   max-width: 90%;
   min-width: 80%;
   margin: 0 auto;
-  /*margin: 10% auto;*/
 }
 
+.modal {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  overflow-y: hidden;
+}
 
+#pro-gallery-slick,
+#pro-gallery-slick .slick-list,
+#pro-gallery-slick .slick-track,
+#pro-gallery-slick .slick-slide {
+  max-height: 100% !important;
+  max-height: 100vh !important;
+  outline: none;
+}
+
+#pro-gallery-modal .slick-slide img {
+  display: block;
+  max-height: 95%;
+  max-height: 95vh;
+  max-width: 90%;
+  margin: 2.5% auto;
+}
+
+.modal.in {
+  height: auto;
+}
+
+.modal.in #close-gallery {
+  visibility: visible;
+}
+
+#pro-gallery-modal #close-gallery {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 200%;
+  cursor: pointer;
+}
 
 .background-image#oakbluffs-representer {
   background-image: url('../images/pro-gallery/photo-lighthouse.gif');
@@ -358,7 +400,7 @@ ul.navbar-nav{
 
 #facebook-posts {
   /*padding: 2.5%;*/
-  margin: 40px 0;
+  margin-top: 60px;
   padding: 40px;
   width: 100%;
   text-align: center;
@@ -520,10 +562,6 @@ ul.navbar-nav{
   float: none;
   display: inline-block;
   vertical-align: middle;
-}
-
-#pro-gallery-slick.slick-initialized .slick-slide img {
-  margin: 0 auto;
 }
 
 .background-image {
