@@ -58,39 +58,21 @@
           <img class="img-responsive center-block visible-md" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_7682.gif" alt="Greetings From Martha's Vineyard">
-          
-          <!-- <h4>Scroll for more</h4>
-          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> -->
         </div>
       </div>
       <!-- Hero end -->
 
       <!-- Reviews start -->
       <div id="reviews">
-        <!-- <h1 class="text-center">Reviews</h1> -->
-        
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-              <div class="row">
-                <div class="col-xs-2">
-                  <img class="img-responsive center-block" src="/images/reviews/Yelp_burst_positive_RGB.png">
-                </div>
-                <div class="col-xs-10">
-                  <div id="yelp-reviews" class="reviews-slider"></div>
-                </div>
-              </div>
+              <img class="img-responsive center-block" id="yelp-burst" src="/images/reviews/Yelp_burst_positive_RGB.png">
+              <div id="yelp-reviews" class="reviews-slider"></div>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <div class="row">
-                <div class="col-xs-2">
-                  <img class="img-responsive center-block" src="/images/reviews/FB-f-Logo__blue_144.png">
-                </div>
-
-                <div class="col-xs-10">
-                  <div id="facebook-reviews" class="reviews-slider"></div>
-                </div>
-              </div>
+              <img class="img-responsive center-block" id="facebook-f" src="/images/reviews/FB-f-Logo__blue_144.png">
+              <div id="facebook-reviews" class="reviews-slider"></div>
             </div>
           </div>
 
@@ -103,10 +85,10 @@
 
       <!-- Info Map start -->
       <div id="info-map">
-        <img src="images/map_sizes/map_3840.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
-        <img src="images/map_sizes/map_1920.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
-        <img src="images/map_sizes/map_1200.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
-        <img src="images/map_sizes/map_992.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
+        <img src="images/map_sizes/map_3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
+        <img src="images/map_sizes/map_1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
+        <img src="images/map_sizes/map_1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
+        <img src="images/map_sizes/map_992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
 
         <map name="mapiconslocations_3840">
           <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
@@ -195,90 +177,90 @@
           </div>
         </div>
   
-        <button class="btn btn-large btn-viewgallery" data-toggle="modal" data-target="#pro-gallery-modal">View Gallery</button>
+        <span id="viewgallery-button" data-toggle="modal" data-target="#pro-gallery-modal"></span>
+      </div>
 
-        <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div id="pro-gallery-slick">
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/gingerbread-houses.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/harbour-fourkids.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/lifeguard-post.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/menemsha-statue.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/menemsha-sunset.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/ob-harbour.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_80.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_81.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_82.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_83.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_84.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_85.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_86.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_87.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_89.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_90.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_91.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_92.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_93.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_94.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_95.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_96.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_97.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_98.jpg">
-                </div>
-                <div class="pro-gallery-slide">
-                  <img class="img-responsive" src="images/pro-gallery/1920/IMG_99.jpg">
-                </div>
+      <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div id="pro-gallery-slick">
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/gingerbread-houses.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/harbour-fourkids.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/lifeguard-post.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/menemsha-statue.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/menemsha-sunset.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/ob-harbour.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_80.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_81.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_82.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_83.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_84.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_85.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_86.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_87.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_89.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_90.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_91.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_92.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_93.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_94.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_95.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_96.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_97.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_98.jpg">
+              </div>
+              <div class="pro-gallery-slide">
+                <img class="img-responsive" src="images/pro-gallery/1920/IMG_99.jpg">
               </div>
             </div>
           </div>
@@ -302,20 +284,31 @@
         </div>
       </div>
       <!-- About Contact end -->
+    </div>
 
-      <!-- Facebook Posts start -->
-      <div id="facebook-posts">
-        <h3>Latest Posts</h3>
+    <!-- Facebook Posts start -->
+    <div id="facebook-posts">
+      <div class="container">
+        <h2>Our Latest Adventures!</h2>
+
+        <div id="post-container">
+        </div>
+
+        <h3>Follow us on <a href="https://www.facebook.com/marthasvineyardtours/" target="_blank">Facebook</a>!</h3>
       </div>
-      <!-- Facebook Posts end -->
+    </div>
+    <!-- Facebook Posts end -->
 
-      <!-- Footer start -->
-      <div id="footer" class="text-center">
+    <!-- Footer start -->
+    <div id="footer" class="text-center">
+      <div class="container">
         <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
       </div>
-      <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
-      <!-- Footer end -->
     </div>
+
+    <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
+    <!-- Footer end -->
+    
 
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
