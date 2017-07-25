@@ -53,7 +53,7 @@
       <!-- Hero start -->
       <div id="hero">
         <div id="hero-content">
-          <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_3840.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_38401.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_1920.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-md" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
@@ -124,14 +124,20 @@
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Oak Bluffs</h1>
-          <p>Before there was even a town named Oak Bluffs – back in the 1830s – Methodist congregations across New England would organize summer retreats to the outlying woods north of Edgartown, where they would spend a week in revival meetings, hearing as many as four sermons a day. As the Methodists expanded their summer visits, they first built wooden platforms for their tents, and then began building a community of colorful cottages around their open-air meeting center. Thus was born the Island’s only truly original architectural style, known today as Campground Gothic Revival. Some 300 cottages with “gingerbread” scrollwork details and gaily-colored paint schemes still stand at the heart of Oak Bluffs, around the central Tabernacle. The historic path of this burgeoning summer resort so departed from Edgartown that in 1880 its residents split away, forming the town of Cottage City. The town took on the new name of Oak Bluffs in 1907. From its revivalist beginnings, Oak Bluffs has grown to become the Island’s liveliest center for after-hours entertainment, with a downtown district, called Circuit Avenue, bustling well into the wee hours on summer weekends. Oak Bluffs is also home to such landmarks as the Flying Horses, among the nation’s oldest operating carousels, and Union Chapel, a remarkable octagonal structure that dates to 1870. The Oak Bluffs harbor is known as the Island’s favorite center for power boaters, with it's long concrete dock and electrical hookup services.</p>
+          <p>Walk among the storybook gingerbread cottages,see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and pic nic with family!</p>
         </div>
 
         <div class="pop-up" id="vineyard-haven">
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Vineyard Haven</h1>
-          <p>Excellent shops, fine restaurants, and a beautiful harbor are only a few of the attractions that make Vineyard Haven so special to tourists and residents alike.The town that incorporates Vineyard Haven is called Tisbury, after a parish in England near the birthplace of the Island’s first governor, Thomas Mayhew. English settlement of the area dates from the mid-1600s, when Mayhew purchased the settlement rights from the Crown. The town beach here is a fine place to watch the harbor. Vineyard Haven was one of New England’s busiest ports because of its strategic location on the sailing routes. Most of the coastwise shipping traveled through Vineyard Sound. Holmes Hole, as this harbor community was called, provided a convenient anchorage. Here a ship and its crew could lay over com­fortably to wait out bad weather, pick up provisions, or take on an experienced local pilot who could negotiate the rips and shoals that were the special perils of this sea route.There are many scenic places around the town: in addition to Main Street and the harbor, the Tashmoo Lake overlook on State Road, the nearby Tisbury Water Works, West Chop Lighthouse, and the area around the drawbridge on Beach Road are favorite spots for photographers.</p>
+          <p>A quaint New England shipping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard,Moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
+        </div>
+        <div class="pop-up" id="west-tisbury">
+          <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
+
+          <h1>West Tisbury</h1>
+          <p>Stroll the aisles of Alleys General Store ,the first store on the island opened in 1858 ,check out the brass P.O.boxes amongst the thousands of items for sale. " if they don't have it, you probably don't need it! " one fellow on my tour said. Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road,hear how Music St got its name and what famous historical novelist lives and creates there.</p>
         </div>
 
         <div class="pop-up" id="menemsha">
@@ -139,7 +145,7 @@
 
           <h1>Menemsha</h1>
 
-          <p>Menemsha is a small fishing village located in the town of Chilmark on the island of Martha's Vineyard in Dukes County, Massachusetts, United States.[1] It is located on the east coast of Menemsha Pond, adjacent to the opening into the Vineyard Sound on the pond's northern end. The village's historic harbor serves as the point of departure for local fishermen, some from multi-generational fishing families such as the Larsens, Pooles and Mayhews, as well as charter boats to the Elizabeth Islands and elsewhere. Besides charter fishing and cruises, other possibilities for recreation are the public beach adjacent to the harbor and the bicycle ferry across Menemsha Pond to Aquinnah as well as many excellent places to get freshly cooked seafood. It is also home of one of the most dramatic sunsets in New England. Menemsha is the location of a United States Coast Guard station, Coast Guard Station Menemsha, and was once known as Menemsha Creek. It is well known for being the background of Steven Spielberg's film Jaws.</p>
+          <p>We will then drive past rolling hills that run to the sea, dotted with sheep/horses and framed by the miles of stone walls built by the farmers and reminiscent of the stone walls of the United Kingdom. Then passing through Beetlebung corner and its country town center. Perhaps stopping at Chilmark Chocolates and choosing your favorites to fill your classic box lined with wax paper ,but don't spoil your appetite until we have our seafood pic-nic on the docks of the fishing village of Menemsha, I'll provide you with a complimentary bottle of wine that works well with your hot lobster roll,fresh fish or the best oysters ever! We also offer a sunset tour ,we wine and dine while watching the sunset into the ocean! followed by boat horns and the applause of the appreciative onlookers. Great way to end the day and tour! 	</p>
         </div>
 
         <div class="pop-up" id="edgartown">
@@ -147,7 +153,7 @@
 
           <h1>Edgartown</h1>
           
-          <p>One of New England’s most elegant com­munities, Edgartown was the Island’s first colonial settlement and it has been the county seat since 1642. The stately white Greek Revival houses built by the whaling captains have been carefully maintained. They make the town a museum-piece community, a seaport village preserved from the early 19th century. Main Street is a picture-book setting with its harbor and waterfront. The tall square-rigged ships that sailed all the world’s oceans have passed from the Edgartown scene, but the heritage of those vessels and their captains has continued. To view and appreciate this town fully, you must walk it's streets. North Water Street has a row of captains’ houses not equaled anywhere. Study the fanlights and widows walks by day and stroll down the streets after the lamps are lit. There are excellent public beaches in the township of Edgartown. Norton’s Point, known as Katama, is a barrier beach providing surf bathing and the opportunity to explore Katama Bay on the other side of the dunes. Wasque and Cape Poge on Chappaquiddick are both unspoiled areas owned and maintained by The Trustees of Reservations. They are favorite spots for bluefish and bass fishermen. Lighthouse Beach, located off North Water Street near the town center, offers calm water and views of harbor activities.</p>
+          <p>Cruise the narrow streets with Whaling Captains houses on one side and on the other side the picturesque harbor filled with beautiful classic sailboats and multi-million dollar yachts! Hear how whale oil money help build this town and pause to photograph the Harborview hotel which help save this town! As you turn the camera around see the great lighthouse with Chappaquiddick island in a panoramic backdrop!</p>
         </div>
 
         <div class="pop-up" id="aquinnah">
@@ -155,7 +161,8 @@
 
           <h1>Aquinnah</h1>
 
-          <p>Many year-round residents of Aquinnah are descendants of the Wampanoag Indians who showed the colonial settlers how to kill whales, plant corn and find clay for the early brickyards. The Aquinnah Wampanoag were judged to be the most skillful and courageous boat-steerers of that era.  The brilliant colors of the mile-long expanse of the Aquinnah Cliffs astonished early explorers and have continued to be a source of intense interest to scientists and visitors alike. Here layers of sands, gravels, and clays of various hues tell a hundred-million-year-old story of a land first covered with forests, then flooded and laid bare, then covered with new growth, time and again. The seas, glaciers, and land itself have contorted these once-level layers into waving bands of color that stream above the sea. Erosion continues as it has for centuries, turning the seas red and revealing fossil secrets. The Aquinnah Cliffs are a national landmark, yet they are seriously threatened by erosion. To protect the Cliffs, climbing and the removal of clay are both prohibited by law. Because of the extremely dangerous rocky ledge offshore, the seas around Aquinnah have always been a place of great peril to the mariner. One of the first revolving lighthouses in the country was erected atop the Cliffs in 1799. The current red-brick electrified Gay Head Light stands in it's place.</p>
+          <p>The end of the island we will see the magnificent colorful clay cliffs   Looking down on the spectacular beaches below the cliffs and viewing the Elizabeth islands off in a the distance, visit the unique shops owned by the Wampanoag tribe perhaps purchasing a piece of wampum jewelry,and if you're feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea. PBS did a wonderful documentary on it. 
+		  Join us on a tour that will make your visit to this island memorable, and see much more than I can put into words here! </p>
         </div>
         <div class="visible-xs">
         	
