@@ -317,7 +317,7 @@
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
-    <script src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- endbower -->
 
     <script src="js/main.min.js"></script>
