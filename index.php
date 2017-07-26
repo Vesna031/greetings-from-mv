@@ -323,6 +323,9 @@
               <img class="img-responsive" src="images/pro-gallery/1920/toursmv-95.jpg">
             </div>
             <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-105.jpg">
+            </div>
+            <div class="pro-gallery-slide">
               <img class="img-responsive" src="images/pro-gallery/1920/toursmv-96.jpg">
             </div>
             <div class="pro-gallery-slide">

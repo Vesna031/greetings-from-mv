@@ -372,7 +372,7 @@ ul.navbar-nav{
 }
 
 #about-contact {
-  background-image: url('../images/about-contact/about-postcard-line.gif');
+  background-image: url('../images/about-contact/about-postcard.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
@@ -518,6 +518,8 @@ ul.navbar-nav{
     .text-lg-center { text-align: center; }
     .text-lg-justify { text-align: justify; }
 }
+
+  
 @media screen and (max-width: 767px) {
   #pro-gallery-modal .modal-dialog {
     max-width: 80%;
@@ -588,6 +590,7 @@ ul.navbar-nav{
   padding-bottom: 33.25%;
 }
 
+
 /*Small devices (landscape phones, 767px and up)*/
 @media screen and (max-width: 767px) {
   .background-image {
@@ -616,8 +619,8 @@ ul.navbar-nav{
     max-height: 5em;
   }
   #contact-text{
-    padding: 6em 10px 0px;
-    font-size: 1.1em;
+    padding: 5em 10px 0px;
+    font-size: .8em;
     width: 90%;
     /*left:30px;*/
 }
