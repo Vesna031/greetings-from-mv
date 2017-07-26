@@ -22,8 +22,8 @@ a {
 
 
 #contact-text p {
-  /*padding-top: 6em;*/
-  font-size: 1.3em; 
+  padding-top: 1em;
+  font-size: .9em; 
 }
 
 #about-contact h3, #about-contact h4 {
@@ -37,6 +37,7 @@ a {
 .container {
   position: relative;
 }
+
 
 .navbar-default {
   position: absolute;
@@ -374,12 +375,16 @@ ul.navbar-nav{
 }
 
 #about-contact {
-  background: url('../images/about-contact/about-postcard.gif');
+  background: url('../images/about-contact/about-postcard-line.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
   background-position: center;
   padding-bottom: 63.625%;
+}
+#contact-text{
+  padding: 9em 10px 0px;
+  font-size: 1.3em;
 }
 
 /*#about-contact * {
@@ -393,9 +398,9 @@ ul.navbar-nav{
   font-size: 150%;
 }*/
 
-#about-contact h3 {
+/*#about-contact h3 {
   margin-top: 5%;
-}
+}*/
 
 
 #facebook-posts {
@@ -572,9 +577,8 @@ ul.navbar-nav{
   padding-bottom: 33.25%;
 }
 #contact-text{
-  /*width: 60%;*/
-  padding: 12em 10px 0px;
-  font-size: 1.3em;
+  padding: 7em 10px 0px;
+  font-size: 1.1em;
 }
 
 /*Small devices (landscape phones, 767px and up)*/
@@ -587,6 +591,13 @@ ul.navbar-nav{
     font-size: .9em;
     width: 90%;
     left:30px;
+}
+#about-contact{
+  background: url('../images/about-contact/about-postcard-768.gif') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+
 }
 
 }
@@ -652,6 +663,7 @@ ul.navbar-nav{
     left:30px;
 }
 
+
 }
 @media screen and (max-width: 991px){
 .navbar-default .navbar-nav>li>a {
@@ -660,17 +672,19 @@ ul.navbar-nav{
   .navbar-brand img {
     max-height: 5em;
   }
+  
   #contact-text{
-    padding: 6em 10px 0px;
-    font-size: 1.1em;
+    padding: 9em 10px 0px;
+    font-size: .9em;
     width: 90%;
     left:30px;
+    
 }
 #about-contact h3, #about-contact h4 {
   font-size: 17px;
 }
 #about-contact {
-  background: url('../images/about-contact/about-postcard-768.gif');
+  background: url('../images/about-contact/about-postcard.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: contain;

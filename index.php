@@ -61,8 +61,24 @@
         </div>
       </div>
       <!-- Hero end -->
-
-      <!-- Reviews start -->
+      <!-- About Contact start -->
+      <div id="about-contact">
+        <div id="contact-text" class="col-xs-12 col-sm-8 col-md-offset-2">
+          <p class="text-center">Hello friends,
+            Let us welcome you to the island where we will show you all 6 towns, hear how each was started at different times by different people for different reasons! You'll get a sense how each town has its own feel! There is something here for everyone! The history, the celebrities, Jaws movie locations and the islands natural beauty! You'll get a good understanding of why we are all drawn to this magical island! 
+            Relax in our luxurious air conditioned vans on comfy leather Capt. chairs as we cruise along side beautiful beaches and quaint seaside towns with whaling captains houses and stone walls framing rolling fields with sheep down to the sea! Stopping to explore the gingerbread cottages, the islands first general store, the lighthouses, view the colorful 200ft Clay cliffs alongside the Wampanoag tribes shops filled with Wampum and native crafts! Finally, we'll have a pic nic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, I'll even provide you with a complimentary bottle of wine!  "Authentic" is the word most often used in this idyllic setting! You can have this terrific experience all in our 4-hour tour! The Preferred tour! 
+            Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! 
+            Please call now to book ahead as we are a small company and love giving you a personal experience on our private tours! 
+            I look forward to hearing from you and showing you our island! 
+			Wish you were here! </p>
+        </div>
+        <div class="col-xs-12 text-center">
+          <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
+          <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
+        </div>
+      </div>
+  	  <!-- About Contact end -->
+  	  <!-- Reviews start -->
       <div id="reviews">
         <div class="container">
           <div class="row">
@@ -83,16 +99,35 @@
       </div>
       <!-- Reviews end -->
 
+  	  <!-- Pro Gallery start -->
+      <div id="pro-gallery">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 background-image " id="edgartown-representer"></div>
+            <div class="hidden-xs col-sm-6 background-image" id="oakbluffs-representer"></div>
+          </div>
+  
+          <div class="row">
+            <div class="hidden-xs col-sm-6 background-image" id="menemsha-representer"></div>
+            <div class="hidden-xs col-sm-6 background-image" id="aquinnah-representer"></div>
+          </div>
+        </div>
+  
+        <span id="viewgallery-button" data-toggle="modal" data-target="#pro-gallery-modal"></span>
+      </div>
+      <!-- Pro Gallery end -->
+      
       <!-- Info Map start -->
       <div id="info-map">
-        <img src="images/map_sizes/map_3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
-        <img src="images/map_sizes/map_1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
-        <img src="images/map_sizes/map_1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
-        <img src="images/map_sizes/map_992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
+        <img src="images/map_sizes/map-3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
+        <img src="images/map_sizes/map-1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
+        <img src="images/map_sizes/map-1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
+        <img src="images/map_sizes/map-992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
 
         <map name="mapiconslocations_3840">
           <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="3075,1227,300" alt="Edgartown" onclick="showPopup('edgartown');">
+          <area shape="circle" coords="1772,1085,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="299,1771,300" alt="Aquinnah" onclick="showPopup('aquinnah');">
           <area shape="circle" coords="2286,443,300" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="875,1571,300" alt="Menemsha" onclick="showPopup('menemsha');">
@@ -101,6 +136,7 @@
         <map name="mapiconslocations_1920">  
           <area shape="circle" coords="1364,249,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="1522,609,200" alt="Edgartown" onclick="showPopup('edgartown');">
+          <area shape="circle" coords="890,557,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="142,880,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
           <area shape="circle" coords="1135,229,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
@@ -108,6 +144,7 @@
         <map name="mapiconslocations_1200">  
           <area shape="circle" coords="841,148,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="942,379,200" alt="Edgartown" onclick="showPopup('edgartown');">
+          <area shape="circle" coords="552,342,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="93,548,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
           <area shape="circle" coords="844,147,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="264,483,200" alt="Menemsha" onclick="showPopup('menemsha');">
@@ -115,6 +152,7 @@
         <map name="mapiconslocations_992">  
           <area shape="circle" coords="701,120,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="782,314,200" alt="Edgartown" onclick="showPopup('edgartown');">
+          <area shape="circle" coords="461,283,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="71,453,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
           <area shape="circle" coords="583,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="220,397,200" alt="Menemsha" onclick="showPopup('menemsha');">
@@ -170,40 +208,6 @@
       </div>
       <!-- Info Map end -->
 
-      <!-- Pro Gallery start -->
-      <div id="pro-gallery">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 background-image " id="edgartown-representer"></div>
-            <div class="hidden-xs col-sm-6 background-image" id="oakbluffs-representer"></div>
-          </div>
-  
-          <div class="row">
-            <div class="hidden-xs col-sm-6 background-image" id="menemsha-representer"></div>
-            <div class="hidden-xs col-sm-6 background-image" id="aquinnah-representer"></div>
-          </div>
-        </div>
-  
-        <span id="viewgallery-button" data-toggle="modal" data-target="#pro-gallery-modal"></span>
-      </div>
-      <!-- Pro Gallery end -->
-
-      <!-- About Contact start -->
-      <div id="about-contact">
-        <div id="contact-text" class="col-xs-12 col-sm-8 col-md-offset-2">
-
-          <p class="text-center">Greetings from Martha's Vineyard Tours will cater to your schedule, taking as little or as much time as you wish. 
-          See the locations where Jaws was filmed, dine on the catch of the day in the quaint fishing village of Menemsha or walk through the camp meeting grounds and marvel at the gingerbread cottages. 
-          Learn the history of the independent-minded Islanders. And see what continues to attract artists, celebrities, tycoons and world leaders to this magic island. 
-          Relax in the comfort of our 6 person conversion vans, equipped with air-conditioning and leather seats in our 4-hour tour.</p>
-        </div>
-        <div class="col-xs-12 text-center">
-
-          <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
-          <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
-        </div>
-      </div>
-      <!-- About Contact end -->
     </div>
 
     <!-- Facebook Posts start -->
@@ -221,7 +225,7 @@
 
     <!-- Footer start -->
     <div id="footer" class="text-center">
-      <div class="container">
+      <div class="container policy">
         <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
       </div>
     </div>
@@ -236,82 +240,94 @@
         <div class="modal-content">
           <div id="pro-gallery-slick">
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/gingerbread-houses.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-gingerbread-houses.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/harbour-fourkids.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-harbour-fourkids.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/lifeguard-post.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-lifeguard-post.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/menemsha-statue.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-101.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/menemsha-sunset.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-103.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/ob-harbour.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-menemsha-statue.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_80.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-menemsha-sunset.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_81.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-ob-harbour.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_82.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-80.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_83.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-100.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_84.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-81.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_85.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-82.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_86.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-83.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_87.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-84.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_88.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-102.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_89.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-85.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_90.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-86.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_91.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-87.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_92.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-88.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_93.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-89.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_94.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-90.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_95.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-91.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_96.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-92.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_97.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-93.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_98.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-94.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/IMG_99.jpg">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-95.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-96.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-97.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-98.jpg">
+            </div>
+            <div class="pro-gallery-slide">
+              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-99.jpg">
             </div>
           </div>
         </div>
