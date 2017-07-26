@@ -54,7 +54,7 @@
       <div id="hero">
         <div id="hero-content">
           <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_38401.gif" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_1920.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_19201.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-md" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_7682.gif" alt="Greetings From Martha's Vineyard">
