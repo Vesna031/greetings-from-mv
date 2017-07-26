@@ -8,7 +8,7 @@
 
 body{
   font-family: "Ubuntu";
-  background: url(../images/backgrounds/resources-background.gif);
+  background-image: url(../images/backgrounds/resources-background.gif);
   background-repeat: repeat;
 }
 
@@ -21,10 +21,7 @@ a {
 }
 
 
-#contact-text p {
-  padding-top: 1em;
-  font-size: .9em; 
-}
+
 
 #about-contact h3, #about-contact h4 {
   font-family: "Ubuntu";
@@ -183,7 +180,7 @@ ul.navbar-nav{
   margin-left: auto;
   margin-right: auto;
   vertical-align: top;
-  background: url(../images/hand-drawns/every-tuesday-hand-drawn-decorative-divider-horizontal-white.gif);
+  background-image: url(../images/hand-drawns/every-tuesday-hand-drawn-decorative-divider-horizontal-white.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -375,15 +372,21 @@ ul.navbar-nav{
 }
 
 #about-contact {
-  background: url('../images/about-contact/about-postcard-line.gif');
+  background-image: url('../images/about-contact/about-postcard-line.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
   background-position: center;
-  padding-bottom: 63.625%;
+  padding-bottom: 2em;
+  /*padding-bottom: 63.625%;*/
 }
-#contact-text{
-  padding: 9em 10px 0px;
+
+#contact-text {
+  margin-left: 30px;
+}
+
+#contact-text p {
+  padding: 7em 10px 0px;
   font-size: 1.3em;
 }
 
@@ -495,21 +498,21 @@ ul.navbar-nav{
 .text-xs-center { text-align: center; }
 .text-xs-justify { text-align: justify; }
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
     .text-sm-left { text-align: left; }
     .text-sm-right { text-align: right; }
     .text-sm-center { text-align: center; }
     .text-sm-justify { text-align: justify; }
 }
 
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
     .text-md-left { text-align: left; }
     .text-md-right { text-align: right; }
     .text-md-center { text-align: center; }
     .text-md-justify { text-align: justify; }
 }
 
-@media (min-width: @screen-lg-min) {
+@media (min-width: 1200px) {
     .text-lg-left { text-align: left; }
     .text-lg-right { text-align: right; }
     .text-lg-center { text-align: center; }
@@ -542,6 +545,14 @@ ul.navbar-nav{
   .navbar-default .navbar-toggle:focus, 
   .navbar-default .navbar-toggle:hover {
     background-color: #fcf8e3;
+  }
+
+  .background-image#edgartown-representer {
+    padding-bottom: 68.5%;
+  }
+
+  #viewgallery-button {
+    width: 50%;
   }
 }
 
@@ -576,10 +587,6 @@ ul.navbar-nav{
   background-position: center;
   padding-bottom: 33.25%;
 }
-#contact-text{
-  padding: 7em 10px 0px;
-  font-size: 1.1em;
-}
 
 /*Small devices (landscape phones, 767px and up)*/
 @media screen and (max-width: 767px) {
@@ -590,10 +597,10 @@ ul.navbar-nav{
     padding: 10em 10px 0px;
     font-size: .9em;
     width: 90%;
-    left:30px;
+    /*left:30px;*/
 }
 #about-contact{
-  background: url('../images/about-contact/about-postcard-768.gif') !important;
+  background-image: url('../images/about-contact/about-postcard-768.gif') !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 
@@ -612,7 +619,7 @@ ul.navbar-nav{
     padding: 6em 10px 0px;
     font-size: 1.1em;
     width: 90%;
-    left:30px;
+    /*left:30px;*/
 }
 #about-contact h3, #about-contact h4 {
   font-size: 17px;
@@ -660,7 +667,7 @@ ul.navbar-nav{
     padding: 10em 10px 0px;
     font-size: .9em;
     width: 90%;
-    left:30px;
+    /*left:30px;*/
 }
 
 
@@ -672,24 +679,29 @@ ul.navbar-nav{
   .navbar-brand img {
     max-height: 5em;
   }
+
+  #about-contact > .row {
+    width: 80%;
+    margin: 0 auto;
+  }
   
   #contact-text{
     padding: 9em 10px 0px;
     font-size: .9em;
-    width: 90%;
-    left:30px;
+    /*width: 90%;*/
+    /*left:30px;*/
     
 }
 #about-contact h3, #about-contact h4 {
   font-size: 17px;
 }
 #about-contact {
-  background: url('../images/about-contact/about-postcard.gif');
+  background-image: url('../images/about-contact/about-postcard.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: contain;
   background-position: center;
-  padding-bottom: 63.625%;
+  /*padding-bottom: 63.625%;*/
 }
 .glyphicon{
   padding: 10px;
