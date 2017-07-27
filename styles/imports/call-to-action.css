@@ -1,0 +1,19 @@
+.book-now-btn {
+  padding-bottom: 33%;
+  background-image: url(../../images/buttons/book-now-trans.gif);
+  background-size: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  content: ' ';
+  width: 33%;
+  /*position: absolute;*/
+  /*visibility: hidden;*/
+}
+
+.book-now-btn:hover,
+.book-now-btn:focus,
+.book-now-btn:active {
+  background-image: url(../../images/buttons/book-now-trans-hover.gif);
+}

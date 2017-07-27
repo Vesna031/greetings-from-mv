@@ -21,24 +21,50 @@ $(document).ready(function() {
   // POP-UP INITIALIZATION
   $('.pop-up').fadeOut(0);
 
-  // PRO GALLERY BUTTON POSITIONING
   $(window).on('load', function() {
+    // PRO GALLERY BUTTON POSITIONING
     centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
-  });
-  $(window).resize(function() {
-    centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
+
+    // ABOUT CONTACT TEXT POSITIONING
+    centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+
+    // CALL TO ACTION BUTTON POSITIONING
+    // centerElement($('#call-to-action'), $('#call-to-action').find('.book-now-btn'));
+
+    // INFO MAP MOBILE
+    $('.card .back').css({
+      'height': $('.card .front img').innerHeight()
+    });
+
+    centerElement($('.card .back'), $('.card .back').find('.town-info'));
   });
 
-  // ABOUT CONTACT TEXT POSITIONING
-  $(window).on('load', function() {
-    centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
-  });
   $(window).resize(function() {
+    // PRO GALLERY BUTTON POSITIONING
+    centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
+
+    // ABOUT CONTACT TEXT POSITIONING
     centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+
+    // CALL TO ACTION BUTTON POSITIONING
+    // centerElement($('#call-to-action'), $('#call-to-action').find('#book-now-btn'));
+
+    // INFO MAP MOBILE
+    $('.card .back').css({
+      'height': $('.card .front img').innerHeight()
+    });
+
+    $('.card').each(function (index, element) {
+      centerElement($(element).find('.back'), $(element).find('.town-info'));
+    });
   });
 
-  // PRO GALLERY MODAL + SLICK
   $('#pro-gallery-slick').slick();
+
+  $('.card').flip({
+    autoSize: false,
+    forceHeight: true
+  });
 
   $.get('reviews_and_posts.php', function (data) {
     // Yelp and Facebook Reviews
@@ -119,21 +145,6 @@ function showPopup(id) {
 
 function closePopups() {
   $('.pop-up').fadeOut(300);
-}
-
-function proGalleryButton() {
-  var $this = $('#pro-gallery'),
-      $btn = $this.find('#viewgallery-button'),
-      containerHeight = $this.outerHeight(),
-      containerWidth = $this.outerWidth(),
-      buttonHeight = $btn.outerHeight(),
-      buttonWidth = $btn.outerWidth();
-
-  $btn.css({
-    'top': (containerHeight / 2) - (buttonHeight / 2),
-    'left': (containerWidth / 2) - (buttonWidth / 2),
-    'visibility': 'visible'
-  });
 }
 
 function centerElement($parent, $element) {

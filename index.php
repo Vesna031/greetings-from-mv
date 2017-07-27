@@ -86,9 +86,12 @@
 
       <!-- Call to Action start -->
       <div id="call-to-action">
-        <button class="btn btn-large btn-success">Book Now!</button>
+        <!-- <img src="images/call-to-action/toursmv-polaroid-van.gif" class="img-responsive"> -->
 
-        <p>You can have this terrific experience all in our 4-hour tour! The Preferred tour! Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! Please call now to book ahead as we are a small company and love giving you a personal experience on our private tours! I look forward to hearing from you and showing you our island!</p>
+        <div class="text-center">
+          <a class="book-now-btn visible-xs visible-sm" href="tel:+16173599298"></a>
+          <a class="book-now-btn hidden-xs hidden-sm" href="mailto:hello@toursmv.com?subject=Book a Tour&body=Hi Craig!%0D%0A%0D%0AWe'd like to book a [4 hour|2 hour] tour of Martha's Vineyard with you!%0D%0A%0D%0AThere are [number of people] of us and we are arriving on the [your arrival date] and staying until the [your departure date].%0D%0A%0D%0ASee you soon!%0D%0A%0D%0A~[Your name]" target="_blank"></a>
+        </div>
       </div>
       <!-- Call to Action end -->
 
@@ -231,14 +234,14 @@
                 <h1>Oak Bluffs</h1>
 
                 <p>Walk among the storybook gingerbread cottages,see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and pic nic with family!</p>
-	      </div>
-	    </div>
-      </div>
+              </div>
+            </div> 
+          </div>
 
           <div class="card"> 
             <div class="front"> 
               <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown.gif">
-    </div>
+            </div> 
             <div class="back">
               <div class="town-info">
                 <h1>Edgartown</h1>
@@ -328,15 +331,19 @@
     <!-- Footer end -->
 
     <!-- Call to Action Modal start -->
-    <div class="modal fade" id="call-to-action-modal" tabindex="-1" role="dialog" aria-labelledby="callToActionModal">
+    <!-- <div class="modal fade" id="call-to-action-modal" tabindex="-1" role="dialog" aria-labelledby="callToActionModal">
       <span class="glyphicon glyphicon-remove close-modal" data-dismiss="modal" data-target="#call-to-action-modal" aria-label="Close"></span>
       <div class="modal-dialog modal-lg" role="document">
-        <div class="text-center">
-          <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
-          <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
+        <div class="modal-content">
+          <div class="text-center">
+            <p>You can have this terrific experience all in our 4-hour tour! The Preferred tour! Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! Please call now to book ahead as we are a small company and love giving you a personal experience on our private tours! I look forward to hearing from you and showing you our island!</p>
+
+            <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
+            <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Call to Action Modal end -->
     
     <!-- Pro Gallery Modal start -->
