@@ -8,7 +8,7 @@
     <title>Greetings From Martha's Vineyard</title>
 
     <link href="styles/main.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite|Ubuntu:300,400" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,28 +61,37 @@
         </div>
       </div>
       <!-- Hero end -->
+
       <!-- About Contact start -->
       <div id="about-contact">
-        <div class="row">
-          <div id="contact-text" class="col-xs-12 col-sm-8 col-md-offset-2">
-            <p class="text-justify">Hello friends,
-              Let us welcome you to the island where we will show you all 6 towns, hear how each was started at different times by different people for different reasons! You'll get a sense how each town has its own feel! There is something here for everyone! The history, the celebrities, Jaws movie locations and the islands natural beauty! You'll get a good understanding of why we are all drawn to this magical island! 
-              Relax in our luxurious air conditioned vans on comfy leather Capt. chairs as we cruise along side beautiful beaches and quaint seaside towns with whaling captains houses and stone walls framing rolling fields with sheep down to the sea! Stopping to explore the gingerbread cottages, the islands first general store, the lighthouses, view the colorful 200ft Clay cliffs alongside the Wampanoag tribes shops filled with Wampum and native crafts! Finally, we'll have a pic nic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, I'll even provide you with a complimentary bottle of wine!  "Authentic" is the word most often used in this idyllic setting! You can have this terrific experience all in our 4-hour tour! The Preferred tour! 
-              Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! 
-              Please call now to book ahead as we are a small company and love giving you a personal experience on our private tours! 
-              I look forward to hearing from you and showing you our island! 
-  			Wish you were here! </p>
-          </div>
-        </div>
+        <img src="images/about-contact/about-postcard.gif" class="img-responsive hidden-xs hidden-sm">
+        <img src="images/about-contact/about-postcard-768.gif" id="mobile-about-contact-image" class="img-responsive visible-xs visible-sm">
+        <div id="contact-text">
+          <p class="no-indent">Hello friends,</p>
 
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
-            <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
-          </div>
+          <p>Greetings From Martha's Vineyard! Our tour guides show you our 6 towns; each with a unique history, each with its own feel. See where celebrities stay and stand on the sets of Jaws. Understand why we are all drawn to this magical island!</p>
+
+          <p>Relax in our luxurious air conditioned vans on comfy leather Capt. chairs as we cruise along side beautiful beaches and quaint seaside towns with whaling captains&rsquo; houses and stone walls framing rolling fields dotted with sheep all the way down to the sea!</p>
+
+          <p>Explore the gingerbread cottages, shop the island&rsquo;s first general store, climb lighthouses, view the colorful 200&rsquo; Clay cliffs alongside the Wampanoag tribes shops filled with Wampum and native crafts!</p>
+
+          <p>Finally, we&rsquo;ll have a picnic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, with a complimentary bottle of wine!  &ldquo;Authentic&rdquo; is the word most often used in this idyllic setting!</p>
+
+          <p class="no-indent">Wish you were here!</p>
+
+          <p class="text-right no-indent">Greeting From Martha&rsquo;s Vineyard Tours</p>
         </div>
       </div>
   	  <!-- About Contact end -->
+
+      <!-- Call to Action start -->
+      <div id="call-to-action">
+        <button class="btn btn-large btn-success">Book Now!</button>
+
+        <p>You can have this terrific experience all in our 4-hour tour! The Preferred tour! Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! Please call now to book ahead as we are a small company and love giving you a personal experience on our private tours! I look forward to hearing from you and showing you our island!</p>
+      </div>
+      <!-- Call to Action end -->
+
   	  <!-- Reviews start -->
       <div id="reviews">
         <div class="container">
@@ -244,10 +253,22 @@
 
     <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
     <!-- Footer end -->
+
+    <!-- Call to Action Modal start -->
+    <div class="modal fade" id="call-to-action-modal" tabindex="-1" role="dialog" aria-labelledby="callToActionModal">
+      <span class="glyphicon glyphicon-remove close-modal" data-dismiss="modal" data-target="#call-to-action-modal" aria-label="Close"></span>
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="text-center">
+          <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
+          <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
+        </div>
+      </div>
+    </div>
+    <!-- Call to Action Modal end -->
     
     <!-- Pro Gallery Modal start -->
     <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
-      <span class="glyphicon glyphicon-remove" id="close-gallery" data-dismiss="modal" data-target="#pro-gallery-modal" aria-label="Close"></span>
+      <span class="glyphicon glyphicon-remove close-modal" id="close-modal" data-dismiss="modal" data-target="#pro-gallery-modal" aria-label="Close"></span>
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div id="pro-gallery-slick">
@@ -330,9 +351,6 @@
               <img class="img-responsive" src="images/pro-gallery/1920/toursmv-95.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-105.jpg">
-            </div>
-            <div class="pro-gallery-slide">
               <img class="img-responsive" src="images/pro-gallery/1920/toursmv-96.jpg">
             </div>
             <div class="pro-gallery-slide">
@@ -348,7 +366,7 @@
         </div>
       </div>
     </div>
-    <!-- Pro Gallery end -->
+    <!-- Pro Gallery Modal end -->
 
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -22,8 +22,20 @@ $(document).ready(function() {
   $('.pop-up').fadeOut(0);
 
   // PRO GALLERY BUTTON POSITIONING
-  $(window).on('load', proGalleryButton);
-  $(window).resize(proGalleryButton);
+  $(window).on('load', function() {
+    centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
+  });
+  $(window).resize(function() {
+    centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
+  });
+
+  // ABOUT CONTACT TEXT POSITIONING
+  $(window).on('load', function() {
+    centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+  });
+  $(window).resize(function() {
+    centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+  });
 
   // PRO GALLERY MODAL + SLICK
   $('#pro-gallery-slick').slick();
@@ -118,6 +130,19 @@ function proGalleryButton() {
       buttonWidth = $btn.outerWidth();
 
   $btn.css({
+    'top': (containerHeight / 2) - (buttonHeight / 2),
+    'left': (containerWidth / 2) - (buttonWidth / 2),
+    'visibility': 'visible'
+  });
+}
+
+function centerElement($parent, $element) {
+  var containerHeight = $parent.outerHeight(),
+      containerWidth = $parent.outerWidth(),
+      buttonHeight = $element.outerHeight(),
+      buttonWidth = $element.outerWidth();
+
+  $element.css({
     'top': (containerHeight / 2) - (buttonHeight / 2),
     'left': (containerWidth / 2) - (buttonWidth / 2),
     'visibility': 'visible'
