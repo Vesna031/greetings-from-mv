@@ -1,0 +1,29 @@
+#footer {
+  background: #77878d;
+  color: #f0eccf;
+  padding: 15px;
+}
+
+#footer a {
+  color: #f6e37d;
+}
+
+/*Extra small devices (mobile phones, 767px and below)*/
+@media screen and (max-width: 767px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Small devices (landscape phones, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Medium devices (tablets, netbooks, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Large devices (desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /* TODO remove if unnecessary */
+}

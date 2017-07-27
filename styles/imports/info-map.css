@@ -1,0 +1,54 @@
+#info-map {
+  position: relative;
+  transform: rotate(2deg);
+}
+
+.map {
+  width: 100%;
+}
+
+.pop-up {
+  position: absolute;
+
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  padding: 5%;
+  color: #f0eccf;
+  border-radius: 10px;
+}
+
+.pop-up p {
+  font-size: 130%;
+}
+
+.pop-up .glyphicon-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/*Extra small devices (mobile phones, 767px and below)*/
+@media screen and (max-width: 767px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Small devices (landscape phones, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Medium devices (tablets, netbooks, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Large devices (desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /* TODO remove if unnecessary */
+}
