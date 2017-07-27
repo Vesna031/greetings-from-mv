@@ -32,6 +32,15 @@ a {
   visibility: visible;
 }
 
+.close-modal {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 200%;
+  cursor: pointer;
+}
+
 #hero, #reviews, #info-map {
   outline: none;
 }

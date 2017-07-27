@@ -176,6 +176,7 @@
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Oak Bluffs</h1>
+
           <p>Walk among the storybook gingerbread cottages,see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and pic nic with family!</p>
         </div>
 
@@ -183,12 +184,14 @@
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Vineyard Haven</h1>
+
           <p>A quaint New England shipping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard,Moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
         </div>
         <div class="pop-up" id="west-tisbury">
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>West Tisbury</h1>
+
           <p>Stroll the aisles of Alleys General Store ,the first store on the island opened in 1858 ,check out the brass P.O.boxes amongst the thousands of items for sale. " if they don't have it, you probably don't need it! " one fellow on my tour said. Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road,hear how Music St got its name and what famous historical novelist lives and creates there.</p>
         </div>
 
@@ -213,23 +216,93 @@
 
           <h1>Aquinnah</h1>
 
-          <p>The end of the island we will see the magnificent colorful clay cliffs   Looking down on the spectacular beaches below the cliffs and viewing the Elizabeth islands off in a the distance, visit the unique shops owned by the Wampanoag tribe perhaps purchasing a piece of wampum jewelry,and if you're feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea. PBS did a wonderful documentary on it. 
-		  Join us on a tour that will make your visit to this island memorable, and see much more than I can put into words here! </p>
+          <p>The end of the island we will see the magnificent colorful clay cliffs   Looking down on the spectacular beaches below the cliffs and viewing the Elizabeth islands off in a the distance, visit the unique shops owned by the Wampanoag tribe perhaps purchasing a piece of wampum jewelry,and if you're feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea. PBS did a wonderful documentary on it. Join us on a tour that will make your visit to this island memorable, and see much more than I can put into words here! </p>
         </div>
-	    <div class="visible-xs">
-	      <div class="row">
-	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs.gif">
-	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown.gif">
-	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha.gif">
-	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven.gif">
-	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury.gif">
-	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah.gif">
+
+        <!-- Flip cards start -->
+  	    <div class="visible-xs" id="flip-cards">
+          <div class="card"> 
+            <div class="front">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs.gif">
+            </div>
+
+            <div class="back">
+              <div class="town-info">
+                <h1>Oak Bluffs</h1>
+
+                <p>Walk among the storybook gingerbread cottages,see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and pic nic with family!</p>
 	      </div>
 	    </div>
       </div>
-      <!-- Info Map end -->
 
+          <div class="card"> 
+            <div class="front"> 
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown.gif">
     </div>
+            <div class="back">
+              <div class="town-info">
+                <h1>Edgartown</h1>
+            
+                <p>Cruise the narrow streets of Whaling Captains' houses on one side and on the other, the picturesque harbor filled with beautiful classic sailboats and multi-million dollar yachts! Hear how whale oil money helped build this town. See the great lighthouse with Chappaquiddick island in a panoramic backdrop!</p>
+              </div>
+            </div> 
+          </div>
+
+          <div class="card"> 
+            <div class="front"> 
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha.gif">
+            </div> 
+            <div class="back">
+              <div class="town-info">
+                <h1>Menemsha</h1>
+
+                <p>We will then drive past rolling hills that run to the sea, dotted with sheep and framed by the miles of stone walls built by the farmers. A stop at Chilmark Chocolates and fill your classic box lined with wax paper, but don't spoil your appetite until we have our seafood picnic on the docks of the fishing village of Menemsha.</p>
+              </div>
+            </div> 
+          </div>
+
+          <div class="card"> 
+            <div class="front"> 
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven.gif">
+            </div> 
+            <div class="back">
+              <div class="town-info">
+                <h1>Vineyard Haven</h1>
+
+                <p>A quaint New England shipping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard,Moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
+              </div>
+            </div> 
+          </div>
+
+          <div class="card"> 
+            <div class="front"> 
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury.gif">
+            </div> 
+            <div class="back">
+              <div class="town-info">
+                <h1>West Tisbury</h1>
+            
+                <p>Stroll the aisles of Alleys General Store ,the first store on the island opened in 1858.  Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road,hear how Music St got its name and what famous historical novelist lives and creates there.</p>
+              </div>
+            </div> 
+          </div>
+
+          <div class="card"> 
+            <div class="front"> 
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah.gif">
+            </div> 
+            <div class="back">
+              <div class="town-info">
+                <h1>Aquinnah</h1>
+
+                <p>At the end of the island we see the magnificent, colorful, clay cliffs looking down on spectacular beaches and the Elizabeth islands off in a the distance.  Visit the unique shops owned by the Wampanoag tribe to buy a piece of wampum jewelry.  Then climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea!</p>
+              </div>
+            </div> 
+          </div>
+	      </div>
+      </div>
+    </div>
+    <!-- Info Map end -->
 
     <!-- Facebook Posts start -->
     <div id="facebook-posts">
@@ -374,6 +447,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="bower_components/flip/dist/jquery.flip.js"></script>
     <!-- endbower -->
 
     <script src="js/main.min.js"></script>

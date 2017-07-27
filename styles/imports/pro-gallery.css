@@ -93,15 +93,6 @@
   margin: 2.5% auto;
 }
 
-#pro-gallery-modal #close-gallery {
-  color: white;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 200%;
-  cursor: pointer;
-}
-
 #pro-gallery-modal .modal-content {
   background: transparent;
   box-shadow: none;
