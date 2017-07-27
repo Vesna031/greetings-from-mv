@@ -43,7 +43,7 @@
           <div class="collapse navbar-collapse" id="gfmv-navbar">
             <ul class="nav navbar-nav">
               <li class="active"><a class="ubuntu-font" href="#hero">HOME</a></li>
-              <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li>
+              <!-- <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li> -->
               <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
               <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
               <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
@@ -59,9 +59,9 @@
       <!-- Hero start -->
       <div id="hero">
         <div id="hero-content">
-          <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_38401.gif" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_19201.gif" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-md" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
+          <!-- <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_38401.gif" alt="Greetings From Martha's Vineyard"> -->
+          <!-- <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_19202.gif" alt="Greetings From Martha's Vineyard"> -->
+          <img class="img-responsive center-block visible-md visible-lg" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_7682.gif" alt="Greetings From Martha's Vineyard">
         </div>
@@ -101,7 +101,7 @@
       </div>
       <!-- Call to Action end -->
 
-  	  <!-- Reviews start -->
+  	  <!-- Reviews start --
       <div id="reviews">
         <div class="container">
           <div class="row">
@@ -142,28 +142,28 @@
       
       <!-- Info Map start -->
       <div id="info-map">
-        <img src="images/map_sizes/map-3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();">
-        <img src="images/map_sizes/map-1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();">
-        <img src="images/map_sizes/map-1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md" onclick="closePopups();">
+        <!-- <img src="images/map_sizes/map-3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();"> -->
+        <!-- <img src="images/map_sizes/map-1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();"> -->
+        <img src="images/map_sizes/map-1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md visible-lg" onclick="closePopups();">
         <img src="images/map_sizes/map-992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
 
-        <map name="mapiconslocations_3840">
+        <!-- <map name="mapiconslocations_3840">
           <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="3075,1227,300" alt="Edgartown" onclick="showPopup('edgartown');">
           <area shape="circle" coords="1772,1085,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="299,1771,300" alt="Aquinnah" onclick="showPopup('aquinnah');">
           <area shape="circle" coords="2286,443,300" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="875,1571,300" alt="Menemsha" onclick="showPopup('menemsha');">
-        </map>
+        </map> -->
 
-        <map name="mapiconslocations_1920">  
+        <!-- <map name="mapiconslocations_1920">  
           <area shape="circle" coords="1364,249,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="1522,609,200" alt="Edgartown" onclick="showPopup('edgartown');">
           <area shape="circle" coords="890,557,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="142,880,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
           <area shape="circle" coords="1135,229,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
-        </map>
+        </map> -->
         <map name="mapiconslocations_1200">  
           <area shape="circle" coords="841,148,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="942,379,200" alt="Edgartown" onclick="showPopup('edgartown');">
@@ -232,7 +232,7 @@
   	    <div class="visible-xs" id="flip-cards">
           <div class="card"> 
             <div class="front">
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs.gif">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.gif">
             </div>
 
             <div class="back">
@@ -246,7 +246,7 @@
 
           <div class="card"> 
             <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown.gif">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown-lores.gif">
             </div> 
             <div class="back">
               <div class="town-info">
@@ -259,7 +259,7 @@
 
           <div class="card"> 
             <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha.gif">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha-lores.gif">
             </div> 
             <div class="back">
               <div class="town-info">
@@ -272,7 +272,7 @@
 
           <div class="card"> 
             <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven.gif">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven-lores.gif">
             </div> 
             <div class="back">
               <div class="town-info">
@@ -285,7 +285,7 @@
 
           <div class="card"> 
             <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury.gif">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury-lores.gif">
             </div> 
             <div class="back">
               <div class="town-info">
@@ -298,7 +298,7 @@
 
           <div class="card"> 
             <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah.gif">
+              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah-lores.gif">
             </div> 
             <div class="back">
               <div class="town-info">
@@ -313,7 +313,7 @@
     </div>
     <!-- Info Map end -->
 
-    <!-- Facebook Posts start -->
+    <!-- Facebook Posts start --
     <div id="facebook-posts">
       <div class="container">
         <h2>Our Latest Adventures!</h2>
@@ -359,94 +359,94 @@
         <div class="modal-content">
           <div id="pro-gallery-slick">
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-gingerbread-houses.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-gingerbread-houses.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-harbour-fourkids.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-harbour-fourkids.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-lifeguard-post.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-lifeguard-post.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-101.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-101.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-103.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-103.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-menemsha-statue.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-menemsha-statue.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-menemsha-sunset.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-menemsha-sunset.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-ob-harbour.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-ob-harbour.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-80.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-80.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-100.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-100.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-81.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-81.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-82.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-82.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-83.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-83.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-84.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-84.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-102.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-102.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-85.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-85.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-86.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-86.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-87.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-87.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-88.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-88.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-89.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-89.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-90.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-90.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-91.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-91.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-92.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-92.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-93.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-93.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-94.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-94.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-95.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-95.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-96.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-96.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-97.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-97.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-98.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-98.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="img-responsive" src="images/pro-gallery/1920/toursmv-99.jpg">
+              <img class="img-responsive" data-lazy="images/pro-gallery/1920/toursmv-99.jpg">
             </div>
           </div>
         </div>
