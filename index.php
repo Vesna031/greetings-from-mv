@@ -65,7 +65,7 @@
       <div id="about-contact">
         <div class="row">
           <div id="contact-text" class="col-xs-12 col-sm-8 col-md-offset-2">
-            <p class="text-center">Hello friends,
+            <p class="text-justify">Hello friends,
               Let us welcome you to the island where we will show you all 6 towns, hear how each was started at different times by different people for different reasons! You'll get a sense how each town has its own feel! There is something here for everyone! The history, the celebrities, Jaws movie locations and the islands natural beauty! You'll get a good understanding of why we are all drawn to this magical island! 
               Relax in our luxurious air conditioned vans on comfy leather Capt. chairs as we cruise along side beautiful beaches and quaint seaside towns with whaling captains houses and stone walls framing rolling fields with sheep down to the sea! Stopping to explore the gingerbread cottages, the islands first general store, the lighthouses, view the colorful 200ft Clay cliffs alongside the Wampanoag tribes shops filled with Wampum and native crafts! Finally, we'll have a pic nic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, I'll even provide you with a complimentary bottle of wine!  "Authentic" is the word most often used in this idyllic setting! You can have this terrific experience all in our 4-hour tour! The Preferred tour! 
               Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! 
@@ -207,9 +207,16 @@
           <p>The end of the island we will see the magnificent colorful clay cliffs   Looking down on the spectacular beaches below the cliffs and viewing the Elizabeth islands off in a the distance, visit the unique shops owned by the Wampanoag tribe perhaps purchasing a piece of wampum jewelry,and if you're feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea. PBS did a wonderful documentary on it. 
 		  Join us on a tour that will make your visit to this island memorable, and see much more than I can put into words here! </p>
         </div>
-        <div class="visible-xs">
-        	
-        </div>
+	    <div class="visible-xs">
+	      <div class="row">
+	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs.gif">
+	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown.gif">
+	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha.gif">
+	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven.gif">
+	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury.gif">
+	      	<img class="image-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah.gif">
+	      </div>
+	    </div>
       </div>
       <!-- Info Map end -->
 
