@@ -63,7 +63,7 @@
           <!-- <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_19202.gif" alt="Greetings From Martha's Vineyard"> -->
           <img class="img-responsive center-block visible-md visible-lg" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
-          <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_7682.gif" alt="Greetings From Martha's Vineyard">
+          <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_768.gif" alt="Greetings From Martha's Vineyard">
         </div>
       </div>
       <!-- Hero end -->
@@ -102,7 +102,7 @@
       <!-- Call to Action end -->
 
   	  <!-- Reviews start --
-      <div id="reviews">
+>      <div id="reviews">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-sm-offset-2">
