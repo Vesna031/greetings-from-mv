@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+#flip-cards {
+  padding-top: 2em;
+}
+
 #flip-cards .back {
   background-color: rgba(0, 0, 0, 0.6);
   color: #f0eccf;
@@ -51,9 +55,9 @@
 
 /*Small devices (landscape phones, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-  #info-map {
+  /*#info-map {
     transform: rotate(2deg);
-  }
+  }*/
 }
 
 /*Medium devices (tablets, netbooks, 992px and up)*/

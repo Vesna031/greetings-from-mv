@@ -145,7 +145,7 @@
         <!-- <img src="images/map_sizes/map-3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();"> -->
         <!-- <img src="images/map_sizes/map-1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();"> -->
         <img src="images/map_sizes/map-1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md visible-lg" onclick="closePopups();">
-        <img src="images/map_sizes/map-992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();">
+        <!-- <img src="images/map_sizes/map-992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();"> -->
 
         <!-- <map name="mapiconslocations_3840">
           <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
@@ -164,22 +164,22 @@
           <area shape="circle" coords="1135,229,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
         </map> -->
-        <map name="mapiconslocations_1200">  
-          <area shape="circle" coords="857,158,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-          <area shape="circle" coords="961,385,200" alt="Edgartown" onclick="showPopup('edgartown');">
-          <area shape="circle" coords="552,342,200" alt="West Tisbury" onclick="showPopup('west-tisbury');">
-          <area shape="circle" coords="90,558,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-          <area shape="circle" coords="715,142,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
-          <area shape="circle" coords="264,483,200" alt="Menemsha" onclick="showPopup('menemsha');">
+        <map id="mapiconslocations_1200" name="mapiconslocations_1200">  
+          <area shape="circle" coords="857,158,75" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
+          <area shape="circle" coords="961,385,75" alt="Edgartown" onclick="showPopup('edgartown');">
+          <area shape="circle" coords="552,342,75" alt="West Tisbury" onclick="showPopup('west-tisbury');">
+          <area shape="circle" coords="90,558,75" alt="Aquinnah" onclick="showPopup('aquinnah');">
+          <area shape="circle" coords="715,142,75" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
+          <area shape="circle" coords="264,483,75" alt="Menemsha" onclick="showPopup('menemsha');">
         </map>
-        <map name="mapiconslocations_992">  
-          <area shape="circle" coords="710,130,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-          <area shape="circle" coords="782,314,200" alt="Edgartown" onclick="showPopup('edgartown');">
-          <area shape="circle" coords="481,280,200" alt="West Tisbury" onclick="showPopup('west-tisbury');">
-          <area shape="circle" coords="71,453,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-          <area shape="circle" coords="590,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
-          <area shape="circle" coords="220,397,200" alt="Menemsha" onclick="showPopup('menemsha');">
-        </map>
+        <!-- <map id="mapiconslocations_992" name="mapiconslocations_992">  
+          <area shape="circle" coords="710,130,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');" href="#">
+          <area shape="circle" coords="782,314,200" alt="Edgartown" onclick="showPopup('edgartown');" href="#">
+          <area shape="circle" coords="481,280,200" alt="West Tisbury" onclick="showPopup('west-tisbury');" href="#">
+          <area shape="circle" coords=" 71,453,200" alt="Aquinnah" onclick="showPopup('aquinnah');" href="#">
+          <area shape="circle" coords="590,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');" href="#">
+          <area shape="circle" coords="220,397,200" alt="Menemsha" onclick="showPopup('menemsha');" href="#">
+        </map> -->
 
         <div class="pop-up" id="oak-bluffs">
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
@@ -229,84 +229,102 @@
         </div>
 
         <!-- Flip cards start -->
-  	    <div class="visible-xs" id="flip-cards">
-          <div class="card"> 
-            <div class="front">
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.gif">
+  	    <div class="visible-xs visible-sm" id="flip-cards">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6"> 
+              <div class="card">
+                <div class="front">
+                  <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.gif">
+                </div>
+
+                <div class="back">
+                  <div class="town-info">
+                    <h1>Oak Bluffs</h1>
+
+                    <p>Walk among the storybook gingerbread cottages, see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and picnic with family!</p>
+                  </div>
+                </div> 
+              </div>
             </div>
 
-            <div class="back">
-              <div class="town-info">
-                <h1>Oak Bluffs</h1>
-
-                <p>Walk among the storybook gingerbread cottages, see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and picnic with family!</p>
-              </div>
-            </div> 
+            <div class="col-xs-12 col-sm-6"> 
+              <div class="card">
+                <div class="front"> 
+                  <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown-lores.gif">
+                </div> 
+                <div class="back">
+                  <div class="town-info">
+                    <h1>Edgartown</h1>
+                
+                    <p>Cruise the narrow streets of Whaling Captains' houses on one side and on the other, the picturesque harbor filled with beautiful classic sailboats and multi-million dollar yachts! Hear how whale oil money helped build this town. See the great lighthouse with Chappaquiddick island in a panoramic backdrop!</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
           </div>
 
-          <div class="card"> 
-            <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown-lores.gif">
-            </div> 
-            <div class="back">
-              <div class="town-info">
-                <h1>Edgartown</h1>
-            
-                <p>Cruise the narrow streets of Whaling Captains' houses on one side and on the other, the picturesque harbor filled with beautiful classic sailboats and multi-million dollar yachts! Hear how whale oil money helped build this town. See the great lighthouse with Chappaquiddick island in a panoramic backdrop!</p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6"> 
+              <div class="card">
+                <div class="front"> 
+                  <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha-lores.gif">
+                </div> 
+                <div class="back">
+                  <div class="town-info">
+                    <h1>Menemsha</h1>
+
+                    <p>We will then drive past rolling hills that run to the sea, dotted with sheep and framed by the miles of stone walls built by the farmers. A stop at Chilmark Chocolates and fill your classic box lined with wax paper, but don't spoil your appetite until we have our seafood picnic on the docks of the fishing village of Menemsha.</p>
+                  </div>
+                </div> 
               </div>
-            </div> 
+            </div>
+
+            <div class="col-xs-12 col-sm-6"> 
+              <div class="card">
+                <div class="front"> 
+                  <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven-lores.gif">
+                </div> 
+                <div class="back">
+                  <div class="town-info">
+                    <h1>Vineyard Haven</h1>
+
+                    <p>A quaint New England shopping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard, moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
+                  </div>
+                </div> 
+              </div>
+            </div>
           </div>
 
-          <div class="card"> 
-            <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha-lores.gif">
-            </div> 
-            <div class="back">
-              <div class="town-info">
-                <h1>Menemsha</h1>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6"> 
+              <div class="card">
+                <div class="front"> 
+                  <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury-lores.gif">
+                </div> 
+                <div class="back">
+                  <div class="town-info">
+                    <h1>West Tisbury</h1>
+                
+                    <p>Stroll the aisles of Alleys General Store, the first store on the island opened in 1858.  Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road, hear how Music St got its name and what famous historical novelist lives and creates there.</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
 
-                <p>We will then drive past rolling hills that run to the sea, dotted with sheep and framed by the miles of stone walls built by the farmers. A stop at Chilmark Chocolates and fill your classic box lined with wax paper, but don't spoil your appetite until we have our seafood picnic on the docks of the fishing village of Menemsha.</p>
+            <div class="col-xs-12 col-sm-6"> 
+              <div class="card">
+                <div class="front"> 
+                  <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah-lores.gif">
+                </div> 
+                <div class="back">
+                  <div class="town-info">
+                    <h1>Aquinnah</h1>
+
+                    <p>At the end of the island, we see the colorful, clay cliffs looking down on spectacular beaches and the Elizabeth islands off in the distance.  Visit the unique shops owned by the Wampanoag tribe to buy wampum jewelry.  Then climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea!</p>
+                  </div>
+                </div>
               </div>
-            </div> 
-          </div>
-
-          <div class="card"> 
-            <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven-lores.gif">
-            </div> 
-            <div class="back">
-              <div class="town-info">
-                <h1>Vineyard Haven</h1>
-
-                <p>A quaint New England shopping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard, moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
-              </div>
-            </div> 
-          </div>
-
-          <div class="card"> 
-            <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury-lores.gif">
-            </div> 
-            <div class="back">
-              <div class="town-info">
-                <h1>West Tisbury</h1>
-            
-                <p>Stroll the aisles of Alleys General Store, the first store on the island opened in 1858.  Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road, hear how Music St got its name and what famous historical novelist lives and creates there.</p>
-              </div>
-            </div> 
-          </div>
-
-          <div class="card"> 
-            <div class="front"> 
-              <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah-lores.gif">
-            </div> 
-            <div class="back">
-              <div class="town-info">
-                <h1>Aquinnah</h1>
-
-                <p>At the end of the island, we see the magnificent, colorful, clay cliffs looking down on spectacular beaches and the Elizabeth islands off in the distance.  Visit the unique shops owned by the Wampanoag tribe to buy a piece of wampum jewelry.  Then climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea!</p>
-              </div>
-            </div> 
+            </div>
           </div>
 	      </div>
       </div>
