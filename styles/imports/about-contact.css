@@ -21,9 +21,20 @@
   visibility: hidden;
 }
 
-#contact-text p {
+#contact-text p,
+#contact-text a {
   font-size: 1.3em;
   text-indent: 20px;
+}
+
+#contact-text a:hover,
+#contact-text a:focus,
+#contact-text a:active {
+  text-decoration: none;
+}
+
+#contact-text a {
+  cursor: pointer;
 }
 
 #contact-text p.no-indent {

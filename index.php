@@ -86,6 +86,10 @@
           <p class="no-indent">Wish you were here!</p>
 
           <p class="text-right no-indent">Greeting From Martha&rsquo;s Vineyard Tours</p>
+
+          <div class="text-center">
+            <a data-toggle="modal" data-target="#itinerary-modal">Read More...</a>
+          </div>
         </div>
       </div>
   	  <!-- About Contact end -->
@@ -354,21 +358,32 @@
     <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
     <!-- Footer end -->
 
-    <!-- Call to Action Modal start -->
-    <!-- <div class="modal fade" id="call-to-action-modal" tabindex="-1" role="dialog" aria-labelledby="callToActionModal">
-      <span class="glyphicon glyphicon-remove close-modal" data-dismiss="modal" data-target="#call-to-action-modal" aria-label="Close"></span>
-      <div class="modal-dialog modal-lg" role="document">
+    <!-- Itinerary Modal start -->
+    <div class="modal fade" id="itinerary-modal" tabindex="-1" role="dialog" aria-labelledby="itineraryModal">
+      <div class="modal-dialog modal-md" role="document">
         <div class="modal-content">
-          <div class="text-center">
-            <p>You can have this terrific experience all in our 4-hour tour! The Preferred tour! Or We can show you the 3 down island towns, Edgartown, Oak Bluffs and Vineyard Haven in a 2-hour tour! Please call now to book ahead as we are a small company and love giving you a personal experience on our private tours! I look forward to hearing from you and showing you our island!</p>
+          <div>
+            <h3 class="text-center">Tour Itinerary</h3>
 
-            <h3><span class="glyphicon glyphicon-earphone"></span><a href="tel:6173599298" >617-359-9298</a></h3>
-            <h4><span class="glyphicon glyphicon-envelope"></span><a href="hello@toursmv.com">hello@toursmv.com</a></h4>
+            <p>Our tours are custom-tailored to you, but they consist of at least the following:</p>
+
+            <ul>
+              <li>Either a 2-hour tour of 3 towns or a 4-hour tour of 6</li>
+              <li>Pick-up from wherever you are</li>
+              <li>We'll bring you to a brilliant dinner and provide you with a bottle of wine</li>
+              <li>Enjoy and relax in our new and air-conditioned vans</li>
+            </ul>
+
+            <p>With us, you will see everything that is described on this site and much more!</p>
+
+            <div class="text-center">
+              <button class="btn btn-primary" data-dismiss="modal">Back to site</button>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- Call to Action Modal end -->
+    </div>
+    <!-- Itinerary Modal end -->
     
     <!-- Pro Gallery Modal start -->
     <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
