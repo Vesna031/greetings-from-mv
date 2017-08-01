@@ -2,6 +2,10 @@ body {
   font-family: "Ubuntu";
   background-image: url(../../images/backgrounds/resources-background.gif);
   background-repeat: repeat;
+  /*overflow-x: hidden;*/
+}
+
+.container {
   overflow-x: hidden;
 }
 
