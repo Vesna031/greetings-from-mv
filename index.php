@@ -165,19 +165,19 @@
           <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
         </map> -->
         <map name="mapiconslocations_1200">  
-          <area shape="circle" coords="841,148,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-          <area shape="circle" coords="942,379,200" alt="Edgartown" onclick="showPopup('edgartown');">
-          <area shape="circle" coords="552,342,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
-          <area shape="circle" coords="93,548,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-          <area shape="circle" coords="844,147,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
+          <area shape="circle" coords="857,158,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
+          <area shape="circle" coords="961,385,200" alt="Edgartown" onclick="showPopup('edgartown');">
+          <area shape="circle" coords="552,342,200" alt="West Tisbury" onclick="showPopup('west-tisbury');">
+          <area shape="circle" coords="90,558,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
+          <area shape="circle" coords="715,142,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="264,483,200" alt="Menemsha" onclick="showPopup('menemsha');">
         </map>
         <map name="mapiconslocations_992">  
-          <area shape="circle" coords="701,120,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
+          <area shape="circle" coords="710,130,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="782,314,200" alt="Edgartown" onclick="showPopup('edgartown');">
-          <area shape="circle" coords="461,283,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
+          <area shape="circle" coords="481,280,200" alt="West Tisbury" onclick="showPopup('west-tisbury');">
           <area shape="circle" coords="71,453,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-          <area shape="circle" coords="583,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
+          <area shape="circle" coords="590,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="220,397,200" alt="Menemsha" onclick="showPopup('menemsha');">
         </map>
 
