@@ -76,10 +76,10 @@
   margin: 0 auto;
 }
 
-#pro-gallery-slick,
-#pro-gallery-slick .slick-list,
-#pro-gallery-slick .slick-track,
-#pro-gallery-slick .slick-slide {
+#pro-gallery-slick.slick-initialized,
+#pro-gallery-slick.slick-initialized .slick-list,
+#pro-gallery-slick.slick-initialized .slick-track,
+#pro-gallery-slick.slick-initialized .slick-slide {
   max-height: 100% !important;
   max-height: 100vh !important;
   outline: none;
@@ -91,6 +91,7 @@
   max-height: 95vh;
   max-width: 90%;
   margin: 2.5% auto;
+  vertical-align: middle;
 }
 
 #pro-gallery-modal .modal-content {
