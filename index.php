@@ -403,124 +403,124 @@
         <div class="modal-content">
           <div id="pro-gallery-slick">
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-gingerbread-houses.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-gingerbread-houses.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-gingerbread-houses.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-gingerbread-houses.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-harbour-fourkids.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-harbour-fourkids.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-harbour-fourkids.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-harbour-fourkids.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-lifeguard-post.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-lifeguard-post.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-lifeguard-post.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-lifeguard-post.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-101.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-101.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-101.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-101.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-103.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-103.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-103.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-103.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-menemsha-statue.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-menemsha-statue.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-menemsha-statue.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-menemsha-statue.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-menemsha-sunset.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-menemsha-sunset.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-menemsha-sunset.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-menemsha-sunset.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-ob-harbour.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-ob-harbour.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-ob-harbour.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-ob-harbour.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-80.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-80.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-80.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-80.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-100.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-100.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-100.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-100.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-81.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-81.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-81.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-81.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-82.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-82.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-82.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-82.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-83.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-83.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-83.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-83.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-84.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-84.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-84.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-84.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-102.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-102.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-102.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-102.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-85.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-85.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-85.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-85.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-86.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-86.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-86.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-86.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-87.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-87.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-87.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-87.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-88.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-88.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-88.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-88.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-89.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-89.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-89.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-89.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-90.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-90.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-90.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-90.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-91.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-91.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-91.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-91.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-92.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-92.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-92.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-92.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-93.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-93.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-93.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-93.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-94.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-94.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-94.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-94.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-95.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-95.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-95.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-95.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-96.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-96.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-96.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-96.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-97.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-97.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-97.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-97.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-98.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-98.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-98.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-98.jpg">
             </div>
             <div class="pro-gallery-slide">
-              <img class="visible-lg img-responsive" data-lazy="images/pro-gallery/1920/toursmv-99.jpg">
-              <img class="hidden-lg img-responsive" data-lazy="images/pro-gallery/992/toursmv-99.jpg">
+              <img class="visible-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/1920/toursmv-99.jpg">
+              <img class="hidden-lg img-responsive" src="images/pro-gallery/spinner.svg" data-lazy="images/pro-gallery/992/toursmv-99.jpg">
             </div>
           </div>
         </div>

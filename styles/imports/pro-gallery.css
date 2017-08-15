@@ -68,6 +68,9 @@
 /* Pro Gallery modal */
 #pro-gallery-modal .modal-dialog {
   width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #pro-gallery-modal .modal-content {
@@ -79,9 +82,11 @@
 #pro-gallery-slick.slick-initialized,
 #pro-gallery-slick.slick-initialized .slick-list,
 #pro-gallery-slick.slick-initialized .slick-track,
-#pro-gallery-slick.slick-initialized .slick-slide {
-  max-height: 100% !important;
-  max-height: 100vh !important;
+#pro-gallery-slick.slick-initialized .slick-slide,
+#pro-gallery-slick.slick-initialized .slick-slide img {
+  max-height: 75% !important;
+  max-height: 75vh !important;
+  height: auto;
   outline: none;
 }
 
@@ -90,7 +95,7 @@
   max-height: 95%;
   max-height: 95vh;
   max-width: 90%;
-  margin: 2.5% auto;
+  margin: 0 auto;
   vertical-align: middle;
 }
 
@@ -127,6 +132,8 @@
   #pro-gallery-modal .modal-dialog {
     max-width: 80%;
     min-width: 70%;
+
+    margin: 0 auto;
   }
 }
 
