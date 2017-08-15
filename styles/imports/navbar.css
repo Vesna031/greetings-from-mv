@@ -45,6 +45,9 @@
 .navbar-default .navbar-nav > .active > a:hover{
   color: #395a58;
 }
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #425669;
+}
 ul.navbar-nav{
   letter-spacing: 2px;
   margin: 40px auto;
@@ -98,8 +101,8 @@ ul.navbar-nav{
   }
 
   .navbar-default .navbar-toggle {
-    background-color: rgba(134, 144, 137, 0.8);
-    border-color: #fcf8e3;
+    background-color: rgba(134, 144, 137, 0.1);
+    border-color: #425669;
   }
 
   .navbar-toggle {
