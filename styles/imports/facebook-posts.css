@@ -38,7 +38,18 @@
 
 /*Extra small devices (mobile phones, 767px and below)*/
 @media screen and (max-width: 767px) {
-  /* TODO remove if unnecessary */
+  .facebook-post {
+    display: none;
+  }
+
+  .facebook-post:nth-child(1),
+  .facebook-post:nth-child(2),
+  .facebook-post:nth-child(3) {
+    display: inline-block;
+    width: 31%;
+    padding-bottom: 31%;
+    margin: 1%;
+  }
 }
 
 /*Small devices (landscape phones, 768px and up)*/
