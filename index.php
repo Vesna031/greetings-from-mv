@@ -35,6 +35,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <span class="icon-word">MENU</span>
             </button>
             <a class="navbar-brand" href="#"><img class="img-responsive brand" src="images/navigation/nav-logo.png"></a>
           </div>

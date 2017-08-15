@@ -45,8 +45,15 @@
 .navbar-default .navbar-nav > .active > a:hover{
   color: #395a58;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar{
   background-color: #425669;
+}
+.navbar-toggle .icon-bar{
+  width: 30px;
+  margin: auto;
+}
+.navbar-default .navbar-toggle .icon-word{
+  color: #425669;
 }
 ul.navbar-nav{
   letter-spacing: 2px;
@@ -103,6 +110,7 @@ ul.navbar-nav{
   .navbar-default .navbar-toggle {
     background-color: rgba(134, 144, 137, 0.1);
     border-color: #425669;
+    border-style: hidden;
   }
 
   .navbar-toggle {
