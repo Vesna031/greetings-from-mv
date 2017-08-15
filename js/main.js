@@ -81,7 +81,7 @@ $(document).ready(function() {
 
   $('.card').flip({
     autoSize: false,
-    forceHeight: true
+    forceHeight: false
   });
 
   $.get('reviews_and_posts.php', function (data) {
