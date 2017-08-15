@@ -2,8 +2,8 @@
   require __DIR__ . '/vendor/autoload.php';
   date_default_timezone_set('EST');
 
-  $m = new Memcached();
-  $m->addServer('localhost', 11211);
+  // $m = new Memcached();
+  // $m->addServer('localhost', 11211);
 
   $expiration_time = 604800; // one week
 
@@ -17,11 +17,11 @@
   // $m->delete('facebook_reviews');
   // $m->delete('facebook_posts');
 
-  $yelp_reviews = $m->get('yelp_reviews');
-  $facebook_reviews = $m->get('facebook_reviews');
-  $facebook_posts = $m->get('facebook_posts');
+  // $yelp_reviews = $m->get('yelp_reviews');
+  // $facebook_reviews = $m->get('facebook_reviews');
+  // $facebook_posts = $m->get('facebook_posts');
 
-  if(!$yelp_reviews) {
+  // if(!$yelp_reviews) {
     $yelp_reviews = array();
     $provider = new \Stevenmaguire\OAuth2\Client\Provider\Yelp([
       'clientId'     => 'gBCKyJl4lEQZJc6WWEFvNw',
@@ -50,10 +50,10 @@
       }
     }
 
-    $m->set('yelp_reviews', $yelp_reviews);
-  }
+    // $m->set('yelp_reviews', $yelp_reviews);
+  // }
 
-  if(!$facebook_reviews || !$facebook_posts) {
+  // if(!$facebook_reviews || !$facebook_posts) {
     $fb = new \Facebook\Facebook([
       'app_id'                => $app_id,
       'app_secret'            => $app_secret,
@@ -74,7 +74,7 @@
     $expires_in = json_decode($debug->getBody())->data->expires_at - time();
 
     if($expires_in < $expiration_time * 2) {
-      echo 'getting new access code<br>';
+      // echo 'getting new access code<br>';
       try {
         $code = $fb->get('/oauth/client_code?access_token='.$access_token.'&client_secret='.$app_secret.'&redirect_uri='.$redirect_uri.'&client_id='.$app_id);
       } catch(\Facebook\Exceptions\FacebookResponseException $e) {
@@ -87,7 +87,7 @@
 
       $code = json_decode($code->getBody())->code;
 
-      echo 'code: '.$code;
+      // echo 'code: '.$code;
 
       try {
         $longlivetoken = $fb->get('/oauth/access_token?code='.$code.'&client_id='.$app_id.'&redirect_uri='.$redirect_uri);
@@ -111,7 +111,7 @@
       ]);
     }
 
-    if(!$facebook_reviews) {
+    // if(!$facebook_reviews) {
       $facebook_reviews = array();
       $facebook_review_url = 'https://www.facebook.com/pg/marthasvineyardtours/reviews/';
 
@@ -138,10 +138,10 @@
         }
       }
 
-      $m->set('facebook_reviews', $facebook_reviews);
-    }
+      // $m->set('facebook_reviews', $facebook_reviews);
+    // }
 
-    if(!$facebook_posts) {
+    // if(!$facebook_posts) {
       // FACEBOOK POSTS
       $facebook_posts = array();
 
@@ -175,9 +175,9 @@
         }
       } while(count($facebook_posts) < 10);
 
-      $m->set('facebook_posts', $facebook_posts);
-    }
-  }
+      // $m->set('facebook_posts', $facebook_posts);
+    // }
+  // }
 
   // RETURN VALUE
   $output = array(

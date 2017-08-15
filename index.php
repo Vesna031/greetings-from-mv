@@ -106,8 +106,8 @@
       </div>
       <!-- Call to Action end -->
 
-  	  <!-- Reviews start --
->      <div id="reviews">
+  	  <!-- Reviews start -->
+      <div id="reviews">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-sm-offset-2">
@@ -120,8 +120,11 @@
             </div>
           </div>
 
-          <div class="row" id="reviews-loader">
-            <div class='uil-default-css' style='transform:scale(0.94);'><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(0deg) translate(0,-60px);transform:rotate(0deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(30deg) translate(0,-60px);transform:rotate(30deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(60deg) translate(0,-60px);transform:rotate(60deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(90deg) translate(0,-60px);transform:rotate(90deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(120deg) translate(0,-60px);transform:rotate(120deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(150deg) translate(0,-60px);transform:rotate(150deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(180deg) translate(0,-60px);transform:rotate(180deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(210deg) translate(0,-60px);transform:rotate(210deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(240deg) translate(0,-60px);transform:rotate(240deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(270deg) translate(0,-60px);transform:rotate(270deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(300deg) translate(0,-60px);transform:rotate(300deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#9e9e9e;-webkit-transform:rotate(330deg) translate(0,-60px);transform:rotate(330deg) translate(0,-60px);border-radius:10px;position:absolute;'></div></div>
+          <div id="reviews-loader">
+            <div style="width:100%;height:100%" class="lds-ripple">
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>
@@ -336,7 +339,7 @@
     </div>
     <!-- Info Map end -->
 
-    <!-- Facebook Posts start --
+    <!-- Facebook Posts start -->
     <div id="facebook-posts">
       <div class="container">
         <h2>Our Latest Adventures!</h2>
@@ -345,6 +348,13 @@
         </div>
 
         <h3>Follow us on <a href="https://www.facebook.com/marthasvineyardtours/" target="_blank">Facebook</a>!</h3>
+      </div>
+
+      <div id="facebook-loader">
+        <div style="width:100%;height:100%" class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
     <!-- Facebook Posts end -->
