@@ -1,0 +1,107 @@
+#about-contact h3, #about-contact h4 {
+  font-size: 28px;
+  text-align: center;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
+#about-contact {
+  position: relative;
+  font-family: 'Special Elite', cursive;
+}
+
+#about-contact > .row {
+  margin-left: 30px;
+}
+
+#contact-text {
+  margin: 0 auto;
+  position: absolute;
+  width: 80%;
+  visibility: hidden;
+}
+
+#contact-text p,
+#contact-text a {
+  font-size: 1.3em;
+  text-indent: 20px;
+}
+
+#contact-text a:hover,
+#contact-text a:focus,
+#contact-text a:active {
+  text-decoration: none;
+}
+
+#contact-text a {
+  cursor: pointer;
+}
+
+#contact-text p.no-indent {
+  text-indent: 0;
+}
+
+/*Extra small devices (mobile phones, 767px and below)*/
+@media screen and (max-width: 767px) {
+  #contact-text {
+    font-size: .9em;
+  }
+}
+
+/*Small devices (landscape phones, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #about-contact h3, #about-contact h4 {
+    font-size: 17px;
+  }
+
+  #about-contact {
+    width: 100%;
+    transform: rotate(2deg);
+  }
+  
+  #contact-text {
+    font-size: .9em;
+  }
+}
+
+/*Medium devices (tablets, netbooks, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #contact-text {
+    font-size: .8em;
+  }
+
+  #about-contact {
+    transform: rotate(2deg);
+  }
+}
+
+/*Large devices (desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #about-contact {
+    transform: rotate(2deg);
+  }
+}
+
+@media (max-width: 400px) {
+  #mobile-about-contact-image {
+    max-width: initial;
+    width: 250%;
+    margin-left: -75%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 469px) {
+  #mobile-about-contact-image {
+    max-width: initial;
+    width: 175%;
+    margin-left: -37.5%;
+  }
+}
+
+@media (min-width: 470px) and (max-width: 570px) {
+  #mobile-about-contact-image {
+    max-width: initial;
+    width: 125%;
+    margin-left: -12.5%;
+  }
+}

@@ -1,0 +1,35 @@
+#scroll-up {
+  position: fixed;
+  z-index: 1000;
+  top: 75%;
+  right: 35px;
+  font-size: 300%;
+  color: #f0eccf;
+}
+
+#scroll-up:hover,
+#scroll-up:focus,
+#scroll-up:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+/*Extra small devices (mobile phones, 767px and below)*/
+@media screen and (max-width: 767px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Small devices (landscape phones, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Medium devices (tablets, netbooks, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* TODO remove if unnecessary */
+}
+
+/*Large devices (desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /* TODO remove if unnecessary */
+}

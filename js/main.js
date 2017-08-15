@@ -5,7 +5,7 @@ $(document).ready(function() {
   // SCROLL UP ARROW
   $('#scroll-up').fadeOut();
   var waypoint = new Waypoint({
-    element: document.getElementById('reviews'),
+    element: document.getElementById('about-contact'),
     handler: function(direction) {
       if(direction === 'down') {
         $('#scroll-up').fadeIn(400);
@@ -22,44 +22,99 @@ $(document).ready(function() {
   $('.pop-up').fadeOut(0);
 
   // PRO GALLERY BUTTON POSITIONING
-  $(window).load(proGalleryButton);
-  $(window).resize(proGalleryButton);
+  centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
 
-  // PRO GALLERY MODAL + SLICK
-  $('#pro-gallery-modal').on('shown.bs.modal', function (event) {
-    console.log($('#pro-gallery-slick'));
-    $('#pro-gallery-slick').slick();
+  // ABOUT CONTACT TEXT POSITIONING
+  centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+
+  // CALL TO ACTION BUTTON POSITIONING
+  // centerElement($('#call-to-action'), $('#call-to-action').find('.book-now-btn'));
+
+  // INFO MAP MOBILE
+  $('.card .back').css({
+    'height': $('.card .front img').innerHeight()
+  });
+
+  centerElement($('.card .back'), $('.card .back').find('.town-info'));
+
+  $(window).on('load', function() {
+    // PRO GALLERY BUTTON POSITIONING
+    centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
+
+    // ABOUT CONTACT TEXT POSITIONING
+    centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+
+    // CALL TO ACTION BUTTON POSITIONING
+    // centerElement($('#call-to-action'), $('#call-to-action').find('.book-now-btn'));
+
+    // INFO MAP MOBILE
+    $('.card .back').css({
+      'height': $('.card .front img').innerHeight()
+    });
+
+    centerElement($('.card .back'), $('.card .back').find('.town-info'));
+  });
+
+  $(window).resize(function() {
+    // PRO GALLERY BUTTON POSITIONING
+    centerElement($('#pro-gallery'), $('#pro-gallery').find('#viewgallery-button'));
+
+    // ABOUT CONTACT TEXT POSITIONING
+    centerElement($('#about-contact'), $('#about-contact').find('#contact-text'));
+
+    // CALL TO ACTION BUTTON POSITIONING
+    // centerElement($('#call-to-action'), $('#call-to-action').find('#book-now-btn'));
+
+    // INFO MAP MOBILE
+    $('.card .back').css({
+      'height': $('.card .front img').innerHeight()
+    });
+
+    $('.card').each(function (index, element) {
+      centerElement($(element).find('.back'), $(element).find('.town-info'));
+    });
+  });
+
+  $('#pro-gallery-slick').slick({
+    lazyLoad: 'ondemand'
+  });
+
+  $('.card').flip({
+    autoSize: false,
+    forceHeight: false
   });
 
   $.get('reviews_and_posts.php', function (data) {
-    console.log(data);
     // Yelp and Facebook Reviews
     var yelpReviews = JSON.parse(data).yelp_reviews;
-    //     facebookReviews = JSON.parse(data).facebook_reviews,
-    //     facebookPosts = JSON.parse(data).facebook_posts;
+        facebookReviews = JSON.parse(data).facebook_reviews,
+        facebookPosts = JSON.parse(data).facebook_posts;
 
     for(var i = 0; i < yelpReviews.length; i++) {
       if(yelpReviews[i].rating === 5) {
-        $('<blockquote><p>' + yelpReviews[i].text + '</p><footer><a href="' + yelpReviews[i].url + '" target="_blank">' + yelpReviews[i].name + ' <cite title="Yelp">Yelp</cite></a></footer></blockquote></div>').appendTo('#yelp-reviews');
+        $('<blockquote><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><br><p>' + yelpReviews[i].text + '</p><footer><a href="' + yelpReviews[i].url + '" target="_blank">' + yelpReviews[i].name + ' <cite title="Yelp">Yelp</cite></a></footer></blockquote>').appendTo('#yelp-reviews');
       }
     }
 
-    // for(var j = 0; j < facebookReviews.length; j++) {
-    //   $('<blockquote><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote></div>').appendTo('#facebook-reviews');
-    // }
+    for(var j = 0; j < facebookReviews.length; j++) {
+      $('<blockquote><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><br><p>' + facebookReviews[j].text + '</p><footer><a href="' + facebookReviews[j].url + '" target="_blank">' + facebookReviews[j].name + ' <cite title="Facebook">Facebook</cite></a></footer></blockquote>').appendTo('#facebook-reviews');
+    }
 
     $('.reviews-slider').slick({
       autoplay: true,
       arrows: false,
-      autoplaySpeed: 7500
+      autoplaySpeed: 7500,
+      fade: true
     });
 
     $('#reviews-loader').hide();
 
-    // // Facebook Posts
-    // for(var k = 0; k < facebookPosts.length; k++) {
-    //   $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts');;
-    // }
+    // Facebook Posts
+    for(var k = 0; k < facebookPosts.length; k++) {
+      $('<a class="facebook-post" id="post-' + k + '" target="_blank" href="' + facebookPosts[k].link + '" style="background-image:url(' + facebookPosts[k].image + ')"></a>').appendTo('#facebook-posts #post-container');
+    }
+
+    $('#facebook-loader').hide();
   });
 });
 
@@ -112,23 +167,15 @@ function closePopups() {
   $('.pop-up').fadeOut(300);
 }
 
-// function openLightbox() {
-//   console.log('does the lightbox work?');
-//   $('#pro-gallery').slickLightbox({
-//     images: ['http://placekitten.com/1000/600', 'http://placekitten.com/1010/606', 'http://placekitten.com/1060/636']
-//   });
-// }
+function centerElement($parent, $element) {
+  var containerHeight = $parent.outerHeight(),
+      containerWidth = $parent.outerWidth(),
+      buttonHeight = $element.outerHeight(),
+      buttonWidth = $element.outerWidth();
 
-function proGalleryButton() {
-  var $this = $('#pro-gallery'),
-      $btn = $this.find('.btn-viewgallery'),
-      containerHeight = $this.outerHeight(),
-      containerWidth = $this.outerWidth(),
-      buttonHeight = $btn.outerHeight(),
-      buttonWidth = $btn.outerWidth();
-
-  $btn.css({
+  $element.css({
     'top': (containerHeight / 2) - (buttonHeight / 2),
-    'left': (containerWidth / 2) - (buttonWidth / 2)
+    'left': (containerWidth / 2) - (buttonWidth / 2),
+    'visibility': 'visible'
   });
 }

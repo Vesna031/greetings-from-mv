@@ -1,0 +1,29 @@
+.book-now-btn {
+  padding-bottom: 33%;
+  background-image: url(../../images/buttons/book-now-trans.gif);
+  background-size: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  content: ' ';
+  width: 33%;
+  /*position: absolute;*/
+  /*visibility: hidden;*/
+}
+
+.book-now-btn:hover,
+.book-now-btn:focus,
+.book-now-btn:active {
+  background-image: url(../../images/buttons/book-now-trans-hover.gif);
+}
+
+/*Extra small devices (mobile phones, 767px and below)*/
+@media screen and (max-width: 991px) {
+  .book-now-btn.visible-xs.visible-sm {
+    display: inline-block;
+    margin: 0 auto 2em;
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}

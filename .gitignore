@@ -1,3 +1,5 @@
 bower_components/
 node_modules/
 vendor/
+styles/main.min.css
+js/main.min.js
