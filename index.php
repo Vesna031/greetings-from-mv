@@ -44,7 +44,7 @@
           <div class="collapse navbar-collapse" id="gfmv-navbar">
             <ul class="nav navbar-nav">
               <li class="active"><a class="ubuntu-font" href="#hero">HOME</a></li>
-              <!-- <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li> -->
+              <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li>
               <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
               <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
               <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
@@ -533,7 +533,7 @@
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
-    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.js"></script>
     <script src="bower_components/flip/dist/jquery.flip.js"></script>
     <!-- endbower -->
 
