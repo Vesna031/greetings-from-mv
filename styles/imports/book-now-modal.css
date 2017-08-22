@@ -1,0 +1,10 @@
+#book-now-modal .modal-content {
+  padding: 5%;
+  background-color: #f0eccf;
+  font-size: 1.25em;
+}
+
+#book-now-modal input,
+#book-now-modal select {
+  background-color: #f9f7ec;
+}

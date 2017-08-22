@@ -13,13 +13,13 @@ var gulp   = require('gulp'),
 
 gulp.task('wiredep', function() {
   gulp.src('index.php')
-    .pipe(wiredep(/*{
+    .pipe(wiredep({
       overrides: {
-        'slick-lightbox': {
-          'main': 'dist/slick-lightbox.js'
+        'bootstrap-daterangepicker': {
+          'main': 'daterangepicker.js'
         }
       }
-    }*/))
+    }))
     .pipe(gulp.dest('.'));
 
   gulp.src('styles/main.css')

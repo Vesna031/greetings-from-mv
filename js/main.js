@@ -156,6 +156,88 @@ function smoothScrolling() {
         }
       }
     });
+  
+  // Contact form
+  $('input[type="daterange"]').daterangepicker();
+
+  var ajaxurl = '/contact-mailer.php',
+      $form = $('#book-now-form input:not(#submit), #book-now-form select'),
+      $pleaseWait = $('#book-now-form #please-wait'),
+      $invalidForm = $('#book-now-form #invalid-form'),
+      $successEmail = $('#book-now-form #success-email'),
+      $errorEmail = $('#book-now-form #error-email');
+
+  $('#book-now-form').on('submit', function (event) {
+    event.preventDefault();
+  });
+
+  $form.on('change', function() {
+    $invalidForm.hide();
+    $successEmail.hide();
+    $errorEmail.hide();
+  });
+
+  $.validate({
+    form: '#book-now-form',
+    onSuccess: function (form) {
+      var data = {};
+
+      $form.each(function (index, element) {
+        var $element = $(element);
+
+        if($element.attr('type') === 'radio' && $element.is(':checked')) {
+          data[$element.attr('name')] = $element.val();
+        } else if($element.attr('type') !== 'radio') {
+          data[$element.attr('name')] = $element.val();
+        }
+      });
+
+      // data.action = action;
+
+      // console.log($form);
+      // console.log(form);
+      // console.log(data);
+
+      $.ajax({
+        type: 'POST',
+        url: ajaxurl,
+        dataType: 'json',
+        data: data,
+        beforeSend: function() {
+          $pleaseWait.show();
+          $('#book-now-form button').prop('disabled', true);
+        },
+        success: function (data) {
+          $pleaseWait.hide();
+          console.log(data);
+          if(data.status == 200) {
+            console.info('Success');
+            $successEmail.show();
+          } else {
+            console.error('Error!');
+            console.error(data);
+            $errorEmail.show();
+          }
+
+          $('#book-now-form button').prop('disabled', false);
+        },
+        error: function (data) {
+          $pleaseWait.hide();
+          console.error('Error!');
+          console.error(data);
+          $errorEmail.show();
+        }
+      });
+
+      return false;
+    },
+    onError: function ($form) {
+      $pleaseWait.hide();
+      console.error('Invalid form');
+      $invalidForm.show();
+      return false;
+    }
+  });
 }
 
 function showPopup(id) {

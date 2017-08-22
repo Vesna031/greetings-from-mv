@@ -17,6 +17,8 @@
     "bootstrap": "^3.3.7",
     "waypoints": "^4.0.1",
     "slick-carousel": "^1.6.0",
-    "flip": "^1.1.2"
+    "flip": "^1.1.2",
+    "bootstrap-daterangepicker": "dangrossman/bootstrap-daterangepicker#^2.1.25",
+    "jquery-form-validator": "^2.3.74"
   }
 }

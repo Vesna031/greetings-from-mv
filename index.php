@@ -101,7 +101,7 @@
 
         <div class="text-center">
           <a class="book-now-btn visible-xs visible-sm" href="tel:+16173599298"></a>
-          <a class="book-now-btn hidden-xs hidden-sm" href="mailto:hello@toursmv.com?subject=Book a Tour&body=Hi Craig!%0D%0A%0D%0AWe'd like to book a [4 hour|2 hour] tour of Martha's Vineyard with you!%0D%0A%0D%0AThere are [number of people] of us and we are arriving on the [your arrival date] and staying until the [your departure date].%0D%0A%0D%0ASee you soon!%0D%0A%0D%0A~[Your name]" target="_blank"></a>
+          <a class="book-now-btn hidden-xs hidden-sm" data-toggle="modal" data-target="#book-now-modal"></a>
         </div>
       </div>
       <!-- Call to Action end -->
@@ -395,6 +395,118 @@
       </div>
     </div>
     <!-- Itinerary Modal end -->
+
+    <!-- Book Now Modal start -->
+    <div class="modal fade" id="book-now-modal" tabindex="-1" role="dialog" aria-labelledby="bookNowModal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div>
+            <h3 class="text-center">Book a tour!</h3>
+
+            <form class="form-horizontal" id="book-now-form">
+              <div class="col-xs-12">
+                <div class="alert alert-warning" role="alert" style="display:none;" id="please-wait">
+                  <strong>We&rsquo;re sending your email.</strong> Don&rsquo;t refresh your browser or navigate anywhere else.
+                </div>
+
+                <div class="alert alert-danger" role="alert" style="display:none;" id="no-recaptcha">
+                  <strong>Fill out the reCaptcha!</strong> No robots, please.
+                </div>
+
+                <div class="alert alert-danger" role="alert" style="display:none;" id="invalid-form">
+                  <strong>You forgot to fill something out!</strong> Please look at the form and add anything that is missing or incorrect.
+                </div>
+
+                <div class="alert alert-success" role="alert" style="display:none;" id="success-email">
+                  <strong>Success!</strong> Your email has been sent.
+                </div>
+
+                <div class="alert alert-danger" role="alert" style="display:none;" id="error-email">
+                  <strong>Oh no!</strong> Something went wrong! Let us know by emailing us <a href="mailto:hello@toursmv.com?subject=Book a Tour&body=Hi Craig!%0D%0A%0D%0AWe'd like to book a [4 hour|2 hour] tour of Martha's Vineyard with you!%0D%0A%0D%0AThere are [number of people] of us and we are arriving on the [your arrival date] and staying until the [your departure date].%0D%0A%0D%0ASee you soon!%0D%0A%0D%0A~[Your name]%0D%0A%0D%0AThis email was sent via a mail client because of an error on the website." target="_blank">here</a>.
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+              </div> -->
+              <div class="form-group">
+                <!-- <label for="firstname" class="col-sm-2 control-label">First Name</label> -->
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required>
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="col-sm-3">
+                  <label for="guests" class="control-label">Total guests</label>
+                </div>
+                <div class="col-sm-3">
+                  <input type="number" name="guests" class="form-control" id="guests" placeholder="0" min="1" required>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                </div>
+              </div> -->
+              <div class="form-group">
+                <div class="col-sm-6 text-center">
+                  <label class="radio-inline">
+                    <input type="radio" name="tourlength" id="tourlength" value="fourhour" required>
+                    4 hour tour
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="tourlength" id="tourlength" value="twohour" required>
+                    2 hour tour
+                  </label>
+                </div>
+
+                <div class="col-sm-3">
+                  <label for="pickup-location" class="control-label">Pick-up location</label>
+                </div>
+
+                <div class="col-sm-3">
+                  <select class="form-control" id="town" name="town">
+                    <option>Vineyard Haven</option>
+                    <option>Oak Bluffs</option>
+                    <option>Edgartown</option>
+                    <option>West Tisbury</option>
+                    <option>Chilmark</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="specific-location" class="col-sm-2 control-label">Hotel/Address</label> -->
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="address" name="address" placeholder="Hotel name or street address">
+                </div>
+                <div class="col-sm-3">
+                  <label for="staylength" class="control-label">Length of stay</label>
+                </div>
+                <div class="col-sm-3">
+                  <input type="daterange" name="staylength" id="staylength" value="" class="form-control" placeholder="Your stay" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="text-center">
+                  <button class="btn btn-success" id="submit">Request your tour</button>
+                  <button class="btn btn-secondary" data-dismiss="modal">Back to site</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Book Now Modal end -->
     
     <!-- Pro Gallery Modal start -->
     <div class="modal fade" id="pro-gallery-modal" tabindex="-1" role="dialog" aria-labelledby="proGalleryModal">
@@ -535,6 +647,9 @@
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.js"></script>
     <script src="bower_components/flip/dist/jquery.flip.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <!-- endbower -->
 
     <script src="js/main.min.js"></script>
