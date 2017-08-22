@@ -74,8 +74,7 @@
 }
 
 #pro-gallery-modal .modal-content {
-  max-width: 90%;
-  min-width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -130,10 +129,10 @@
   /* Pro Gallery modal */
 
   #pro-gallery-modal .modal-dialog {
-    max-width: 80%;
-    min-width: 70%;
-
-    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    left: 5%;
+    margin: 0 5%;
   }
 }
 
