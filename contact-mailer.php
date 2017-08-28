@@ -8,25 +8,34 @@
   $subject = $_POST['firstname'] . ' would like to book a tour!';
 
   // Message
-  $tourlength = $_POST['tourlength'] == 'twohour' ? '2 hour' : '4 hour';
+  $tourlength = $_POST['tourlength'] == 'twohour' ? '2-hour' : '4-hour';
   $guests = (int)$_POST['guests'] > 1 ? ['We\'d', 'There are ' . $_POST['guests'] . ' of us and we\'re', 'us'] : ['I\'d', 'It\'s just me and I\'m', 'me'];
   $pickup = $_POST['address'] . ' in ' . $_POST['town'];
 
-  $message = 'Hi Craig!\n\r' . $guests[0] . ' like to book a ' . $tourlength . ' tour of Martha\'s Vineyard with you!\n\r' . $guests[1] . ' on the Vineyard ' . $_POST['staylength'] . '.  ' . $guests[0] . ' love it if you could pick ' . $guests[2] . ' up from ' . $pickup .'\n\rSee you soon!\n\r~' . $_POST['firstname'];
+  $message = 'Hi Craig!
+
+' . $guests[0] . ' like to book a ' . $tourlength . ' tour of Martha\'s Vineyard with you!
+
+' . $guests[1] . ' on the Vineyard ' . $_POST['staylength'] . '.  ' . $guests[0] . ' love it if you could pick ' . $guests[2] . ' up from ' . $pickup .'.
+
+See you soon!
+
+~' . $_POST['firstname'];
 
   // PHPMailer setup
-  // $mail->SMTPDebug = 3;
   $mail = new PHPMailer(true);
+  $mail->SMTPDebug = 3;
   $mail->isSMTP();
-  $mail->Host = 'mail.artlyticalmedia.com';
+  $mail->Host = 'toursmv.com';
   $mail->SMTPAuth = true;
   $mail->CharSet ='UTF-8';
-  $mail->Username = 'david@artlyticalmedia.com';
-  $mail->Password = 'W3d3ology##';
+  $mail->Username = 'hello@toursmv.com';
+  $mail->Password = 'Vineyard17!';
   $mail->SMTPSecure = 'tls';
   $mail->Port = 25;
   $mail->setFrom($_POST['email'], $_POST['firstname'] . ' ' . $_POST['lastname']);
-  $mail->addAddress('hello@toursmv.com', 'Craig MacCormack');     // Add a recipient
+  $mail->addAddress('hello@toursmv.com', 'Craig MacCormack');
+  // $mail->addAddress('david@artlyticalmedia.com', 'David Rhoderick');
   $mail->addReplyTo($_POST['email'], $_POST['firstname'] . ' ' . $_POST['lastname']);
   $mail->isHTML(false);
   $mail->Subject = $subject;

@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  // USERAGENT DETECTION
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+  if(iOS) {
+    $('body').addClass('iOS');
+  } else {
+    $('body').removeClass('iOS');
+  }
+
   // SMOOTH SCROLLING
   smoothScrolling();
 
@@ -201,7 +210,7 @@ function smoothScrolling() {
       $.ajax({
         type: 'POST',
         url: ajaxurl,
-        dataType: 'json',
+        dataType: 'text json',
         data: data,
         beforeSend: function() {
           $pleaseWait.show();
@@ -209,23 +218,29 @@ function smoothScrolling() {
         },
         success: function (data) {
           $pleaseWait.hide();
-          console.log(data);
+          
           if(data.status == 200) {
             console.info('Success');
             $successEmail.show();
+            $('#book-now-form button').prop('disabled', false);
           } else {
             console.error('Error!');
             console.error(data);
             $errorEmail.show();
           }
-
-          $('#book-now-form button').prop('disabled', false);
         },
         error: function (data) {
           $pleaseWait.hide();
-          console.error('Error!');
-          console.error(data);
-          $errorEmail.show();
+
+          if(data.status == 200) {
+            console.info('Success');
+            $successEmail.show();
+            $('#book-now-form button').prop('disabled', false);
+          } else {
+            console.error('Error!');
+            console.error(data);
+            $errorEmail.show();
+          }
         }
       });
 

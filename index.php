@@ -89,6 +89,7 @@
           <p class="text-right no-indent">Greeting From Martha&rsquo;s Vineyard Tours</p>
 
           <div class="text-center">
+            <br class="hidden-xs">
             <a class="btn btn-success" data-toggle="modal" data-target="#itinerary-modal">View Itinerary</a>
           </div>
         </div>
@@ -110,11 +111,11 @@
       <div id="reviews">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+            <div class="col-xs-12 col-md-4 col-md-offset-2">
               <img class="img-responsive center-block" id="yelp-burst" src="/images/reviews/Yelp_burst_positive_RGB.png">
               <div id="yelp-reviews" class="reviews-slider"></div>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-md-4">
               <img class="img-responsive center-block" id="facebook-f" src="/images/reviews/FB-f-Logo__blue_144.png">
               <div id="facebook-reviews" class="reviews-slider"></div>
             </div>
@@ -211,7 +212,7 @@
         <!-- Flip cards start -->
   	    <div class="visible-xs visible-sm" id="flip-cards">
           <div class="row">
-            <div class="col-xs-12 col-sm-6"> 
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
               <div class="card">
                 <div class="front">
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.gif">
@@ -391,7 +392,7 @@
                 </div>
 
                 <div class="alert alert-danger" role="alert" style="display:none;" id="error-email">
-                  <strong>Oh no!</strong> Something went wrong! Let us know by emailing us <a href="mailto:hello@toursmv.com?subject=Book a Tour&body=Hi Craig!%0D%0A%0D%0AWe'd like to book a [4 hour|2 hour] tour of Martha's Vineyard with you!%0D%0A%0D%0AThere are [number of people] of us and we are arriving on the [your arrival date] and staying until the [your departure date].%0D%0A%0D%0ASee you soon!%0D%0A%0D%0A~[Your name]%0D%0A%0D%0AThis email was sent via a mail client because of an error on the website." target="_blank">here</a>.
+                  <strong>Oh no!</strong> Something went wrong! Let us know by emailing us <a href="mailto:hello@toursmv.com?subject=Book a Tour&body=Hi Craig!%0D%0A%0D%0AWe'd like to book a [4-hour|2-hour] tour of Martha's Vineyard with you!%0D%0A%0D%0AThere are [number of people] of us and we are arriving on the [your arrival date] and staying until the [your departure date].%0D%0A%0D%0ASee you soon!%0D%0A%0D%0A~[Your name]%0D%0A%0D%0AThis email was sent via a mail client because of an error on the website." target="_blank">here</a>.
                 </div>
               </div>
               <!-- <div class="form-group">
@@ -430,11 +431,11 @@
                 <div class="col-sm-6 text-center">
                   <label class="radio-inline">
                     <input type="radio" name="tourlength" id="tourlength" value="fourhour" required>
-                    4 hour tour
+                    4-hour tour
                   </label>
                   <label class="radio-inline">
                     <input type="radio" name="tourlength" id="tourlength" value="twohour" required>
-                    2 hour tour
+                    2-hour tour
                   </label>
                 </div>
 
