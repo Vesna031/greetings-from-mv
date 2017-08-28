@@ -41,6 +41,11 @@
   text-indent: 0;
 }
 
+#contact-text .btn {
+  font-family: "Ubuntu";
+  text-indent: 0;
+}
+
 /*Extra small devices (mobile phones, 767px and below)*/
 @media screen and (max-width: 767px) {
   #contact-text {

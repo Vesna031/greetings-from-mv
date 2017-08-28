@@ -51,7 +51,7 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="tel:6173599298" class="glyphicon glyphicon-earphone"></a></li>
+              <li><a href="tel:+16173599298" class="glyphicon glyphicon-earphone"></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -76,20 +76,20 @@
         <div id="contact-text">
           <p class="no-indent">Hello friends,</p>
 
-          <p>Greetings From Martha's Vineyard! Our tour guides show you our 6 towns; each with a unique history, each with its own feel. See where celebrities stay and stand on the sets of Jaws. Understand why we are all drawn to this magical island!</p>
+          <p>Greetings From Martha's Vineyard! Our tour guides show you our 6 towns; each with a unique history and feel. See where celebrities stay and stand on the sets of Jaws. Understand why we are all drawn to this magical island!</p>
 
-          <p>Relax in our luxurious air conditioned vans on comfy leather Capt. chairs as we cruise along side beautiful beaches and quaint seaside towns with whaling captains&rsquo; houses and stone walls framing rolling fields dotted with sheep all the way down to the sea!</p>
+          <p>Relax in our luxurious air conditioned vans on comfy leather captain chairs as we cruise alongside beautiful beaches and quaint seaside towns with whaling captains&rsquo; houses and stone walls framing rolling fields dotted with sheep all the way down to the sea!</p>
 
-          <p>Explore the gingerbread cottages, shop the island&rsquo;s first general store, climb lighthouses, view the colorful 200&rsquo; Clay cliffs alongside the Wampanoag tribes shops filled with Wampum and native crafts!</p>
+          <p>Explore the gingerbread cottages, shop the island&rsquo;s first general store, climb lighthouses, and view the colorful 200&rsquo; Clay cliffs!</p>
 
-          <p>Finally, we&rsquo;ll have a picnic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, with a complimentary bottle of wine!  &ldquo;Authentic&rdquo; is the word most often used in this idyllic setting!</p>
+          <p>Finally, we&rsquo;ll have a picnic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, with a complimentary bottle of wine!</p>
 
           <p class="no-indent">Wish you were here!</p>
 
           <p class="text-right no-indent">Greeting From Martha&rsquo;s Vineyard Tours</p>
 
           <div class="text-center">
-            <a data-toggle="modal" data-target="#itinerary-modal">Read More...</a>
+            <a class="btn btn-success" data-toggle="modal" data-target="#itinerary-modal">View Itinerary</a>
           </div>
         </div>
       </div>
@@ -150,28 +150,8 @@
       
       <!-- Info Map start -->
       <div id="info-map">
-        <!-- <img src="images/map_sizes/map-3840-wcta.gif" usemap="#mapiconslocations_3840" class="img-responsive map visible-xlg" onclick="closePopups();"> -->
-        <!-- <img src="images/map_sizes/map-1920-wcta.gif" usemap="#mapiconslocations_1920" class="img-responsive map visible-lg" onclick="closePopups();"> -->
         <img src="images/map_sizes/map-1200-wcta.gif" usemap="#mapiconslocations_1200" class="img-responsive map visible-md visible-lg" onclick="closePopups();">
-        <!-- <img src="images/map_sizes/map-992-wcta.gif" usemap="#mapiconslocations_992" class="img-responsive map visible-sm" onclick="closePopups();"> -->
 
-        <!-- <map name="mapiconslocations_3840">
-          <area shape="circle" coords="2739,491,300" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-          <area shape="circle" coords="3075,1227,300" alt="Edgartown" onclick="showPopup('edgartown');">
-          <area shape="circle" coords="1772,1085,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
-          <area shape="circle" coords="299,1771,300" alt="Aquinnah" onclick="showPopup('aquinnah');">
-          <area shape="circle" coords="2286,443,300" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
-          <area shape="circle" coords="875,1571,300" alt="Menemsha" onclick="showPopup('menemsha');">
-        </map> -->
-
-        <!-- <map name="mapiconslocations_1920">  
-          <area shape="circle" coords="1364,249,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
-          <area shape="circle" coords="1522,609,200" alt="Edgartown" onclick="showPopup('edgartown');">
-          <area shape="circle" coords="890,557,300" alt="West Tisbury" onclick="showPopup('west-tisbury');">
-          <area shape="circle" coords="142,880,200" alt="Aquinnah" onclick="showPopup('aquinnah');">
-          <area shape="circle" coords="1135,229,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
-          <area shape="circle" coords="430,784,200" alt="Menemsha" onclick="showPopup('menemsha');">
-        </map> -->
         <map id="mapiconslocations_1200" name="mapiconslocations_1200">  
           <area shape="circle" coords="857,158,75" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');">
           <area shape="circle" coords="961,385,75" alt="Edgartown" onclick="showPopup('edgartown');">
@@ -180,21 +160,13 @@
           <area shape="circle" coords="715,142,75" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');">
           <area shape="circle" coords="264,483,75" alt="Menemsha" onclick="showPopup('menemsha');">
         </map>
-        <!-- <map id="mapiconslocations_992" name="mapiconslocations_992">  
-          <area shape="circle" coords="710,130,200" alt="Oak Bluffs" onclick="showPopup('oak-bluffs');" href="#">
-          <area shape="circle" coords="782,314,200" alt="Edgartown" onclick="showPopup('edgartown');" href="#">
-          <area shape="circle" coords="481,280,200" alt="West Tisbury" onclick="showPopup('west-tisbury');" href="#">
-          <area shape="circle" coords=" 71,453,200" alt="Aquinnah" onclick="showPopup('aquinnah');" href="#">
-          <area shape="circle" coords="590,116,200" alt="Vineyard Haven" onclick="showPopup('vineyard-haven');" href="#">
-          <area shape="circle" coords="220,397,200" alt="Menemsha" onclick="showPopup('menemsha');" href="#">
-        </map> -->
 
         <div class="pop-up" id="oak-bluffs">
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>Oak Bluffs</h1>
 
-          <p>Walk among the storybook gingerbread cottages, see the oldest carousel in America, perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks where the town band plays J.P.Souza and families March around the gazebo.</p>
+          <p>A Victorian-styled yet exciting town on the tip of our island.  There are so many ice cream shops in Oak Bluffs, there is no doubt your stomach will ache if you try to taste them all!  Circuit Avenue and the harbour are filled with wonderful bars, shops, and restaurants, and are flanked by the iconic Campground on one side and Ocean Park on the other.</p>
         </div>
 
         <div class="pop-up" id="vineyard-haven">
@@ -202,14 +174,14 @@
 
           <h1>Vineyard Haven</h1>
 
-          <p>A quaint New England shopping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard. Moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
+          <p>Filled with shops and restaurants, Vineyard Haven is a harbour town home to many creatives.  Learn some maritime history, grab a coffee to go and head towards main street, or stop by Net Result for some fantastic seafood!</p>
         </div>
         <div class="pop-up" id="west-tisbury">
           <span class="glyphicon glyphicon-remove" onclick="closePopups();" aria-hidden="true"></span>
 
           <h1>West Tisbury</h1>
 
-          <p>Stroll the aisles of Alleys General Store, the first store on the island opened in 1858, check out the brass P.O.boxes amongst the thousands of items for sale. " if they don't have it, you probably don't need it! " one fellow on our tour said. Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road, hear how Music St got its name and what famous historical novelist creates there.</p>
+          <p>A small but beautiful town.  Check out Alley&rsquo;s General Store&rsquo;s vintage brass P.O. boxes amongst the thousands of items for sale.  &ldquo;If they don&rsquo;t have it, you probably don&rsquo;t need it!&rdquo; one fellow on our tour said.  Home of the farmer&rsquo;s market and some remarkable artwork.</p>
         </div>
 
         <div class="pop-up" id="menemsha">
@@ -217,7 +189,7 @@
 
           <h1>Menemsha</h1>
 
-          <p>We will then drive past rolling hills that run to the sea, dotted with sheep/horses and framed by the miles of stone walls built by the farmers and reminiscent of the stone walls of the United Kingdom. Then passing through the Beetlebung corner and its country town center. Perhaps stopping at Chilmark Chocolates and choosing your favorites, but don't spoil your appetite until we have our seafood picnic on the docks of the fishing village of Menemsha.  We'll provide you with a complimentary bottle of wine that works well with your hot lobster roll, fresh fish or the best oysters ever! We also offer a sunset tour, we wine and dine while watching the sunset into the ocean! All of that followed by boat horns and the applause of the appreciative onlookers. Great way to end the day and tour!</p>
+          <p>Every dreamed about watching a sunset and eating fresh seafood with a glass of wine?  If you did, you dreamed of Menemsha.  A small fishing harbour featuring seafood shops and a beach that looks off to the west.  Martha&rsquo;s Vineyard sunsets are already great, but if you want front-row seats, go to Menemsha.</p>
         </div>
 
         <div class="pop-up" id="edgartown">
@@ -225,7 +197,7 @@
 
           <h1>Edgartown</h1>
           
-          <p>Cruise the narrow streets with Whaling Captain's houses on one side and on the other side the picturesque harbor filled with beautiful classic sailboats and multi-million dollar yachts! Hear how whale oil money helps build this town and pause to photograph the Harborview hotel which helps save this town! As you turn the camera around see the great lighthouse with Chappaquiddick island in a panoramic backdrop!</p>
+          <p>Cruise the narrow streets with whaling captain&rsquo;s houses on one side and the picturesque harbor on the other filled with beautiful classic sailboats and multi-million dollar yachts. Hear how whale oil money helped build this town and pause to photograph the majestic Harborview Hotel atop the hill. Make it to the steps of the Harborview and turn around to capture the great lighthouse with Chappaquiddick Island as your panoramic backdrop.</p>
         </div>
 
         <div class="pop-up" id="aquinnah">
@@ -233,7 +205,7 @@
 
           <h1>Aquinnah</h1>
 
-          <p>The end of the island we will see the magnificent colorful clay cliffs.   Looking down on the spectacular beaches below the cliffs and viewing the Elizabeth islands off in the distance. Visit the unique shops owned by the Wampanoag tribe perhaps purchasing a piece of wampum jewelry, and if you're feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea. PBS did a wonderful documentary on it. Join us on a tour that will make your visit to this island memorable, and see much more than we can put into words here! </p>
+          <p>It might take a bit longer to get to the tip of the island, not that the drive is anything but enjoyable as you wind under bows of oak and past homes of artists and novelists, but standing on the clay cliffs and looking down on pristine beaches makes the drive even more worth it.  If you&rsquo;re lucky, you might even catch surfers off of Moshop Beach!</p>
         </div>
 
         <!-- Flip cards start -->
@@ -247,9 +219,7 @@
 
                 <div class="back">
                   <div class="town-info">
-                    <h1>Oak Bluffs</h1>
-
-                    <p>Walk among the storybook gingerbread cottages, see the oldest carousel in America. perhaps grab for the brass ring and get a free ride! Walk along our lively little harbor, or stroll on Ocean park, just one of our many beautiful parks! Where the town band plays J.P.Souza and families March around the gazebo and picnic with family!</p>
+                    <p>A Victorian-styled yet exciting town on the tip of our island.  Circuit Avenue and the harbour are filled with wonderful bars, shops, and restaurants, and are flanked by the iconic Campground on one side and Ocean Park on the other.</p>
                   </div>
                 </div> 
               </div>
@@ -262,9 +232,7 @@
                 </div> 
                 <div class="back">
                   <div class="town-info">
-                    <h1>Edgartown</h1>
-                
-                    <p>Cruise the narrow streets of Whaling Captains' houses on one side and on the other, the picturesque harbor filled with beautiful classic sailboats and multi-million dollar yachts! Hear how whale oil money helped build this town. See the great lighthouse with Chappaquiddick island in a panoramic backdrop!</p>
+                    <p>Cruise the narrow streets with whaling captain&rsquo;s houses on one side and the picturesque harbor on the other filled with beautiful classic sailboats and multi-million dollar yachts. Hear how whale oil money helped build this town and pause to photograph the majestic Harborview Hotel.</p>
                   </div>
                 </div>
               </div> 
@@ -279,9 +247,7 @@
                 </div> 
                 <div class="back">
                   <div class="town-info">
-                    <h1>Menemsha</h1>
-
-                    <p>We will then drive past rolling hills that run to the sea, dotted with sheep and framed by the miles of stone walls built by the farmers. A stop at Chilmark Chocolates and fill your classic box lined with wax paper, but don't spoil your appetite until we have our seafood picnic on the docks of the fishing village of Menemsha.</p>
+                    <p>Every dreamed about watching a sunset and eating fresh seafood with a glass of wine?  If you did, you dreamed of Menemsha.  Martha&rsquo;s Vineyard sunsets are already great, but if you want front-row seats, go to Menemsha.</p>
                   </div>
                 </div> 
               </div>
@@ -294,9 +260,7 @@
                 </div> 
                 <div class="back">
                   <div class="town-info">
-                    <h1>Vineyard Haven</h1>
-
-                    <p>A quaint New England shopping village where you can go for a sunset sail on a large schooner which docks next to an old school boat builders yard, moving along Main St. filled with cute shops and restaurants, home to many authors and novelists.</p>
+                    <p>Filled with shops and restaurants, Vineyard Haven is a harbour town home to many creatives.  Learn some maritime history, grab a coffee to go and head towards main street, or stop by Net Result for some fantastic seafood!</p>
                   </div>
                 </div> 
               </div>
@@ -311,9 +275,7 @@
                 </div> 
                 <div class="back">
                   <div class="town-info">
-                    <h1>West Tisbury</h1>
-                
-                    <p>Stroll the aisles of Alleys General Store, the first store on the island opened in 1858.  Pick up some fresh fruit in the farm stand out back and snack on it as you enjoy the art at the field gallery across the road, hear how Music St got its name and what famous historical novelist lives and creates there.</p>
+                    <p>A small but beautiful town.  Check out Alley&rsquo;s General Store&rsquo;s vintage brass P.O. boxes amongst the thousands of items for sale.  &ldquo;If they don&rsquo;t have it, you probably don&rsquo;t need it!&rdquo; one fellow on our tour said.  Home of the farmer&rsquo;s market and some remarkable artwork.</p>
                   </div>
                 </div>
               </div> 
@@ -326,9 +288,7 @@
                 </div> 
                 <div class="back">
                   <div class="town-info">
-                    <h1>Aquinnah</h1>
-
-                    <p>At the end of the island, we see the colorful, clay cliffs looking down on spectacular beaches and the Elizabeth islands off in the distance.  Visit the unique shops owned by the Wampanoag tribe to buy wampum jewelry.  Then climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn't fall into the sea!</p>
+                    <p>It might take longer to get to the tip of the island, not that the drive is anything but enjoyable as you wind under bows of oak and past homes of artists and novelists, but standing on the clay cliffs and looking down on pristine beaches makes the drive even more worth it.</p>
                   </div>
                 </div>
               </div>
@@ -371,21 +331,30 @@
 
     <!-- Itinerary Modal start -->
     <div class="modal fade" id="itinerary-modal" tabindex="-1" role="dialog" aria-labelledby="itineraryModal">
-      <div class="modal-dialog modal-md" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div>
+            <span class="glyphicon glyphicon-remove close-modal" id="close-modal" data-dismiss="modal" data-target="#itinerary-modal" aria-label="Close"></span>
+
             <h3 class="text-center">Tour Itinerary</h3>
 
-            <p>Our tours are custom-tailored to you, but they consist of at least the following:</p>
+            <p>Choose between a 2- or 4-hour of the beautiful island of Martha&rsquo;s Vineyard.  You will experience the six very unique towns and all the carefully preserved space between:</p>
 
-            <ul>
-              <li>Either a 2-hour tour of 3 towns or a 4-hour tour of 6</li>
-              <li>Pick-up from wherever you are</li>
-              <li>We'll bring you to a brilliant dinner and provide you with a bottle of wine</li>
-              <li>Enjoy and relax in our new and air-conditioned vans</li>
-            </ul>
+            <p>In <strong>Oak Bluffs</strong>, we&rsquo;ll walk among the story-book gingerbread cottages and see the oldest carousel in America, where if you grab the brass ring, you get a free ride!  We&rsquo;ll stroll along the lively little harbor or meander through Ocean Park.</p>
 
-            <p>With us, you will see everything that is described on this site and much more!</p>
+            <p><strong>Vineyard Haven</strong> is a quaint New England shopping village where you can go for a sunset sail on a large schooner.  Wander up and down Main Street, which is filled with cute shops and restaurants.</p>
+            
+            <p><strong>West Tisbury</strong> is home to the oldest store on-island; Alley&rsquo;s General Store, which first opened in 1858.  We&rsquo;ll pick up some fresh fruit in the farm stand out back to snack on as we peruse the art at the Field Gallery across the road.</p>
+            
+            <p><strong>Edgartown</strong> is surreal, with a harbor and waterfront edged by stately white Greek Revival houses built by whaling captains.  The Old Whaling Church stands tall thanks to six massive columns, and along with the Edgartown Harbor Lighthouse and the historic Harborview Hotel, Edgartown really belongs in a museum!</p>
+
+            <p>Onwards to <strong>Menemsha</strong>, we drive past rolling hills that run to the sea, dotted with sheep and horses and framed by the miles of British-style stone walls.  A stop at Chilmark Chocolates is a must, but don&rsquo;t spoil your appetite until we have our seafood picnic on the docks.  We&rsquo;ll provide you with a complimentary bottle of wine that works well with a hot lobster roll, fresh fish, or the best oysters ever! We also offer a sunset tour, where we wine and dine while watching the sunset into the ocean, followed by boat horns and the applause of the appreciative on-lookers.</p>
+            
+            <p>In <strong>Aquinnah</strong>, the end of the island, witness our magnificent colorful clay cliffs.   Look down on the spectacular beaches and scour the horizon for the Elizabeth Islands off in the distance. Visit the unique shops owned by the Wampanoag tribe to purchase a piece of wampum jewelry.  If you&rsquo;re feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn&rsquo;t fall into the sea!</p>
+
+            <p>Touring this special place is made even better with convenient pick-up service from wherever you stay and new and air-conditioned vans.</p>
+
+            <p>Don&rsquo;t hesitate to call us anytime at <a href="tel:+16173599298">(617) 359-9298</a> for answers to questions or to book a tour.  Join us on a tour that will make your visit to our island memorable, and see much more than we can put into words here!</p>
 
             <div class="text-center">
               <button class="btn btn-primary" data-dismiss="modal">Back to site</button>

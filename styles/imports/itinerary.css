@@ -1,5 +1,19 @@
 #itinerary-modal .modal-content {
   padding: 5%;
-  background-color: #f0eccf;
+  background-color: #f8f6e8;
   font-size: 1.25em;
+  font-weight: 300;
+}
+
+#itinerary-modal .modal-content #close-modal {
+  color: #333;
+  font-size: 1em;
+}
+
+#itinerary-modal .modal-content strong {
+  font-weight: 400;
+}
+
+#itinerary-modal .modal-content a {
+  color: #73a8bf;
 }
