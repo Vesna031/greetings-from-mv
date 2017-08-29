@@ -16,9 +16,9 @@
   transition: color 0.3s, background 0.3s;
 }
 
-#pro-gallery .btn-viewgallery:hover,
-#pro-gallery .btn-viewgallery:active,
-#pro-gallery .btn-viewgallery:focus {
+body:not(.iOS) #pro-gallery .btn-viewgallery:hover,
+body:not(.iOS) #pro-gallery .btn-viewgallery:active,
+body:not(.iOS) #pro-gallery .btn-viewgallery:focus {
   background: gray;
   color: white;
   outline: none;
@@ -138,12 +138,20 @@
 
 /*Small devices (landscape phones, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* TODO remove if unnecessary */
+  #pro-gallery-modal .modal-dialog {
+    position: absolute;
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 
 /*Medium devices (tablets, netbooks, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* TODO remove if unnecessary */
+  #pro-gallery-modal .modal-dialog {
+    top: 33%;
+    -webkit-transform: translateY(-33%);
+            transform: translateY(-33%);
+  }
 }
 
 /*Large devices (desktops, 1200px and up)*/

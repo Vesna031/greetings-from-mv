@@ -12,9 +12,9 @@
   /*visibility: hidden;*/
 }
 
-.book-now-btn:hover,
-.book-now-btn:focus,
-.book-now-btn:active {
+body:not(.iOS) .book-now-btn:hover,
+body:not(.iOS) .book-now-btn:focus,
+body:not(.iOS) .book-now-btn:active {
   background-image: url(../../images/buttons/book-now-trans-hover.gif);
 }
 
