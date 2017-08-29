@@ -33,6 +33,14 @@
   cursor: pointer;
 }
 
+.iOS .map {
+  display: none !important;
+}
+
+.iOS #flip-cards {
+  display: block !important;
+}
+
 #flip-cards {
   padding-top: 2em;
 }
@@ -63,14 +71,14 @@
 
 /*Medium devices (tablets, netbooks, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  #info-map {
+  body:not(.iOS) #info-map {
     transform: rotate(2deg);
   }
 }
 
 /*Large devices (desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  #info-map {
+  body:not(.iOS) #info-map {
     transform: rotate(2deg);
   }
 }

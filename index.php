@@ -27,7 +27,7 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gfmv-navbar" aria-expanded="false">
@@ -37,13 +37,13 @@
               <span class="icon-bar"></span>
               <span class="icon-word">MENU</span>
             </button>
-            <a class="navbar-brand" href="#"><img class="img-responsive brand" src="images/navigation/nav-logo.png"></a>
+            <a class="navbar-brand" href="#hero"><img class="img-responsive brand" src="images/navigation/nav-logo.png"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="gfmv-navbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a class="ubuntu-font" href="#hero">HOME</a></li>
+              <!-- <li class="active"><a class="ubuntu-font" href="#hero">HOME</a></li> -->
               <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li>
               <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
               <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
@@ -54,7 +54,7 @@
               <li><a href="tel:+16173599298" class="glyphicon glyphicon-earphone"></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        <!-- </div>/.container-fluid -->
       </nav>
 
       <!-- Hero start -->
@@ -109,7 +109,7 @@
 
   	  <!-- Reviews start -->
       <div id="reviews">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="row">
             <div class="col-xs-12 col-md-4 col-md-offset-2">
               <img class="img-responsive center-block" id="yelp-burst" src="/images/reviews/Yelp_burst_positive_RGB.png">
@@ -127,7 +127,7 @@
               <div></div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
       <!-- Reviews end -->
 
@@ -212,7 +212,7 @@
         <!-- Flip cards start -->
   	    <div class="visible-xs visible-sm" id="flip-cards">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front">
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.gif">
@@ -226,7 +226,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6"> 
+            <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-edgartown-lores.gif">
@@ -238,10 +238,10 @@
                 </div>
               </div> 
             </div>
-          </div>
+          <!-- </div>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-6"> 
+          <div class="row"> -->
+            <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-menemsha-lores.gif">
@@ -254,7 +254,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6"> 
+            <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-vineyard-haven-lores.gif">
@@ -266,10 +266,10 @@
                 </div> 
               </div>
             </div>
-          </div>
+          <!-- </div>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-6"> 
+          <div class="row"> -->
+            <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-west-tisbury-lores.gif">
@@ -282,7 +282,7 @@
               </div> 
             </div>
 
-            <div class="col-xs-12 col-sm-6"> 
+            <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
                   <img class="img-responsive" src="images/map_sizes/toursmv-mobile-map-aquinnah-lores.gif">
@@ -302,14 +302,14 @@
 
     <!-- Facebook Posts start -->
     <div id="facebook-posts">
-      <div class="container">
+      <!-- <div class="container"> -->
         <h2>Our Latest Adventures!</h2>
 
         <div id="post-container">
         </div>
 
         <h3>Follow us on <a href="https://www.facebook.com/marthasvineyardtours/" target="_blank">Facebook</a>!</h3>
-      </div>
+      <!-- </div> -->
 
       <div id="facebook-loader">
         <div style="width:100%;height:100%" class="lds-ripple">
