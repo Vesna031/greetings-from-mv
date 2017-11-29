@@ -73,7 +73,7 @@
 
     $expires_in = json_decode($debug->getBody())->data->expires_at - time();
 
-    if($expires_in < $expiration_time * 2) {
+    if($expires_in == 0) {
       // echo 'getting new access code<br>';
       try {
         $code = $fb->get('/oauth/client_code?access_token='.$access_token.'&client_secret='.$app_secret.'&redirect_uri='.$redirect_uri.'&client_id='.$app_id);
