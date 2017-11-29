@@ -9,8 +9,9 @@
 
   // FACEBOOK
   $app_id = '318059708651553';
-  $app_secret = '645272c21a8d0871339d40b518593de6';
-  $access_token = 'EAAEhRgvzmCEBAKPxXFCyqKYZAHkrl7ZAB4fV22qM5iJMLWSqv8g0dT5OGWZANLZBOPnXIAZBnTvyUKjkqq4kdpDmhuG6aAK6ZCPMbZAsbGT6rH91VydrFvIztBi7d81THZCurQK7JXUsRbAl2gPTbgGCjxMylNkHZCQHqhQYPxeZAWZCAZDZD';
+  $app_secret = '50d9c2c845e55a18f5b5156c52294416';
+  $access_token = 'EAAEhRgvzmCEBAJI2kSgZAcZA8e8MdKusvTWy6X8xlhrhY4ZAAXAoprL6sYoqFZC0PLRaGu3ANPOAhjZAdkHCAm0Y96zis4JT8lTxbBtkZAX4qsQXHHbGjuaus4olokYfoxZBOfhjuwhVGbGtulbgE3FYcm7j6iZBcYsm47pmDo5jxt7tNIiyiIaZCWVX7SL8GQSr5fRjEnroexgZDZD';
+  // $access_token = 'thewrongtoken';
   $redirect_uri = 'http://toursmv.com/';
 
   // $m->delete('yelp_reviews');
@@ -119,9 +120,11 @@
         $response = $fb->get('/marthasvineyardtours/ratings');
       } catch(\Facebook\Exceptions\FacebookResponseException $e) {
         echo 'Graph returned an error: ' . $e->getMessage();
+        sendErrorNotification('Graph returned an error', $e->getMessage());
         exit;
       } catch(\Facebook\Exceptions\FacebookSDKException $e) {
         echo 'Facebook SDK returned an error: ' . $e->getMessage();
+        sendErrorNotification('Facebook SDK returned an error', $e->getMessage());
         exit;
       }
 
@@ -149,9 +152,11 @@
         $response = $fb->get('/marthasvineyardtours/photos/uploaded?fields=images,link');
       } catch(\Facebook\Exceptions\FacebookResponseException $e) {
         echo 'Graph returned an error: ' . $e->getMessage();
+        sendErrorNotification('Graph returned an error', $e->getMessage());
         exit;
       } catch(\Facebook\Exceptions\FacebookSDKException $e) {
         echo 'Facebook SDK returned an error: ' . $e->getMessage();
+        sendErrorNotification('Facebook SDK returned an error', $e->getMessage());
         exit;
       }
 
@@ -186,4 +191,55 @@
     'facebook_posts' => $facebook_posts
   );
   echo json_encode($output);
+
+  function sendErrorNotification ($subject, $error) {
+    // Subject
+    // $subject = ;
+
+    // Message
+
+    $message = 'toursmv.com is experiencing an error:\n\r' . $subject . '\n\r' . $error;
+
+    // PHPMailer setup
+    $mail = new PHPMailer(true);
+    $mail->SMTPDebug = 3;
+    $mail->isSMTP();
+    $mail->Host = 'toursmv.com';
+    $mail->SMTPAuth = true;
+    $mail->CharSet ='UTF-8';
+    $mail->Username = 'contact@toursmv.com';
+    $mail->Password = 'GFMV5thebest!';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 25;
+    $mail->setFrom('contact@toursmv.com', 'Error Reporter');
+    $mail->addAddress('david@artlyticalmedia.com', 'David Rhoderick');
+    $mail->addReplyTo('contact@toursmv.com', 'Error Reporter');
+    $mail->isHTML(false);
+    $mail->Subject = $subject;
+    $mail->Body = $message;
+
+    // echo json_encode(array(
+    //     'host' => $mail->Host,
+    //     'username' => $mail->Username,
+    //     'password' => $mail->Password,
+    //     'port' => $mail->Port,
+    //     'subject' => $mail->Subject,
+    //     'message' => $mail->Body,
+    //     'email' => $_POST['email'],
+    //     'name' => $_POST['firstname'] . ' ' . $_POST['lastname'],
+    //     'pickup' => $pickup,
+    //     'guests' => $guests
+    //   ));
+
+    if(!$mail->send()) {
+      // echo 'Message could not be sent.';
+      echo json_encode(array(
+        'status' => 303,
+        'message' => 'Mailer Error: ' . $mail->ErrorInfo));
+    } else {
+      echo json_encode(array(
+        'status' => 200,
+        'message' => 'Message has been sent'));
+    }
+  }
 ?>

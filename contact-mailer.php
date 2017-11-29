@@ -29,8 +29,8 @@ See you soon!
   $mail->Host = 'toursmv.com';
   $mail->SMTPAuth = true;
   $mail->CharSet ='UTF-8';
-  $mail->Username = 'hello@toursmv.com';
-  $mail->Password = 'Vineyard17!';
+  $mail->Username = 'contact@toursmv.com';
+  $mail->Password = 'GFMV5thebest!';
   $mail->SMTPSecure = 'tls';
   $mail->Port = 25;
   $mail->setFrom($_POST['email'], $_POST['firstname'] . ' ' . $_POST['lastname']);
