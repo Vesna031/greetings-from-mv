@@ -10,12 +10,15 @@
     <link href="styles/main.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Ubuntu:300,400" rel="stylesheet">
 
-  	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  	<link rel="manifest" href="/manifest.json">
-  	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  	<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="google-site-verification" content="auSsGHIB_jSI3NTgTCqn-31N7dmsTUD73dglvdGdmrA" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -94,7 +97,7 @@
           </div>
         </div>
       </div>
-  	  <!-- About Contact end -->
+      <!-- About Contact end -->
 
       <!-- Call to Action start -->
       <div id="call-to-action">
@@ -107,7 +110,7 @@
       </div>
       <!-- Call to Action end -->
 
-  	  <!-- Reviews start -->
+      <!-- Reviews start -->
       <div id="reviews">
         <!-- <div class="container"> -->
           <div class="row">
@@ -131,7 +134,7 @@
       </div>
       <!-- Reviews end -->
 
-  	  <!-- Pro Gallery start -->
+      <!-- Pro Gallery start -->
       <div id="pro-gallery">
         <div class="container-fluid">
           <div class="row">
@@ -210,7 +213,7 @@
         </div>
 
         <!-- Flip cards start -->
-  	    <div class="visible-xs visible-sm" id="flip-cards">
+        <div class="visible-xs visible-sm" id="flip-cards">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
@@ -295,7 +298,7 @@
               </div>
             </div>
           </div>
-	      </div>
+        </div>
       </div>
     </div>
     <!-- Info Map end -->
