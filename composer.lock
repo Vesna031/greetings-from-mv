@@ -638,16 +638,16 @@
         },
         {
             "name": "stevenmaguire/yelp-php",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stevenmaguire/yelp-php.git",
-                "reference": "5d8d53162f0d25749fbea9426f33dc09e7b770af"
+                "reference": "9f2587e16c611a8a2a052842119bae6d3067f632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stevenmaguire/yelp-php/zipball/5d8d53162f0d25749fbea9426f33dc09e7b770af",
-                "reference": "5d8d53162f0d25749fbea9426f33dc09e7b770af",
+                "url": "https://api.github.com/repos/stevenmaguire/yelp-php/zipball/9f2587e16c611a8a2a052842119bae6d3067f632",
+                "reference": "9f2587e16c611a8a2a052842119bae6d3067f632",
                 "shasum": ""
             },
             "require": {
@@ -689,7 +689,7 @@
                 "php",
                 "yelp"
             ],
-            "time": "2017-06-26T15:09:26+00:00"
+            "time": "2018-02-10T00:14:21+00:00"
         }
     ],
     "packages-dev": [],

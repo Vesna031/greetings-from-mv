@@ -10,7 +10,7 @@
   // FACEBOOK
   $app_id = '318059708651553';
   $app_secret = '50d9c2c845e55a18f5b5156c52294416';
-  $access_token = 'EAAEhRgvzmCEBAJI2kSgZAcZA8e8MdKusvTWy6X8xlhrhY4ZAAXAoprL6sYoqFZC0PLRaGu3ANPOAhjZAdkHCAm0Y96zis4JT8lTxbBtkZAX4qsQXHHbGjuaus4olokYfoxZBOfhjuwhVGbGtulbgE3FYcm7j6iZBcYsm47pmDo5jxt7tNIiyiIaZCWVX7SL8GQSr5fRjEnroexgZDZD';
+  $access_token = 'EAAEhRgvzmCEBAIO2YGeHdd7JfOnWLZAZBP04V1Yx3ghuEAxIupLWZAjQT59CdZCw6xunYnfZBhF0tFlZAnxfyUHQgLTm0n9jMtt7FSfHI8ZB8HNoZAEHc1VeU6hWXth5ZBHlW1uyiNb4E2Fn9ksQhhdAbZBpnkYV9PS3FcSlvn3eHbSo4pYix8WLMq4v8sZCgOHcY4p5yOZCJIGQvAZDZD';
   // $access_token = 'thewrongtoken';
   $redirect_uri = 'http://toursmv.com/';
 
@@ -24,21 +24,26 @@
 
   // if(!$yelp_reviews) {
     $yelp_reviews = array();
-    $provider = new \Stevenmaguire\OAuth2\Client\Provider\Yelp([
-      'clientId'     => 'gBCKyJl4lEQZJc6WWEFvNw',
-      'clientSecret' => 'cMSyHdzd37sU4ORIHjlC5kJC2oTcfEhAmLg9zJWh1XtALgArQwzD5TJYXNwQsntC'
-    ]);
-    $accessToken = (string) $provider->getAccessToken('client_credentials');
 
-    $client = new \Stevenmaguire\Yelp\v3\Client(array(
-      'accessToken' => $accessToken
-    ));
+    $options = array(
+      'apiKey' => 'NUQtQL7xrb6AWHu7ie1rO3HR29cRYazMRsGpL-vY9GiHr48QjMeTRHt1pV8VxeqrsHxpqrJCfUv7mj_VhJsbHPwJjYtHuIUylv0b5VK8ENw7d_LZWq9YxZh3mC1YWXYx'
+    );
+
+    $client = \Stevenmaguire\Yelp\ClientFactory::makeWith(
+      $options,
+      \Stevenmaguire\Yelp\Version::THREE
+    );
 
     $parameters = [
       'locale' => 'en_US',
     ];
 
     $reviews = $client->getBusinessReviews('greetings-from-marthas-vineyard-tours-oak-bluffs', $parameters);
+
+    // $responseBody = $e->getResponseBody(); // string from Http request
+    // $responseBodyObject = json_decode($responseBody);
+
+    // var_dump($responseBodyObject);
 
     foreach($reviews->reviews as $review) {
       if($review->rating == 5) {
