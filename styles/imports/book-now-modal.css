@@ -8,3 +8,7 @@
 #book-now-modal select {
   background-color: #f9f7ec;
 }
+
+.form-group div {
+  margin-bottom: 8px;
+}

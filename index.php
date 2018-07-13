@@ -370,11 +370,14 @@
               </div> -->
               <div class="form-group">
                 <!-- <label for="firstname" class="col-sm-2 control-label">First Name</label> -->
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
                 </div>
               </div>
               <div class="form-group">

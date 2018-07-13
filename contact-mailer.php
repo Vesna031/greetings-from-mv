@@ -14,7 +14,7 @@
 
   $message = 'Hi Craig!
 
-' . $guests[0] . ' like to book a ' . $tourlength . ' tour of Martha\'s Vineyard with you!
+' . $guests[0] . ' like to book a ' . $tourlength . ' tour of Martha\'s Vineyard with you! You can reach me by phone at ' . $_POST['phone'] . '.
 
 ' . $guests[1] . ' on the Vineyard ' . $_POST['staylength'] . '.  ' . $guests[0] . ' love it if you could pick ' . $guests[2] . ' up from ' . $pickup .'.
 

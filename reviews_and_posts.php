@@ -10,8 +10,9 @@
   // FACEBOOK
   $app_id = '318059708651553';
   $app_secret = '50d9c2c845e55a18f5b5156c52294416';
-  $access_token = 'EAAEhRgvzmCEBAIO2YGeHdd7JfOnWLZAZBP04V1Yx3ghuEAxIupLWZAjQT59CdZCw6xunYnfZBhF0tFlZAnxfyUHQgLTm0n9jMtt7FSfHI8ZB8HNoZAEHc1VeU6hWXth5ZBHlW1uyiNb4E2Fn9ksQhhdAbZBpnkYV9PS3FcSlvn3eHbSo4pYix8WLMq4v8sZCgOHcY4p5yOZCJIGQvAZDZD';
+  $access_token = 'EAAEhRgvzmCEBABIOMggQ36EpnPhiU2UyZAHJKgulVDcHBOe1YK0MPmzQNtdB1ZBArCUmZBJrv83kCFrLJofwNrDUUmZBYYrUnebWhuMpnaloGVHBSJg9ZA4hSRZA6QGiLWZCZC8Lati12XbrOjN2kAaknc0ydD8uvzIG84A1es5LSnyjZAYAkKSYdAMd4f6v3qhaSc10cZCs9cegZDZD';
   // $access_token = 'thewrongtoken';
+  $facebook_page_name = 'greetings.from.mv.tours';
   $redirect_uri = 'http://toursmv.com/';
 
   // $m->delete('yelp_reviews');
@@ -119,10 +120,10 @@
 
     // if(!$facebook_reviews) {
       $facebook_reviews = array();
-      $facebook_review_url = 'https://www.facebook.com/pg/marthasvineyardtours/reviews/';
+      $facebook_review_url = 'https://www.facebook.com/pg/' . $facebook_page_name . '/reviews/';
 
       try {
-        $response = $fb->get('/marthasvineyardtours/ratings');
+        $response = $fb->get('/'.$facebook_page_name.'/ratings');
       } catch(\Facebook\Exceptions\FacebookResponseException $e) {
         echo 'Graph returned an error: ' . $e->getMessage();
         sendErrorNotification('Graph returned an error', $e->getMessage());
@@ -154,7 +155,7 @@
       $facebook_posts = array();
 
       try {
-        $response = $fb->get('/marthasvineyardtours/photos/uploaded?fields=images,link');
+        $response = $fb->get('/'.$facebook_page_name.'/photos/uploaded?fields=images,link');
       } catch(\Facebook\Exceptions\FacebookResponseException $e) {
         echo 'Graph returned an error: ' . $e->getMessage();
         sendErrorNotification('Graph returned an error', $e->getMessage());
