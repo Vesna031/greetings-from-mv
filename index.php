@@ -304,22 +304,12 @@
     <!-- Info Map end -->
 
     <!-- Facebook Posts start -->
-    <div id="facebook-posts">
-      <!-- <div class="container"> -->
-        <h2>Our Latest Adventures!</h2>
-
-        <div id="post-container">
-        </div>
-
-        <h3>Follow us on <a href="https://www.facebook.com/marthasvineyardtours/" target="_blank">Facebook</a>!</h3>
-      <!-- </div> -->
-
-      <div id="facebook-loader">
-        <div style="width:100%;height:100%" class="lds-ripple">
-          <div></div>
-          <div></div>
-        </div>
-      </div>
+    <div id="instagram-posts">
+      <h2><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">Follow us on Instagram</h2>
+      <h3 class="hidden-xs visible-sm"><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">@greetingsfrommarthasvineyard</a></h3>
+      <!-- LightWidget WIDGET -->
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/7725f972541850e980d9e7fa0001edc6.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
     </div>
     <!-- Facebook Posts end -->
 
