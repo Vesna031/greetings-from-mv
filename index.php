@@ -118,9 +118,20 @@
               <img class="img-responsive center-block" id="yelp-burst" src="/images/reviews/Yelp_burst_positive_RGB.png">
               <div id="yelp-reviews" class="reviews-slider"></div>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <img class="img-responsive center-block" id="facebook-f" src="/images/reviews/FB-f-Logo__blue_144.png">
-              <div id="facebook-reviews" class="reviews-slider"></div>
+
+            <div class="col-xs-12 col-md-4 text-center">
+              <div id="TA_selfserveprop861" class="TA_selfserveprop">
+                <ul id="4w7P0rQ9UDqb" class="TA_links W2URLNsLC6mi">
+                  <li id="YDWpEkckfxgu" class="MsGeTAwfn4q">
+                    <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                  </li>
+                </ul>
+              </div>
+              
+              <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=861&amp;locationId=13221005&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=false&amp;display_version=2"></script>
+              
+              <!-- <img class="img-responsive center-block" id="facebook-f" src="/images/reviews/FB-f-Logo__blue_144.png">
+               <div id="facebook-reviews" class="reviews-slider"></div> -->
             </div>
           </div>
 
