@@ -136,11 +136,8 @@ function smoothScrolling() {
     .not('[href="#0"]')
     .click(function(event) {
       // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
+      if(location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && 
+          location.hostname == this.hostname) {
         // Figure out element to scroll to
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -160,7 +157,7 @@ function smoothScrolling() {
             } else {
               $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
               $target.focus(); // Set focus again
-            };
+            }
           });
         }
       }
@@ -170,11 +167,18 @@ function smoothScrolling() {
   $('input[type="daterange"]').daterangepicker();
 
   var ajaxurl = '/contact-mailer.php',
-      $form = $('#book-now-form input:not(#submit), #book-now-form select'),
+      $form = $('#book-now-form input:not(#submit), #book-now-form select, #book-now-form textarea'),
       $pleaseWait = $('#book-now-form #please-wait'),
       $invalidForm = $('#book-now-form #invalid-form'),
       $successEmail = $('#book-now-form #success-email'),
-      $errorEmail = $('#book-now-form #error-email');
+      $errorEmail = $('#book-now-form #error-email'),
+      setupRecaptcha = function() {
+        grecaptcha.render('recaptcha', {
+          'sitekey' : '6LcEpZAUAAAAAO0E8Y1BTXNxBTqc98Sdw9E4UFlG'
+        });
+      };
+
+  $(window).load(setupRecaptcha);
 
   $('#book-now-form').on('submit', function (event) {
     event.preventDefault();
@@ -201,6 +205,8 @@ function smoothScrolling() {
         }
       });
 
+      data['g-recaptcha-response'] = grecaptcha.getResponse();
+
       // data.action = action;
 
       // console.log($form);
@@ -218,6 +224,8 @@ function smoothScrolling() {
         },
         success: function (data) {
           $pleaseWait.hide();
+
+          console.log(data);
           
           if(data.status == 200) {
             console.info('Success');
@@ -231,6 +239,8 @@ function smoothScrolling() {
         },
         error: function (data) {
           $pleaseWait.hide();
+
+          // console.log(data);
 
           if(data.status == 200) {
             console.info('Success');

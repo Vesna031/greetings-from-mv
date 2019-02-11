@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Greetings From Martha's Vineyard</title>
 
     <link href="styles/main.min.css" rel="stylesheet">
@@ -18,6 +19,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta name="google-site-verification" content="auSsGHIB_jSI3NTgTCqn-31N7dmsTUD73dglvdGdmrA" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +43,7 @@
               <span class="icon-bar"></span>
               <span class="icon-word">MENU</span>
             </button>
-            <a class="navbar-brand" href="#hero"><img class="img-responsive brand" src="images/navigation/nav-logo.png"></a>
+            <a class="navbar-brand" href="#hero"><img class="img-responsive brand" src="images/navigation/nav-logo.png" alt="Home"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,8 +77,8 @@
 
       <!-- About Contact start -->
       <div id="about-contact">
-        <img src="images/about-contact/about-postcard.gif" class="img-responsive hidden-xs hidden-sm">
-        <img src="images/about-contact/about-postcard-768.gif" id="mobile-about-contact-image" class="img-responsive visible-xs visible-sm">
+        <img src="images/about-contact/about-postcard.gif" class="img-responsive hidden-xs hidden-sm" alt="About">
+        <img src="images/about-contact/about-postcard-768.gif" id="mobile-about-contact-image" class="img-responsive visible-xs visible-sm" alt="About">
         <div id="contact-text">
           <p class="no-indent">Hello friends,</p>
 
@@ -316,7 +319,7 @@
 
     <!-- Facebook Posts start -->
     <div id="instagram-posts">
-      <h2><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">Follow us on Instagram</h2>
+      <h2><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">Follow us on Instagram</a></h2>
       <h3 class="hidden-xs visible-sm"><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">@greetingsfrommarthasvineyard</a></h3>
       <!-- LightWidget WIDGET -->
       <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
@@ -331,7 +334,7 @@
       </div>
     </div>
 
-    <a id="scroll-up"class="glyphicon glyphicon-chevron-up"href="#hero"></a>
+    <a id="scroll-up" class="glyphicon glyphicon-chevron-up" href="#hero"></a>
     <!-- Footer end -->
 
     <!-- Book Now Modal start -->
@@ -401,17 +404,17 @@
               <div class="form-group">
                 <div class="col-sm-6 text-center">
                   <label class="radio-inline">
-                    <input type="radio" name="tourlength" id="tourlength" value="fourhour" required>
+                    <input type="radio" name="tourlength" class="tourlength" value="fourhour" required>
                     4-hour tour
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="tourlength" id="tourlength" value="twohour" required>
+                    <input type="radio" name="tourlength" class="tourlength" value="twohour" required>
                     2-hour tour
                   </label>
                 </div>
 
                 <div class="col-sm-3">
-                  <label for="pickup-location" class="control-label">Pick-up location</label>
+                  <label for="town" class="control-label">Pick-up location</label>
                 </div>
 
                 <div class="col-sm-3">
@@ -434,6 +437,12 @@
                 </div>
                 <div class="col-sm-3">
                   <input type="daterange" name="staylength" id="staylength" value="" class="form-control" placeholder="Your stay" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div id="recaptcha"></div>
+                  <!-- <div class="g-recaptcha" data-sitekey="6LcEpZAUAAAAAO0E8Y1BTXNxBTqc98Sdw9E4UFlG"></div> -->
                 </div>
               </div>
               <div class="form-group">
@@ -582,7 +591,7 @@
     <!-- Pro Gallery Modal end -->
 
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
