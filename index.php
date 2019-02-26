@@ -57,6 +57,7 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
+              <li><a href="mailto:hello@toursmv.com" target="_blank" class="glyphicon glyphicon-envelope"></a></li>
               <li><a href="tel:+16173599298" class="glyphicon glyphicon-earphone"></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -330,7 +331,7 @@
     <!-- Footer start -->
     <div id="footer" class="text-center">
       <div class="container policy">
-        <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
+        <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; <a href="mailto:hello@toursmv.com" target="_blank">hello@toursmv.com</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
       </div>
     </div>
 
@@ -450,6 +451,9 @@
                   <button class="btn btn-success" id="submit">Request your tour</button>
                   <button class="btn btn-secondary" data-dismiss="modal">Back to site</button>
                 </div>
+              </div>
+              <div class="form-group">
+                <span>Or you can email us at <a target="_blank" href="mailto:hello@toursmv.com">hello@toursmv.com</a></span>
               </div>
             </form>
           </div>
