@@ -331,7 +331,7 @@
     <!-- Footer start -->
     <div id="footer" class="text-center">
       <div class="container policy">
-        <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; <a href="mailto:hello@toursmv.com" target="_blank">hello@toursmv.com</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
+        <p>&copy; <?php date_default_timezone_set('EST'); echo date("Y"); ?> Greetings From Martha's Vineyard &middot; <a href="mailto:hello@toursmv.com" target="_blank">hello@toursmv.com</a> &middot; <a href="/privacypolicy.html">Privacy Policy</a> &middot; Site by <a href="http://mvesna.com" target="_blank">MVesna</a> &amp; <a href="http://artlyticalmedia.com" target="_blank">Artlytical Media</a></p>
       </div>
     </div>
 
