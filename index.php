@@ -111,8 +111,8 @@
         <!-- <img src="images/call-to-action/toursmv-polaroid-van.gif" class="img-responsive"> -->
 
         <div class="text-center">
-          <a class="book-now-btn visible-xs visible-sm" href="tel:+16173599298"></a>
-          <a class="book-now-btn hidden-xs hidden-sm" data-toggle="modal" data-target="#book-now-modal"></a>
+          <!-- <a class="book-now-btn visible-xs visible-sm" href="tel:+16173599298"></a> -->
+          <a class="book-now-btn" data-toggle="modal" data-target="#book-now-modal"></a>
         </div>
       </div>
       <!-- Call to Action end -->
@@ -346,6 +346,8 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            
             <h3 class="text-center">Book a tour!</h3>
 
             <form class="form-horizontal" id="book-now-form">
