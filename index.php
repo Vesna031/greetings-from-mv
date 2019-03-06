@@ -54,11 +54,14 @@
               <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
               <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
               <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="mailto:hello@toursmv.com" target="_blank" class="glyphicon glyphicon-envelope"></a></li>
-              <li><a href="tel:+16173599298" class="glyphicon glyphicon-earphone"></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  CONTACT <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="mailto:hello@toursmv.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span> EMAIL</a></li>
+                  <li><a href="tel:+16173599298"><span class="glyphicon glyphicon-earphone"></span> PHONE</a></li>
+                </ul>
             </ul>
           </div><!-- /.navbar-collapse -->
         <!-- </div>/.container-fluid -->
