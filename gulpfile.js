@@ -12,7 +12,7 @@ var gulp   = require('gulp'),
     connect = require('gulp-connect-php');
 
 gulp.task('wiredep', function() {
-  gulp.src('index.php')
+  gulp.src('*.php')
     .pipe(wiredep({
       overrides: {
         'bootstrap-daterangepicker': {
