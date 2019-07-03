@@ -49,6 +49,18 @@
 
             <p>Don&rsquo;t hesitate to call us anytime at <a href="tel:+16173599298">(617) 359-9298</a> for answers to questions or to book a tour.  Join us on a tour that will make your visit to our island memorable, and see much more than we can put into words here!</p>
 
+            <p>Standard tours last 4 hours and leave at 10:30 a.m. or 3:30 p.m.  Pricing is as follows:</p>
+
+            <ul>
+              <li>$80 per hour for up to 4 people (or $80 per person for a standard tour)</li>
+              <li>For each additional person over 4, the price increases by $10 per hour.</li>
+              <li>So a 5-person tour costs $90 per hour (or $72 per person for a standard tour), a 6-person tour costs $100 per hour (which would be $66 per person for a standard tour), etc.</li>
+            </ul>
+
+            <p>For a customized tour, you can email us at <a target="_blank" href="mailto:hello@toursmv.com?subject=I'd like to book a custom tour">hello@toursmv.com</a>.</p>
+
+            <p>We pick up customers and drop off friends.</p>
+
             <div class="text-center">
               <a class="btn btn-primary" href="/index.php">Back to site</a>
             </div>

@@ -33,45 +33,40 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-default">
-        <!-- <div class="container-fluid"> -->
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gfmv-navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-word">MENU</span>
-            </button>
-            <a class="navbar-brand" href="#hero"><img class="img-responsive brand" src="images/navigation/nav-logo.png" alt="Home"></a>
-          </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gfmv-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-word">MENU</span>
+          </button>
+          <a class="navbar-brand" href="#hero"><img class="img-responsive brand" src="images/navigation/nav-logo.png" alt="Home"></a>
+        </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="gfmv-navbar">
-            <ul class="nav navbar-nav">
-              <!-- <li class="active"><a class="ubuntu-font" href="#hero">HOME</a></li> -->
-              <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li>
-              <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
-              <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
-              <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  CONTACT <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="mailto:hello@toursmv.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span> EMAIL</a></li>
-                  <li><a href="tel:+16173599298"><span class="glyphicon glyphicon-earphone"></span> PHONE</a></li>
-                </ul>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        <!-- </div>/.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="gfmv-navbar">
+          <ul class="nav navbar-nav">
+            <li><a class="ubuntu-font" href="#reviews">REVIEWS</a></li>
+            <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
+            <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
+            <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                CONTACT <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="mailto:hello@toursmv.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span> EMAIL</a></li>
+                <li><a href="tel:+16173599298"><span class="glyphicon glyphicon-earphone"></span> PHONE</a></li>
+              </ul>
+          </ul>
+        </div>
       </nav>
 
       <!-- Hero start -->
       <div id="hero">
         <div id="hero-content">
-          <!-- <img class="img-responsive center-block visible-xlg" src="/images/hero_sizes/hero_38401.gif" alt="Greetings From Martha's Vineyard"> -->
-          <!-- <img class="img-responsive center-block visible-lg" src="/images/hero_sizes/hero_19202.gif" alt="Greetings From Martha's Vineyard"> -->
           <img class="img-responsive center-block visible-md visible-lg" src="/images/hero_sizes/hero_1200.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-sm" src="/images/hero_sizes/hero_992.gif" alt="Greetings From Martha's Vineyard">
           <img class="img-responsive center-block visible-xs" src="/images/hero_sizes/hero_768.gif" alt="Greetings From Martha's Vineyard">
@@ -94,7 +89,7 @@
 
           <p>Finally, we&rsquo;ll have a picnic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, with a complimentary bottle of wine!</p>
 
-          <p class="no-indent">Wish you were here!</p>
+          <p class="no-indent">We pick up customers and drop off friends.  Wish you were here!</p>
 
           <p class="text-right no-indent">Greeting From Martha&rsquo;s Vineyard Tours</p>
 
@@ -108,10 +103,8 @@
 
       <!-- Call to Action start -->
       <div id="call-to-action">
-        <!-- <img src="images/call-to-action/toursmv-polaroid-van.gif" class="img-responsive"> -->
 
         <div class="text-center">
-          <!-- <a class="book-now-btn visible-xs visible-sm" href="tel:+16173599298"></a> -->
           <a class="book-now-btn" data-toggle="modal" data-target="#book-now-modal"></a>
         </div>
       </div>
@@ -119,36 +112,34 @@
 
       <!-- Reviews start -->
       <div id="reviews">
-        <!-- <div class="container"> -->
-          <div class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
-              <img class="img-responsive center-block" id="yelp-burst" src="/images/reviews/Yelp_burst_positive_RGB.png">
-              <div id="yelp-reviews" class="reviews-slider"></div>
-            </div>
-
-            <div class="col-xs-12 col-md-4 text-center">
-              <div id="TA_selfserveprop861" class="TA_selfserveprop">
-                <ul id="4w7P0rQ9UDqb" class="TA_links W2URLNsLC6mi">
-                  <li id="YDWpEkckfxgu" class="MsGeTAwfn4q">
-                    <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
-                  </li>
-                </ul>
-              </div>
-              
-              <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=861&amp;locationId=13221005&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=false&amp;display_version=2"></script>
-              
-              <!-- <img class="img-responsive center-block" id="facebook-f" src="/images/reviews/FB-f-Logo__blue_144.png">
-               <div id="facebook-reviews" class="reviews-slider"></div> -->
-            </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <img class="img-responsive center-block" id="yelp-burst" src="/images/reviews/Yelp_burst_positive_RGB.png">
+            <div id="yelp-reviews" class="reviews-slider"></div>
           </div>
 
-          <div id="reviews-loader">
-            <div style="width:100%;height:100%" class="lds-ripple">
-              <div></div>
-              <div></div>
+          <div class="col-xs-12 col-md-4 text-center">
+            <div id="TA_selfserveprop861" class="TA_selfserveprop">
+              <ul id="4w7P0rQ9UDqb" class="TA_links W2URLNsLC6mi">
+                <li id="YDWpEkckfxgu" class="MsGeTAwfn4q">
+                  <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                </li>
+              </ul>
             </div>
+            
+            <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=861&amp;locationId=13221005&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=false&amp;display_version=2"></script>
+            
+            <!-- <img class="img-responsive center-block" id="facebook-f" src="/images/reviews/FB-f-Logo__blue_144.png">
+              <div id="facebook-reviews" class="reviews-slider"></div> -->
           </div>
-        <!-- </div> -->
+        </div>
+
+        <div id="reviews-loader">
+          <div style="width:100%;height:100%" class="lds-ripple">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </div>
       <!-- Reviews end -->
 
@@ -259,9 +250,7 @@
                 </div>
               </div> 
             </div>
-          <!-- </div>
 
-          <div class="row"> -->
             <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
@@ -287,9 +276,7 @@
                 </div> 
               </div>
             </div>
-          <!-- </div>
-
-          <div class="row"> -->
+            
             <div class="col-xs-12 col-sm-6 col-md-4"> 
               <div class="card">
                 <div class="front"> 
@@ -350,6 +337,18 @@
             
             <h3 class="text-center">Book a tour!</h3>
 
+            <p>Standard tours last 4 hours and leave at 10:30 a.m. or 3:30 p.m.  Pricing is as follows:</p>
+
+            <ul>
+              <li>$80 per hour for up to 4 people (or $80 per person for a standard tour)</li>
+              <li>For each additional person over 4, the price increases by $10 per hour.</li>
+              <li>So a 5-person tour costs $90 per hour (or $72 per person for a standard tour), a 6-person tour costs $100 per hour (which would be $66 per person for a standard tour), etc.</li>
+            </ul>
+
+            <p>For a customized tour, you can email us at <a target="_blank" href="mailto:hello@toursmv.com?subject=I'd like to book a custom tour">hello@toursmv.com</a>.</p>
+
+            <br>
+
             <form class="form-horizontal" id="book-now-form">
               <div class="col-xs-12">
                 <div class="alert alert-warning" role="alert" style="display:none;" id="please-wait">
@@ -372,14 +371,8 @@
                   <strong>Oh no!</strong> Something went wrong! Let us know by emailing us <a href="mailto:hello@toursmv.com?subject=Book a Tour&body=Hi Craig!%0D%0A%0D%0AWe'd like to book a [4-hour|2-hour] tour of Martha's Vineyard with you!%0D%0A%0D%0AThere are [number of people] of us and we are arriving on the [your arrival date] and staying until the [your departure date].%0D%0A%0D%0ASee you soon!%0D%0A%0D%0A~[Your name]%0D%0A%0D%0AThis email was sent via a mail client because of an error on the website." target="_blank">here</a>.
                 </div>
               </div>
-              <!-- <div class="form-group">
-                <label for="email" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-6">
-                  <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-              </div> -->
+              
               <div class="form-group">
-                <!-- <label for="firstname" class="col-sm-2 control-label">First Name</label> -->
                 <div class="col-sm-4">
                   <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required>
                 </div>
@@ -401,24 +394,7 @@
                   <input type="number" name="guests" class="form-control" id="guests" placeholder="0" min="1" required>
                 </div>
               </div>
-              <!-- <div class="form-group">
-                <label for="lastname" class="col-sm-2 control-label">Last Name</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                </div>
-              </div> -->
               <div class="form-group">
-                <!-- <div class="col-sm-6 text-center">
-                  <label class="radio-inline">
-                    <input type="radio" name="tourlength" class="tourlength" value="fourhour" required>
-                    4-hour tour
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="tourlength" class="tourlength" value="twohour" required>
-                    2-hour tour
-                  </label>
-                </div> -->
-
                 <div class="col-sm-3">
                   <label for="town" class="control-label">Pick-up location</label>
                 </div>
@@ -432,7 +408,6 @@
                     <option>Chilmark</option>
                   </select>
                 </div>
-                <!-- <label for="specific-location" class="col-sm-2 control-label">Hotel/Address</label> -->
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="address" name="address" placeholder="Hotel name or street address">
                 </div>
@@ -444,11 +419,8 @@
                 <div class="col-sm-3">
                   <input type="daterange" name="staylength" id="staylength" value="" class="form-control" placeholder="Your stay" />
                 </div>
-              <!-- </div>
-              <div class="form-group"> -->
                 <div class="col-xs-6">
                   <div id="recaptcha"></div>
-                  <!-- <div class="g-recaptcha" data-sitekey="6LcEpZAUAAAAAO0E8Y1BTXNxBTqc98Sdw9E4UFlG"></div> -->
                 </div>
               </div>
               <div class="form-group">
@@ -456,9 +428,6 @@
                   <button class="btn btn-success" id="submit">Request your tour</button>
                   <button class="btn btn-secondary" data-dismiss="modal">Back to site</button>
                 </div>
-              </div>
-              <div class="form-group">
-                <span>Or you can email us at <a target="_blank" href="mailto:hello@toursmv.com">hello@toursmv.com</a></span>
               </div>
             </form>
           </div>
