@@ -154,15 +154,6 @@ ul.navbar-nav{
   .navbar-brand img {
     max-height: 5em;
   }
-
-  .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu {
-    background-color: #3B5663;
-  }
-
-  .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu > li a {
-    color: white;
-    font-size: 1.25em;
-  }
 }
 
 /*Large devices (desktops, 1200px and up)*/
@@ -172,5 +163,18 @@ ul.navbar-nav{
 @media screen and (max-width: 1999px){
   .navbar .navbar-nav {
     font-size: 20px;
+  }
+}
+
+/*Medium devices and up (992px and up)*/
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu {
+    background-color: #3B5663;
+    border-radius: 0;
+  }
+
+  .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu > li a {
+    color: white;
+    font-size: 1.25em;
   }
 }
