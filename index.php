@@ -408,7 +408,7 @@
                 </div>
               </div> -->
               <div class="form-group">
-                <div class="col-sm-6 text-center">
+                <!-- <div class="col-sm-6 text-center">
                   <label class="radio-inline">
                     <input type="radio" name="tourlength" class="tourlength" value="fourhour" required>
                     4-hour tour
@@ -417,7 +417,7 @@
                     <input type="radio" name="tourlength" class="tourlength" value="twohour" required>
                     2-hour tour
                   </label>
-                </div>
+                </div> -->
 
                 <div class="col-sm-3">
                   <label for="town" class="control-label">Pick-up location</label>
@@ -432,27 +432,27 @@
                     <option>Chilmark</option>
                   </select>
                 </div>
-              </div>
-              <div class="form-group">
                 <!-- <label for="specific-location" class="col-sm-2 control-label">Hotel/Address</label> -->
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="address" name="address" placeholder="Hotel name or street address">
                 </div>
+              </div>
+              <div class="form-group">
                 <div class="col-sm-3">
                   <label for="staylength" class="control-label">Length of stay</label>
                 </div>
                 <div class="col-sm-3">
                   <input type="daterange" name="staylength" id="staylength" value="" class="form-control" placeholder="Your stay" />
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-xs-12">
+              <!-- </div>
+              <div class="form-group"> -->
+                <div class="col-xs-6">
                   <div id="recaptcha"></div>
                   <!-- <div class="g-recaptcha" data-sitekey="6LcEpZAUAAAAAO0E8Y1BTXNxBTqc98Sdw9E4UFlG"></div> -->
                 </div>
               </div>
               <div class="form-group">
-                <div class="text-center">
+                <div class="text-center col-xs-12">
                   <button class="btn btn-success" id="submit">Request your tour</button>
                   <button class="btn btn-secondary" data-dismiss="modal">Back to site</button>
                 </div>

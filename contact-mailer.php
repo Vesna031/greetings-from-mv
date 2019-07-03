@@ -11,13 +11,13 @@
   $subject = $_POST['firstname'] . ' would like to book a tour!';
 
   // Message
-  $tourlength = $_POST['tourlength'] == 'twohour' ? '2-hour' : '4-hour';
+  // $tourlength = $_POST['tourlength'] == 'twohour' ? '2-hour' : '4-hour';
   $guests = (int)$_POST['guests'] > 1 ? ['We\'d', 'There are ' . $_POST['guests'] . ' of us and we\'re', 'us'] : ['I\'d', 'It\'s just me and I\'m', 'me'];
   $pickup = $_POST['address'] . ' in ' . $_POST['town'];
 
   $message = 'Hi Craig!
 
-' . $guests[0] . ' like to book a ' . $tourlength . ' tour of Martha\'s Vineyard with you! You can reach me by phone at ' . $_POST['phone'] . '.
+' . $guests[0] . ' like to book a 4-hour tour of Martha\'s Vineyard with you! You can reach me by phone at ' . $_POST['phone'] . '.
 
 ' . $guests[1] . ' on the Vineyard ' . $_POST['staylength'] . '.  ' . $guests[0] . ' love it if you could pick ' . $guests[2] . ' up from ' . $pickup .'.
 

@@ -31,7 +31,7 @@
           <div class="col-xs-12">
             <h1 class="text-center">Tour Itinerary</h1>
 
-            <p>Choose between a 2- or 4-hour of the beautiful island of Martha&rsquo;s Vineyard.  You will experience the six very unique towns and all the carefully preserved space between:</p>
+            <p>Take 4-hour of the beautiful island of Martha&rsquo;s Vineyard.  You will experience the six very unique towns and all the carefully preserved space between:</p>
 
             <p>In <strong>Oak Bluffs</strong>, we&rsquo;ll walk among the story-book gingerbread cottages and see the oldest carousel in America, where if you grab the brass ring, you get a free ride!  We&rsquo;ll stroll along the lively little harbor or meander through Ocean Park.</p>
 
@@ -64,7 +64,7 @@
     </div>
 
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
