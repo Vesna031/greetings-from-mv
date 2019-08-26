@@ -31,35 +31,36 @@
           <div class="col-xs-12">
             <h1 class="text-center">Tour Itinerary</h1>
 
-            <p>Take 4-hour of the beautiful island of Martha&rsquo;s Vineyard.  You will experience the six very unique towns and all the carefully preserved space between:</p>
+            <p>Take our 4-hour of the beautiful island of Martha&rsquo;s Vineyard.  This is the minimum time you will want to spend to see our 100 sq. mile island. We will experience six diverse towns and explore unique places. By the end of our journey, we will have traveled 60 miles and it goes by fast.</p>
 
-            <p>In <strong>Oak Bluffs</strong>, we&rsquo;ll walk among the story-book gingerbread cottages and see the oldest carousel in America, where if you grab the brass ring, you get a free ride!  We&rsquo;ll stroll along the lively little harbor or meander through Ocean Park.</p>
+            <p>Touring this special place is made even better with convenient pick-up service from wherever you stay in our comfortable and air-conditioned vans.</p>
+
+            <p>In <strong>Oak Bluffs</strong>, we&rsquo;ll walk among the story-book gingerbread cottages and see the oldest carousel in America, where if you grab the brass ring, you get a free ride! We&rsquo;ll stroll along the lively little harbor or meander through Ocean Park.</p>
 
             <p><strong>Vineyard Haven</strong> is a quaint New England shopping village where you can go for a sunset sail on a large schooner.  Wander up and down Main Street, which is filled with cute shops and restaurants.</p>
             
-            <p><strong>West Tisbury</strong> is home to the oldest store on-island; Alley&rsquo;s General Store, which first opened in 1858.  We&rsquo;ll pick up some fresh fruit in the farm stand out back to snack on as we peruse the art at the Field Gallery across the road.</p>
+            <p><strong>West Tisbury</strong> is home to the oldest store on-island; Alley&rsquo;s General Store, which first opened in 1858. We&rsquo;ll pick up some fresh fruit in the farm stand out back to snack on as we peruse the art at the Field Gallery across the road.</p>
             
             <p><strong>Edgartown</strong> is surreal, with a harbor and waterfront edged by stately white Greek Revival houses built by whaling captains.  The Old Whaling Church stands tall thanks to six massive columns, and along with the Edgartown Harbor Lighthouse and the historic Harborview Hotel, Edgartown really belongs in a museum!</p>
 
-            <p>Onwards to <strong>Menemsha</strong>, we drive past rolling hills that run to the sea, dotted with sheep and horses and framed by the miles of British-style stone walls.  A stop at Chilmark Chocolates is a must, but don&rsquo;t spoil your appetite until we have our seafood picnic on the docks.  We&rsquo;ll provide you with a complimentary bottle of wine that works well with a hot lobster roll, fresh fish, or the best oysters ever! We also offer a sunset tour, where we wine and dine while watching the sunset into the ocean, followed by boat horns and the applause of the appreciative on-lookers.</p>
+            <p>Onwards to <strong>Menemsha</strong>, we drive past rolling hills that run to the sea, dotted with sheep and horses and framed by the miles of British-style stone walls. A stop at Chilmark Chocolates is a must, but don&rsquo;t spoil your appetite until we have our seafood picnic on the docks. We&rsquo;ll provide you with a complimentary bottle of wine that works well with a hot lobster roll, fresh fish, or the best oysters ever! We also offer a sunset tour, where we wine and dine while watching the sunset into the ocean, followed by boat horns and the applause of the appreciative on-lookers.</p>
             
-            <p>In <strong>Aquinnah</strong>, the end of the island, witness our magnificent colorful clay cliffs.   Look down on the spectacular beaches and scour the horizon for the Elizabeth Islands off in the distance. Visit the unique shops owned by the Wampanoag tribe to purchase a piece of wampum jewelry.  If you&rsquo;re feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn&rsquo;t fall into the sea!</p>
+            <p>In <strong>Aquinnah</strong>, the end of the island, witness our magnificent colorful clay cliffs. Look down on the spectacular beaches and scour the horizon for the Elizabeth Islands off in the distance. Visit the unique shops owned by the Wampanoag tribe to purchase a piece of wampum jewelry. If you&rsquo;re feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn&rsquo;t fall into the sea!</p>
 
             <p>Touring this special place is made even better with convenient pick-up service from wherever you stay and new and air-conditioned vans.</p>
 
-            <p>Don&rsquo;t hesitate to call us anytime at <a href="tel:+16173599298">(617) 359-9298</a> for answers to questions or to book a tour.  Join us on a tour that will make your visit to our island memorable, and see much more than we can put into words here!</p>
+            <p>Don&rsquo;t hesitate to call us anytime at <a href="tel:+16173599298">(617) 359-9298</a> for answers to questions and to book your tour. Join us on a tour that will make your visit to our island memorable, and see much more than we can put into words here!</p>
 
-            <p>Standard tours last 4 hours and leave at 10:30 a.m. or 3:30 p.m.  Pricing is as follows:</p>
+            <p>Our tours last 4+ hours. We pick you up from you Island location whether a ferry, hotel or a rental home and that&rsquo;s when we begin your tour. We have a morning, afternoon, and a sunset tour. Pricing is as follows:</p>
 
             <ul>
-              <li>$80 per hour for up to 4 people (or $80 per person for a standard tour)</li>
-              <li>For each additional person over 4, the price increases by $10 per hour.</li>
-              <li>So a 5-person tour costs $90 per hour (or $72 per person for a standard tour), a 6-person tour costs $100 per hour (which would be $66 per person for a standard tour), etc.</li>
+              <li>$80 per hour for up to 4 people.</li>
+              <li>Only $10 more for each additional person per hour.</li>
             </ul>
 
-            <p>For a customized tour, you can email us at <a target="_blank" href="mailto:hello@toursmv.com?subject=I'd like to book a custom tour">hello@toursmv.com</a>.</p>
+            <p>For all of our tours, you can email us at <a href="mailto:hello@toursmv.com" target="_blank">hello@toursmv.com</a>.</p>
 
-            <p>We pick up customers and drop off friends.</p>
+            <p>&ldquo;We pick up customers and drop off friends.&rdquo;</p>
 
             <div class="text-center">
               <a class="btn btn-primary" href="/index.php">Back to site</a>

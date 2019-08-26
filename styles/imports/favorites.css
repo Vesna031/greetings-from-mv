@@ -1,0 +1,75 @@
+#favorites {
+  position: relative;
+  font-size: 1.3em;
+}
+
+#favorites a:hover,
+#favorites a:focus,
+#favorites a:active {
+  text-decoration: none;
+}
+
+#favorites a {
+  cursor: pointer;
+}
+
+#favorites p.no-indent {
+  text-indent: 0;
+}
+
+#favorites .btn {
+  font-family: "Ubuntu";
+  text-indent: 0;
+}
+
+#favorites .container {
+  background-color: #f8f6e8;
+  border-radius: 5px;
+  margin: 15px auto;
+  padding: 30px;
+}
+
+#favorites .panel {
+  background: transparent;
+}
+
+#favorites .panel .panel-heading {
+  padding-top: 75%;
+  overflow: hidden;
+  content: "";
+  position: relative;
+}
+
+#favorites .panel .panel-heading .panel-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#favorites a .panel .panel-heading .panel-image,
+#favorites a .panel .panel-body {
+  transition: transform 0.3s;
+}
+
+#favorites a:hover .panel .panel-heading .panel-image,
+#favorites a:hover .panel .panel-body {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  #favorites .col-xs-12 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #favorites {
+    font-size: .9em;
+  }
+}

@@ -8,7 +8,7 @@
 
     <title>Greetings From Martha's Vineyard</title>
 
-    <link href="styles/main.min.css" rel="stylesheet">
+    <link href="styles/main.min.css?v=82619" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Ubuntu:300,400" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -52,6 +52,7 @@
             <li><a class="ubuntu-font" href="#info-map">MAP</a></li>
             <li><a class="ubuntu-font" href="#pro-gallery">GALLERY</a></li>
             <li><a class="ubuntu-font" href="#about-contact">ABOUT</a></li>
+            <li><a class="ubuntu-font" href="/favorites.php">OUR FAVORITES</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 CONTACT <span class="caret"></span>
@@ -60,6 +61,7 @@
                 <li><a href="mailto:hello@toursmv.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span> EMAIL</a></li>
                 <li><a href="tel:+16173599298"><span class="glyphicon glyphicon-earphone"></span> PHONE</a></li>
               </ul>
+            </li>
           </ul>
         </div>
       </nav>
