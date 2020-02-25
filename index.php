@@ -11,12 +11,14 @@
     <link href="styles/main.min.css?v=82619" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Ubuntu:300,400" rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=xQOpQNXb5R">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=xQOpQNXb5R">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=xQOpQNXb5R">
+    <link rel="manifest" href="/site.webmanifest?v=xQOpQNXb5R">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=xQOpQNXb5R" color="#000000">
+    <link rel="shortcut icon" href="/favicon.ico?v=xQOpQNXb5R">
+    <meta name="msapplication-TileColor" content="#f7f6e2">
+    <meta name="theme-color" content="#f7f6e2">
 
     <meta name="google-site-verification" content="auSsGHIB_jSI3NTgTCqn-31N7dmsTUD73dglvdGdmrA" />
 
@@ -314,9 +316,8 @@
     <div id="instagram-posts">
       <h2><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">Follow us on Instagram</a></h2>
       <h3 class="hidden-xs visible-sm"><a target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/">@greetingsfrommarthasvineyard</a></h3>
-      <!-- LightWidget WIDGET -->
-      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-      <iframe src="//lightwidget.com/widgets/7725f972541850e980d9e7fa0001edc6.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c8a6ae9e392d5f9382c589c3bf97c081.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
     </div>
     <!-- Facebook Posts end -->
 

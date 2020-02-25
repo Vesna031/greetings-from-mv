@@ -47,14 +47,15 @@ See you soon!
     // PHPMailer setup
     $mail = new PHPMailer(true);
     $mail->SMTPDebug = 3;
-    $mail->isSMTP();
-    $mail->Host = 'toursmv.com';
+    // $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'tls';
+    // $mail->SMTPSecure = 'ssl';
     $mail->CharSet ='UTF-8';
     $mail->Username = 'contact@toursmv.com';
     $mail->Password = '9}&?qA3nCE7CX';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 25;
+    $mail->Port = 465;
     $mail->setFrom($_POST['email'], $_POST['firstname'] . ' ' . $_POST['lastname']);
     $mail->addAddress('hello@toursmv.com', 'Craig MacCormack');
     // $mail->addAddress('david@artlyticalmedia.com', 'David Rhoderick');
