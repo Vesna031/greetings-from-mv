@@ -5,6 +5,6 @@
         "facebook/graph-sdk": "^5.5",
         "cosenary/instagram": "^2.3",
         "stevenmaguire/oauth2-yelp": "^0.1.0",
-        "phpmailer/phpmailer": "^5.2"
+        "phpmailer/phpmailer": "^6.1"
     }
 }
