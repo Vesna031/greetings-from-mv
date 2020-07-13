@@ -7,14 +7,18 @@ import {
 } from 'react-router-dom'
 import {Global, css} from '@emotion/core'
 
+import woodBg from './images/backgrounds/resources-background.gif'
+
 import Header from './components/header'
+
+import Home from './pages/home'
 
 const App = () => {
   return (
     <Router>
       <Global styles={css`
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-        
+
         * {
           box-sizing: border-box;
           margin: 0;
@@ -24,6 +28,10 @@ const App = () => {
         img {
           max-width: 100%;
           display: block;
+        }
+
+        body {
+          background-image: url(${woodBg});
         }
       `} />
 
@@ -40,7 +48,7 @@ const App = () => {
           <div>Our Favorites</div>
         </Route>
         <Route path="/">
-          <div>Home</div>
+          <Home />
         </Route>
       </Switch>
     </Router>

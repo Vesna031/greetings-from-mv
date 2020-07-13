@@ -41,12 +41,11 @@ const Header = () => {
       position: 'absolute',
       width: '2.15rem',
       height: '1.85rem',
-      right: '1.625rem',
-      top: '1.625rem'
+      right: '2.5rem',
+      top: '2.5rem'
     },
     bmBurgerBars: {
       background: '#394a59',
-      borderRadius: '1rem',
       height: '15%'
     },
     bmCrossButton: {
@@ -77,7 +76,7 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <StyledHeader>
       <HeaderContent>
         <a href="#hero">{ logo ? <img src={logo} alt="Greeting's from Martha's Vineyard Tours"/> : <h1>Greeting's from Martha's Vineyard Tours</h1> }</a>
 
@@ -91,22 +90,35 @@ const Header = () => {
           </Menu>
         </MobileNavigation>
       </HeaderContent>
-    </header>
+    </StyledHeader>
   )
 }
 
 export default Header
 
+const StyledHeader = styled.header`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+`
+
 const HeaderContent = styled(Content)`
   padding: .5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   img {
     max-height: 5rem;
+
+    @media screen and (max-width: 992px) {
+      max-height: 4rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     justify-content: space-between;
   }
 `
