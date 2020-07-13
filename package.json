@@ -1,36 +1,34 @@
 {
-  "name": "greetings-from-mv",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://davidrhoderick@github.com/Vesna031/greetings-from-mv.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vesna031/greetings-from-mv/issues"
-  },
-  "homepage": "https://github.com/Vesna031/greetings-from-mv#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.5.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect-php": "^1.0.1",
-    "gulp-jshint": "^2.0.4",
-    "gulp-minify": "^1.0.0",
-    "gulp-watch": "^4.3.11",
-    "gulp-wiredep": "^1.2.0",
-    "jshint": "^2.9.5",
-    "jshint-stylish": "^2.2.1"
-  },
+  "name": "base-react-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "gulp-sourcemaps": "^2.6.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
