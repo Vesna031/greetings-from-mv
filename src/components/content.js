@@ -10,7 +10,7 @@ const Content = ({children, className}) => (
 export default Content
 
 const ContentContainer = styled.div`
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 3rem 1rem;
 

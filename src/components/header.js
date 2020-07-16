@@ -78,7 +78,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <HeaderContent>
-        <a href="#hero">{ logo ? <img src={logo} alt="Greeting's from Martha's Vineyard Tours"/> : <h1>Greeting's from Martha's Vineyard Tours</h1> }</a>
+        <NavbarBrand href="#hero">{ logo ? <img src={logo} alt="Greeting's from Martha's Vineyard Tours"/> : <h1>Greeting's from Martha's Vineyard Tours</h1> }</NavbarBrand>
 
         <DesktopNavigation>
           <Navigation />
@@ -106,10 +106,22 @@ const StyledHeader = styled.header`
 const HeaderContent = styled(Content)`
   padding: .5rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
+`
+
+const NavbarBrand = styled.a`
+  margin-left: -40px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
 
   img {
-    max-height: 5rem;
+    max-height: 10rem;
 
     @media screen and (max-width: 992px) {
       max-height: 4rem;
@@ -117,19 +129,17 @@ const HeaderContent = styled(Content)`
       margin-left: 1rem;
     }
   }
-
-  @media screen and (max-width: 768px) {
-    justify-content: space-between;
-  }
 `
 
 const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 40px -10px 40px 40px;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    margin: 0;
   }
 
   > * {
@@ -141,7 +151,7 @@ const StyledNav = styled.nav`
     background: transparent;
     border: none;
     font-size: 20px;
-    padding: 15px 10px;
+    padding: 15px 20px;
 
     &:hover, &:focus {
       color: #333;
