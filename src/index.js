@@ -18,6 +18,7 @@ const App = () => {
     <Router>
       <Global styles={css`
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
         * {
           box-sizing: border-box;
@@ -32,6 +33,7 @@ const App = () => {
 
         body {
           background-image: url(${woodBg});
+          line-height: 1.42857143;
         }
       `} />
 
