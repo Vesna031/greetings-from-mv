@@ -92,6 +92,7 @@ const GalleryContent = styled(Content)`
   display: flex;
   flex-wrap: wrap;
   transform: rotate(-2deg);
+  margin-bottom: -100px;
 `
 
 const ViewGalleryButton = styled.button`
