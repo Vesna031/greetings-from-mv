@@ -175,4 +175,6 @@ const GreenButton = styled.a`
   border-radius: 4px;
   user-select: none;
   text-decoration: none;
+
+  font-family: 'Ubuntu', sans-serif;
 `
