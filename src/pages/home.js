@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import Hero from './home/hero'
 import About from './home/about'
 import BookNow from './home/book-now'
-// import Reviews from './home/reviews'
+import Reviews from './home/reviews'
 import Gallery from './home/gallery'
 import Map from './home/map'
 
@@ -13,7 +13,7 @@ const Home = () => (
     <Hero />
     <About />
     <BookNow />
-    {/* <Reviews /> */}
+    <Reviews />
     <Gallery />
     <Map />
   </HomeContainer>
