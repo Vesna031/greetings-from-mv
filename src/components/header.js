@@ -108,7 +108,7 @@ const HeaderContent = styled(Content)`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 795px) {
     justify-content: space-between;
   }
 `
@@ -116,17 +116,19 @@ const HeaderContent = styled(Content)`
 const NavbarBrand = styled.a`
   margin-left: -40px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 795px) {
     margin-left: 0;
   }
 
   img {
     max-height: 10rem;
 
-    @media screen and (max-width: 992px) {
-      max-height: 4rem;
-      margin-top: 1rem;
-      margin-left: 1rem;
+    @media screen and (max-width: 1020px) {
+      max-height: 6rem;
+    }
+
+    @media screen and (max-width: 920px) {
+      max-height: 5rem;
     }
   }
 `
@@ -136,8 +138,13 @@ const StyledNav = styled.nav`
   align-items: center;
   justify-content: space-around;
   margin: 40px -10px 40px 40px;
+  wrap: no-wrap;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 840px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 795px) {
     flex-direction: column;
     margin: 0;
   }
@@ -152,6 +159,10 @@ const StyledNav = styled.nav`
     border: none;
     font-size: 20px;
     padding: 15px 20px;
+
+    @media screen and (max-width: 920px) {
+      padding: 10px 15px;
+    }
 
     &:hover, &:focus {
       color: #333;
@@ -170,7 +181,7 @@ const StyledNav = styled.nav`
       background-size: 100%;
       background-size: contain;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 795px) {
         transform: rotate(90deg);
         left: 50%;
         top: 2rem;
@@ -182,7 +193,7 @@ const StyledNav = styled.nav`
 const MobileNavigation = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 795px) {
     display: block;
     position: absolute;
     top: 0;
@@ -193,7 +204,7 @@ const MobileNavigation = styled.div`
 `
 
 const DesktopNavigation = styled.div`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 795px) {
     display: none;
   }
 `
@@ -226,7 +237,7 @@ const StyledDropdownContainer = styled.button`
     ${dropdownCaret}
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 795px) {
     &:after {
       display: none;
     }
@@ -248,7 +259,7 @@ const Dropdown = styled.div`
   flex-direction: column;
   background: #3b5663;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 795px) {
     display: flex;
     padding: 0;
     overflow: hidden;
@@ -267,7 +278,7 @@ const Dropdown = styled.div`
     text-decoration: none;
     color: #fcf8e3;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 795px) {
       color: #3b5663;
     }
   }
