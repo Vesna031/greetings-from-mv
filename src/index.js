@@ -10,8 +10,10 @@ import {Global, css} from '@emotion/core'
 import woodBg from './images/backgrounds/resources-background.gif'
 
 import Header from './components/header'
+import Footer from './components/footer'
 
 import Home from './pages/home'
+import PrivacyPolicy from './pages/privacy-policy'
 
 const App = () => {
   return (
@@ -37,14 +39,12 @@ const App = () => {
         }
       `} />
 
-      <Header />
-
       <Switch>
         <Route path="/itinerary">
           <div>Itinerary</div>
         </Route>
         <Route path="/privacy-policy">
-          <div>Privacy Policy</div>
+          <PrivacyPolicy />
         </Route>
         <Route path="/our-favorites">
           <div>Our Favorites</div>
@@ -53,6 +53,8 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
+
+      <Footer />
     </Router>
   )
 }
