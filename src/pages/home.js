@@ -6,6 +6,7 @@ import About from './home/about'
 import BookNow from './home/book-now'
 // import Reviews from './home/reviews'
 import Gallery from './home/gallery'
+import Map from './home/map'
 
 const Home = () => (
   <HomeContainer>
@@ -14,6 +15,7 @@ const Home = () => (
     <BookNow />
     {/* <Reviews /> */}
     <Gallery />
+    <Map />
   </HomeContainer>
 )
 
