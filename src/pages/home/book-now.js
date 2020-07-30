@@ -8,7 +8,7 @@ import bookNowSprite from '../../images/buttons/book-now-sprite.gif'
 const BookNow = () => {
   return(
     <BookNowContent>
-      <BookNowButton onClick={() => console.log('Book Now!')} />
+      <BookNowButton href="https://fareharbor.com/embeds/book/greetingsfrommarthasvineyard/?full-items=yes" />
     </BookNowContent>
   )
 }
@@ -21,7 +21,7 @@ const BookNowContent = styled(Content)`
   padding: 0 1rem;
 `
 
-const BookNowButton = styled.button`
+const BookNowButton = styled.a`
   border: none;
   outline: none;
   cursor: pointer;
