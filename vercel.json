@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/index.php", "destination": "/" },
+    { "source": "/favorites.php", "destination": "/favorites" },
+    { "source": "/privacypolicy.html", "destination": "/privacy-policy" },
+    { "source": "/itinerary.php", "destination": "/itinerary" }
+  ]
+}
