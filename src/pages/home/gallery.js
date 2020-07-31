@@ -48,7 +48,7 @@ const Gallery = () => {
       width: '100vw',
       overflow: 'hidden',
       inset: '0px',
-      paddingTop: '50px'
+      padding: '50px'
     }
   }
 
