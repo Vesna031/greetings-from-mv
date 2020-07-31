@@ -11,9 +11,7 @@ const Hero = () => (
   <div id="hero">
     <HeroContent>
       <div id="hero-content">
-        <LargeImage src={Hero1200} alt="Greetings From Martha's Vineyard" />
-        <MediumImage src={Hero992} alt="Greetings From Martha's Vineyard" />
-        <SmallImage src={Hero768} alt="Greetings From Martha's Vineyard" />
+        <img src={Hero768} srcSet={`${Hero992} 768w, ${Hero1200} 992w`} alt="Greetings From Martha's Vineyard" />
       </div>
     </HeroContent>
   </div>
@@ -23,28 +21,4 @@ export default Hero
 
 const HeroContent = styled(Content)`
   padding-top: 0;
-`
-
-const LargeImage = styled.img`
-  display: none;
-
-  @media screen and (min-width: 992px) {
-    display: block;
-  }
-`
-
-const MediumImage = styled.img`
-  display: none;
-
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    display: block;
-  }
-`
-
-const SmallImage = styled.img`
-  display: none;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
 `
