@@ -9161,6 +9161,11 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-scroll-to-top@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-scroll-to-top/-/react-scroll-to-top-1.0.5.tgz#7a048c1ab0b038dda237cfb6155e1cdf0ae50e4d"
+  integrity sha512-e7n5LJXpUG9/gnHMHqrGY2UBebpqVaPpAnF4kLuR/e+SRtAGr+4UStvGsCiv6XBOC+dRyTe7ZbjdV9FaPdgUfg==
+
 react-slideshow-image@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/react-slideshow-image/-/react-slideshow-image-3.0.2.tgz#784c439c3b679f5bf6e27eb396b06c3c8b5903e4"
