@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import {Global, css} from '@emotion/core'
 
-import woodBg from './images/backgrounds/resources-background.gif'
+import woodBg from './images/backgrounds/resources-background.png'
 
 import Footer from './components/footer'
 

@@ -4,12 +4,12 @@ import ReactCardFlip from 'react-card-flip'
 
 import Content from '../../components/content'
 
-import oakBluffs from '../../images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.gif'
-import edgartown from '../../images/map_sizes/toursmv-mobile-map-edgartown-lores.gif'
+import oakBluffs from '../../images/map_sizes/toursmv-mobile-map-oak-bluffs-lores.png'
+import edgartown from '../../images/map_sizes/toursmv-mobile-map-edgartown-lores.png'
 import menemsha from '../../images/map_sizes/toursmv-mobile-map-menemsha-lores.gif'
-import aquinnah from '../../images/map_sizes/toursmv-mobile-map-aquinnah-lores.gif'
-import vineyardHaven from '../../images/map_sizes/toursmv-mobile-map-vineyard-haven-lores.gif'
-import westTisbury from '../../images/map_sizes/toursmv-mobile-map-west-tisbury-lores.gif'
+import aquinnah from '../../images/map_sizes/toursmv-mobile-map-aquinnah-lores.png'
+import vineyardHaven from '../../images/map_sizes/toursmv-mobile-map-vineyard-haven-lores.png'
+import westTisbury from '../../images/map_sizes/toursmv-mobile-map-west-tisbury-lores.png'
 
 const FlipCards = ({popups, className}) => {
   const flipCards = [{

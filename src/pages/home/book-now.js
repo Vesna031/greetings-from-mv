@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 import Content from '../../components/content'
 
-import bookNowSprite from '../../images/buttons/book-now-sprite.gif'
+import bookNowSprite from '../../images/buttons/book-now-sprite.png'
 
 const BookNow = () => {
   return(

@@ -7,12 +7,12 @@ import disableScroll from 'disable-scroll'
 
 import Content from '../../components/content'
 
-import viewGallerySprite from '../../images/buttons/view-gallery-sprite.gif'
+import viewGallerySprite from '../../images/buttons/view-gallery-sprite.png'
 
-import photoBoat from '../../images/pro-gallery/photo-boat.gif'
-import photoLighthouse from '../../images/pro-gallery/photo-lighthouse.gif'
-import photoMenemshaHarbor from '../../images/pro-gallery/photo-menemsha-harbor.gif'
-import photoSunset from '../../images/pro-gallery/photo-sunset.gif'
+import photoBoat from '../../images/pro-gallery/photo-boat.png'
+import photoLighthouse from '../../images/pro-gallery/photo-lighthouse.png'
+import photoMenemshaHarbor from '../../images/pro-gallery/photo-menemsha-harbor.png'
+import photoSunset from '../../images/pro-gallery/photo-sunset.png'
 
 Modal.setAppElement('#root')
 

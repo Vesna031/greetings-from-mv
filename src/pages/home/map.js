@@ -5,7 +5,7 @@ import Content from '../../components/content'
 
 import FlipCards from './flip-cards'
 
-import map from '../../images/map_sizes/map-1200-wcta.gif'
+import map from '../../images/map_sizes/map-1200-wcta.png'
 
 const Map = () => {
   const imageMapResize = require('image-map-resizer')

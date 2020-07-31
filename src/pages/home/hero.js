@@ -3,9 +3,9 @@ import styled from '@emotion/styled'
 
 import Content from '../../components/content'
 
-import Hero1200 from '../../images/hero_sizes/hero_1200.gif'
-import Hero992 from '../../images/hero_sizes/hero_992.gif'
-import Hero768 from '../../images/hero_sizes/hero_768.gif'
+import Hero1200 from '../../images/hero_sizes/hero_1200.png'
+import Hero992 from '../../images/hero_sizes/hero_992.png'
+import Hero768 from '../../images/hero_sizes/hero_768.png'
 
 const Hero = () => (
   <div id="hero">

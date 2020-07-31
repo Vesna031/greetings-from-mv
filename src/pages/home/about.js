@@ -3,8 +3,8 @@ import styled from '@emotion/styled'
 
 import Content from '../../components/content'
 
-import aboutBgMobile from '../../images/about-contact/about-postcard-768.gif'
-import aboutBgDesktop from '../../images/about-contact/about-postcard.gif'
+import aboutBgMobile from '../../images/about-contact/about-postcard-768.png'
+import aboutBgDesktop from '../../images/about-contact/about-postcard.png'
 
 const About = () => (
   <div id="about">
