@@ -31,7 +31,7 @@ const Itinerary = () => (
 
     <ul>
       <li>$80 per hour for up to 4 people.</li>
-      <li>Only $10 more for each additional person per hour.</li>
+      <li>Please contact us if there are more than 5 people in your group.</li>
     </ul>
 
     <p>For all of our tours, you can email us at <a href="mailto:hello@toursmv.com" target="_blank" rel="noopener noreferrer">hello@toursmv.com</a>.</p>

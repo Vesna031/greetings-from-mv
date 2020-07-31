@@ -8,7 +8,7 @@ import instagram from '../../images/instagram/IG_Glyph_Fill.png'
 
 const Instagram = () => (
   <InstagramContent>
-    <Heading>Check out our Instagram!</Heading>
+    <Heading>For more beautifuly photographs, follow us on Instagram!</Heading>
 
     <InstagramLink target="_blank" href="https://www.instagram.com/greetingsfrommarthasvineyard/" rel="noopener noreferrer"><img src={instagram} alt="Instagram" /></InstagramLink>
   </InstagramContent>
@@ -31,7 +31,7 @@ const Heading = styled.h2`
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
   color: #f0eccf;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 
   &:after {
