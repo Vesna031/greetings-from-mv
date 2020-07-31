@@ -19,6 +19,7 @@ const BookNowContent = styled(Content)`
   display: flex;
   justify-content: center;
   padding: 0 1rem;
+  margin-bottom: 3rem;
 `
 
 const BookNowButton = styled.a`
