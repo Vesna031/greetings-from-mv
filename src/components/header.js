@@ -19,7 +19,7 @@ const Navigation = () => {
       <a href="#map">Map</a>
       <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
-      <a href="#favorites">Our Favorites</a>
+      <a href="/favorites">Our Favorites</a>
       <StyledDropdownContainer
         onClick={(e) => {toggleDropdown(!dropdownShown)}}
         showDropdown={dropdownShown}

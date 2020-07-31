@@ -14,6 +14,7 @@ import Footer from './components/footer'
 import Home from './pages/home'
 import PrivacyPolicy from './pages/privacy-policy'
 import Itinerary from './pages/itinerary'
+import OurFavorites from './pages/our-favorites'
 
 const App = () => {
   return (
@@ -46,8 +47,8 @@ const App = () => {
         <Route path="/privacy-policy">
           <PrivacyPolicy />
         </Route>
-        <Route path="/our-favorites">
-          <div>Our Favorites</div>
+        <Route path="/favorites">
+          <OurFavorites />
         </Route>
         <Route path="/">
           <Home />
