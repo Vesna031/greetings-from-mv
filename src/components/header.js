@@ -78,7 +78,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <HeaderContent>
-        <NavbarBrand href="#hero">{ logo ? <img src={logo} alt="Greeting's from Martha's Vineyard Tours"/> : <h1>Greeting's from Martha's Vineyard Tours</h1> }</NavbarBrand>
+        <NavbarBrand>{ logo ? <img src={logo} alt="Greeting's from Martha's Vineyard Tours"/> : <h1>Greeting's from Martha's Vineyard Tours</h1> }</NavbarBrand>
 
         <DesktopNavigation>
           <Navigation />
@@ -113,7 +113,7 @@ const HeaderContent = styled(Content)`
   }
 `
 
-const NavbarBrand = styled.a`
+const NavbarBrand = styled.span`
   margin-left: -40px;
 
   @media screen and (max-width: 795px) {

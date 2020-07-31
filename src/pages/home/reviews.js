@@ -11,19 +11,21 @@ import facebook from '../../images/reviews/f_logo_RGB-Blue_250.png'
 import google from '../../images/reviews/google-icon.svg'
 
 const Reviews = () => (
-  <ReviewsContent>
-    <Heading>Check out our reviews!</Heading>
-    
-    <ReviewSites>
-      <ReviewSite href="https://www.tripadvisor.com/Attraction_Review-g41750-d13221005-Reviews-Greetings_from_Martha_s_Vineyard_Tours-Oak_Bluffs_Martha_s_Vineyard_Massachusetts.html?m=19905" target="_blank" rel="noopener noreferrer"><img src={tripadvisor} alt="TripAdvisor" /></ReviewSite>
+  <div id="reviews">
+    <ReviewsContent>
+      <Heading>Check out our reviews!</Heading>
+      
+      <ReviewSites>
+        <ReviewSite href="https://www.tripadvisor.com/Attraction_Review-g41750-d13221005-Reviews-Greetings_from_Martha_s_Vineyard_Tours-Oak_Bluffs_Martha_s_Vineyard_Massachusetts.html?m=19905" target="_blank" rel="noopener noreferrer"><img src={tripadvisor} alt="TripAdvisor" /></ReviewSite>
 
-      <ReviewSite href="https://www.yelp.com/biz/greetings-from-marthas-vineyard-tours-oak-bluffs?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="Yelp" /></ReviewSite>
+        <ReviewSite href="https://www.yelp.com/biz/greetings-from-marthas-vineyard-tours-oak-bluffs?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="Yelp" /></ReviewSite>
 
-      <ReviewSite href="https://www.facebook.com/greetings.from.mv.tours/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" /></ReviewSite>
+        <ReviewSite href="https://www.facebook.com/greetings.from.mv.tours/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" /></ReviewSite>
 
-      <ReviewSite href="https://g.page/marthas-vineyard-tours" target="_blank" rel="noopener noreferrer"><img src={google} alt="Google" /></ReviewSite>
-    </ReviewSites>
-  </ReviewsContent>
+        <ReviewSite href="https://g.page/marthas-vineyard-tours" target="_blank" rel="noopener noreferrer"><img src={google} alt="Google" /></ReviewSite>
+      </ReviewSites>
+    </ReviewsContent>
+  </div>
 )
 
 export default Reviews

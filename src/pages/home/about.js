@@ -6,12 +6,12 @@ import Content from '../../components/content'
 import aboutBgMobile from '../../images/about-contact/about-postcard-768.gif'
 import aboutBgDesktop from '../../images/about-contact/about-postcard.gif'
 
-const About = () => {
-  return (
-    <AboutContent id="about">
+const About = () => (
+  <div id="about">
+    <AboutContent>
       <DesktopBackground src={aboutBgDesktop} alt="About" />
 
-      <MobileBackground src={aboutBgMobile} id="mobile-about-contact-image" alt="About" />
+      <MobileBackground src={aboutBgMobile} alt="About" />
 
       <TextContainer>
         <NoIndentP>Hello friends,</NoIndentP>
@@ -33,8 +33,8 @@ const About = () => {
         </ViewItineraryContainer>
       </TextContainer>
     </AboutContent>
-  )
-}
+  </div>
+)
 
 export default About
 

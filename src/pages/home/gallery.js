@@ -53,35 +53,37 @@ const Gallery = () => {
   }
 
   return (
-    <GalleryContent>
-      <PostcardImage src={photoBoat} />
-      <PostcardImage src={photoLighthouse} />
-      <PostcardImage src={photoMenemshaHarbor} />
-      <PostcardImage src={photoSunset} />
+    <div id="gallery">
+      <GalleryContent>
+        <PostcardImage src={photoBoat} />
+        <PostcardImage src={photoLighthouse} />
+        <PostcardImage src={photoMenemshaHarbor} />
+        <PostcardImage src={photoSunset} />
 
-      <ViewGalleryButton onClick={openModal} />
+        <ViewGalleryButton onClick={openModal} />
 
-      <Modal
-          isOpen={galleryIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Photo Gallery"
-          style={modalStyles}
-        >
-          <ModalContent>
-            <Slide
-              autoplay={false}
-              transitionDuration={250}>
-              {photos.map((photo, index) => (
-                <SlideContainer key={index}>
-                  <SlideImage src={photo} alt={`Gallery slide #${index + 1}`} />
-                </SlideContainer>
-              ))}
-            </Slide>
+        <Modal
+            isOpen={galleryIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Photo Gallery"
+            style={modalStyles}
+          >
+            <ModalContent>
+              <Slide
+                autoplay={false}
+                transitionDuration={250}>
+                {photos.map((photo, index) => (
+                  <SlideContainer key={index}>
+                    <SlideImage src={photo} alt={`Gallery slide #${index + 1}`} />
+                  </SlideContainer>
+                ))}
+              </Slide>
 
-            <CloseButton onClick={closeModal} />
-          </ModalContent>
-        </Modal>
-    </GalleryContent>
+              <CloseButton onClick={closeModal} />
+            </ModalContent>
+          </Modal>
+      </GalleryContent>
+    </div>
   )
 }
 

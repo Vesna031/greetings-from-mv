@@ -54,31 +54,33 @@ const Map = () => {
     setPopupDisplay(false)
   }
 
-  return ( 
-    <Content>
-      <MapContainer>
-        <MapImage src={map} useMap="#mapiconslocations_1200" alt="Map of Martha's Vineyard" onClick={closePopup} />
+  return (
+    <div id="map">
+      <Content>
+        <MapContainer>
+          <MapImage src={map} useMap="#mapiconslocations_1200" alt="Map of Martha's Vineyard" onClick={closePopup} />
 
-        <map id="mapiconslocations_1200" name="mapiconslocations_1200">  
-          <area shape="circle" coords="857,158,75" alt="Oak Bluffs" onClick={() => showPopup('oakBluffs')} />
-          <area shape="circle" coords="961,385,75" alt="Edgartown" onClick={() => showPopup('edgartown')} />
-          <area shape="circle" coords="552,342,75" alt="West Tisbury" onClick={() => showPopup('westTisbury')} />
-          <area shape="circle" coords="90,558,75" alt="Aquinnah" onClick={() => showPopup('aquinnah')} />
-          <area shape="circle" coords="715,142,75" alt="Vineyard Haven" onClick={() => showPopup('vineyardHaven')} />
-          <area shape="circle" coords="264,483,75" alt="Menemsha" onClick={() => showPopup('menemsha')} />
-        </map>
+          <map id="mapiconslocations_1200" name="mapiconslocations_1200">  
+            <area shape="circle" coords="857,158,75" alt="Oak Bluffs" onClick={() => showPopup('oakBluffs')} />
+            <area shape="circle" coords="961,385,75" alt="Edgartown" onClick={() => showPopup('edgartown')} />
+            <area shape="circle" coords="552,342,75" alt="West Tisbury" onClick={() => showPopup('westTisbury')} />
+            <area shape="circle" coords="90,558,75" alt="Aquinnah" onClick={() => showPopup('aquinnah')} />
+            <area shape="circle" coords="715,142,75" alt="Vineyard Haven" onClick={() => showPopup('vineyardHaven')} />
+            <area shape="circle" coords="264,483,75" alt="Menemsha" onClick={() => showPopup('menemsha')} />
+          </map>
 
-        <PopUp display={displayPopup ? 'block' : 'none'}>
-          <CloseButton onClick={closePopup}/>
+          <PopUp display={displayPopup ? 'block' : 'none'}>
+            <CloseButton onClick={closePopup}/>
 
-          <h1>{popupTitle}</h1>
+            <h1>{popupTitle}</h1>
 
-          <p dangerouslySetInnerHTML={{__html: popupDesc}} />
-        </PopUp>
-      </MapContainer>
+            <p dangerouslySetInnerHTML={{__html: popupDesc}} />
+          </PopUp>
+        </MapContainer>
 
-      <StyledFlipCards popups={popups} />
-    </Content>
+        <StyledFlipCards popups={popups} />
+      </Content>
+    </div>
   )
 }
 
