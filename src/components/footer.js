@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const Footer = () => (
   <StyledFooter>
-    © 2020 Greetings From Martha's Vineyard · <a href="mailto:hello@toursmv.com" target="_blank" rel="noreferrer noopener">hello@toursmv.com</a> · <a href="/privacy-policy/">Privacy Policy</a> · Site by <a href="mvesna.com" target="_blank" rel="noreferrer noopener">MVesna</a> & <a href="https://artlyticalmedia.com" target="_blank" rel="noreferrer noopener">Artlytical Media</a>
+    © 2020 Greetings From Martha's Vineyard · <a href="mailto:hello@toursmv.com" target="_blank" rel="noreferrer noopener">hello@toursmv.com</a> · <a href="/privacy-policy/">Privacy Policy</a> · Site by <a href="http://mvesna.com" target="_blank" rel="noreferrer noopener">MVesna</a> & <a href="https://artlyticalmedia.com" target="_blank" rel="noreferrer noopener">Artlytical Media</a>
   </StyledFooter>
 )
 
