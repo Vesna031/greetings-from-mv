@@ -13,6 +13,7 @@ import Footer from './components/footer'
 
 import Home from './pages/home'
 import PrivacyPolicy from './pages/privacy-policy'
+import Itinerary from './pages/itinerary'
 
 const App = () => {
   return (
@@ -40,7 +41,7 @@ const App = () => {
 
       <Switch>
         <Route path="/itinerary">
-          <div>Itinerary</div>
+          <Itinerary />
         </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
