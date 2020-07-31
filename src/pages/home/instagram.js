@@ -21,6 +21,10 @@ const InstagramContent = styled(Content)`
   flex-direction: column;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 2rem;
+  
+  @media screen and (max-width: 660px) {
+    margin: 3rem 1rem;
+  }
 `
 
 const Heading = styled.h2`

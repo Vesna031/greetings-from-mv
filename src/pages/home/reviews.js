@@ -16,13 +16,13 @@ const Reviews = () => (
       <Heading>Check out our reviews!</Heading>
       
       <ReviewSites>
-        <ReviewSite href="https://www.tripadvisor.com/Attraction_Review-g41750-d13221005-Reviews-Greetings_from_Martha_s_Vineyard_Tours-Oak_Bluffs_Martha_s_Vineyard_Massachusetts.html?m=19905" target="_blank" rel="noopener noreferrer"><img src={tripadvisor} alt="TripAdvisor" /></ReviewSite>
+        <ReviewSite><a href="https://www.tripadvisor.com/Attraction_Review-g41750-d13221005-Reviews-Greetings_from_Martha_s_Vineyard_Tours-Oak_Bluffs_Martha_s_Vineyard_Massachusetts.html?m=19905" target="_blank" rel="noopener noreferrer"><img src={tripadvisor} alt="TripAdvisor" /></a></ReviewSite>
 
-        <ReviewSite href="https://www.yelp.com/biz/greetings-from-marthas-vineyard-tours-oak-bluffs?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="Yelp" /></ReviewSite>
+        <ReviewSite><a href="https://www.yelp.com/biz/greetings-from-marthas-vineyard-tours-oak-bluffs?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="Yelp" /></a></ReviewSite>
 
-        <ReviewSite href="https://www.facebook.com/greetings.from.mv.tours/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" /></ReviewSite>
+        <ReviewSite><a href="https://www.facebook.com/greetings.from.mv.tours/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" /></a></ReviewSite>
 
-        <ReviewSite href="https://g.page/marthas-vineyard-tours" target="_blank" rel="noopener noreferrer"><img src={google} alt="Google" /></ReviewSite>
+        <ReviewSite><a href="https://g.page/marthas-vineyard-tours" target="_blank" rel="noopener noreferrer"><img src={google} alt="Google" /></a></ReviewSite>
       </ReviewSites>
     </ReviewsContent>
   </div>
@@ -34,6 +34,10 @@ const ReviewsContent = styled(Content)`
   background: rgba(0, 0, 0, 0.4);
   border-radius: 2rem;
   flex-direction: column;
+  
+  @media screen and (max-width: 1160px) {
+    margin: 3rem 1rem;
+  }
 `
 
 const Heading = styled.h2`
@@ -59,9 +63,14 @@ const Heading = styled.h2`
 const ReviewSites = styled.div`
   display: flex;
   padding-top: 20px;
+
+  @media screen and (max-width: 680px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
 
-const ReviewSite = styled.a`
+const ReviewSite = styled.div`
   color: #f0eccf;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
@@ -69,10 +78,19 @@ const ReviewSite = styled.a`
   display: block;
   margin: 20px auto;
 
+  @media screen and (max-width: 680px) {
+    margin: 40px auto;
+    width: 50%;
+  }
+
   img {
     max-width: 90px;
     margin: 0 auto;
     transition: transform .75s ease;
+
+    @media screen and (max-width: 680px) {
+      width: 100%;
+    }
   }
   
   &:hover img {
