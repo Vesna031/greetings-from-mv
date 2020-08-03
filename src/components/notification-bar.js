@@ -13,7 +13,8 @@ const NotificationBar = () => {
 
   const modalStyles = {
     overlay: {
-      backgroundColor: 'rgba(0, 0, 0, 0.75)'
+      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      overflow: 'shown'
     },
     content: {
       maxWidth: '560px',
@@ -21,9 +22,12 @@ const NotificationBar = () => {
       border: 'none',
       zIndex: '100000',
       background: 'transparent',
-      bottom: 'initial',
       marginLeft: 'auto',
-      marginRight: 'auto'
+      marginRight: 'auto',
+      top: '10px',
+      bottom: '0',
+      inset: '10px',
+      padding: '0'
     }
   }
 
@@ -105,6 +109,9 @@ const NotificationCloseButton = styled(CloseButton)`
 `
 
 const ModalCloseButton = styled(CloseButton)`
+  top: 0;
+  right: 0;
+
   &:hover:after {
     color: #394a59 !important;
     opacity: 1;
@@ -132,6 +139,11 @@ const ModalContent = styled.div`
   padding: 30px;
   border-radius: 10px;
   font-family: 'Ubuntu', sans-serif;
+  position: relative;
+
+  @media screen and (min-width: 700px) {
+    margin-top: 60px;
+  }
 
   p:not(:last-of-type) {
     margin-bottom: 1rem;
