@@ -91,15 +91,18 @@ const FlipCardContainer = styled.div`
 `
 
 const Image = styled.img`
-  height: 360px;
+  height: 296px;
 `
 
 const Text = styled.div`
-  height: 360px;
-  width: 360px;
+  height: 296px;
+  width: 296px;
 
-  padding: 20px;
+  padding: 15px 20px;
   background: rgba(0, 0, 0, 0.8);
   color: #f0eccf;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 92.5%;
 `
 
