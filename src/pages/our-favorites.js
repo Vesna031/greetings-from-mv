@@ -73,6 +73,7 @@ const OurFavorites = () => (
           <ImageContainer>
             <Image image={favorite.image} />
           </ImageContainer>
+
           <h3>{favorite.title}</h3>
         </Favorite>
       ))}
@@ -163,7 +164,9 @@ const FavoritesContainer = styled.div`
 `
 
 const Favorite = styled.a`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: calc(33% - 2rem);
   overflow: hidden;
 
@@ -174,7 +177,7 @@ const Favorite = styled.a`
   h3 {
     text-align: center;
     margin: 0;
-    padding: 1rem;
+    padding: 1rem .5rem;
   }
 
   > div > div, h3 {
