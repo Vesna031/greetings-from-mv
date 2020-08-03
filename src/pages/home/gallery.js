@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import styled from '@emotion/styled'
+import {css} from '@emotion/core'
 import Modal from 'react-modal'
 import {Slide} from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -13,6 +14,8 @@ import photoBoat from '../../images/pro-gallery/photo-boat.png'
 import photoLighthouse from '../../images/pro-gallery/photo-lighthouse.png'
 import photoMenemshaHarbor from '../../images/pro-gallery/photo-menemsha-harbor.png'
 import photoSunset from '../../images/pro-gallery/photo-sunset.png'
+
+import arrow from '../../images/icons/scroll-to-top.png'
 
 Modal.setAppElement('#root')
 
@@ -47,8 +50,12 @@ const Gallery = () => {
       height: '100vh',
       width: '100vw',
       overflow: 'hidden',
+      padding: '0px',
       inset: '0px',
-      padding: '50px'
+      top: '0px',
+      bottom: '0px',
+      left: '0px',
+      right: '0px'
     }
   }
 
@@ -71,7 +78,9 @@ const Gallery = () => {
             <ModalContent>
               <Slide
                 autoplay={false}
-                transitionDuration={250}>
+                transitionDuration={250}
+                nextArrow={<NextButton />}
+                prevArrow={<PrevButton />}>
                 {photos.map((photo, index) => (
                   <SlideContainer key={index}>
                     <SlideImage src={photo} alt={`Gallery slide #${index + 1}`} />
@@ -137,8 +146,8 @@ const ModalContent = styled.div`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 0rem;
-  right: 0rem;
+  top: 1rem;
+  right: 1rem;
   display: block;
 
   background: transparent;
@@ -160,19 +169,53 @@ const CloseButton = styled.button`
   }
 `
 
+const nextPrevButtons = css`
+  background: transparent;
+  border: none;
+  outline: none;
+  background-image: url(${arrow});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100%;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  margin: 30px 0 0;
+  cursor: pointer;
+
+  opacity: 0.8;
+  transition: opacity: 0.25s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+`
+
+const NextButton = styled.button`
+  ${nextPrevButtons}
+  margin-right: 30px;
+  transform: rotate(90deg);
+`
+
+const PrevButton = styled.button`
+  ${nextPrevButtons}
+  margin-left: 30px;
+  transform: rotate(-90deg);
+`
+
 const SlideContainer = styled.div`
   display: flex;
-  width: 80vw;
+  width: 75vw;
   height: 80vh;
   align-items: center;
   justify-content: center;
-  margin: 1rem auto 0;
+  margin: 30px auto 0;
 `
 
 const SlideImage = styled.img`
   position: relative;
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
-  margin: 0 1rem;
+  margin: 0 auto;
   display: block;
 `
