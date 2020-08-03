@@ -160,7 +160,7 @@ const FavoritesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: flex-start;
 `
 
 const Favorite = styled.a`
@@ -173,6 +173,22 @@ const Favorite = styled.a`
   border: 1px solid #ddd;
   margin-bottom: 20px;
   border-radius: 4px;
+
+  @media screen and (max-width: 960px) {
+    width: calc(50% - 6rem);
+  }
+
+  @media screen and (max-width: 760px) {
+    width: 51%;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 67%;
+  }
+
+  @media screen and (max-width: 460px) {
+    width: 90%;
+  }
 
   h3 {
     text-align: center;
