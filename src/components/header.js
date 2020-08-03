@@ -42,7 +42,8 @@ const Header = () => {
       width: '2.15rem',
       height: '1.85rem',
       right: '2.5rem',
-      top: '2.5rem'
+      top: '2.5rem',
+      zIndex: '0'
     },
     bmBurgerBars: {
       background: '#394a59',
@@ -50,10 +51,13 @@ const Header = () => {
     },
     bmCrossButton: {
       height: '24px',
-      width: '24px'
+      width: '24px',
+      right: '24px'
     },
     bmCross: {
-      background: '#394a59'
+      background: '#394a59',
+      height: '24px',
+      width: '7px'
     },
     bmMenuWrap: {
       position: 'fixed',

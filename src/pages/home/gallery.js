@@ -7,6 +7,7 @@ import 'react-slideshow-image/dist/styles.css'
 import disableScroll from 'disable-scroll'
 
 import Content from '../../components/content'
+import CloseButton from '../../components/close-button'
 
 import viewGallerySprite from '../../images/buttons/view-gallery-sprite.png'
 
@@ -88,7 +89,7 @@ const Gallery = () => {
                 ))}
               </Slide>
 
-              <CloseButton onClick={closeModal} />
+              <CloseButton clickHandler={closeModal} />
             </ModalContent>
           </Modal>
       </GalleryContent>
@@ -142,31 +143,6 @@ const PostcardImage = styled.img`
 
 const ModalContent = styled.div`
   position: relative;
-`
-
-const CloseButton = styled.button`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: block;
-
-  background: transparent;
-  outline: none;
-  border: none;
-
-  cursor: pointer;
-
-  &:after {
-    content: '\\00D7';
-    display: block;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 3rem;
-    font-weight: bold;
-  }
-
-  &:hover:after {
-    color: rgba(255, 255, 255, 1);
-  }
 `
 
 const nextPrevButtons = css`

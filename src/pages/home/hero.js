@@ -9,7 +9,7 @@ import Hero992 from '../../images/hero_sizes/hero_992.png'
 import Hero768 from '../../images/hero_sizes/hero_768.png'
 
 const Hero = () => {
-  const [heroImage, setHeroImage] = useState(Hero992)
+  const [heroImage, setHeroImage] = useState(null)
 
   const debounce = (fn, ms) => {
     let timer
@@ -21,6 +21,8 @@ const Hero = () => {
       }, ms)
     }
   }
+
+  const [resizeOnLoad, setResizeOnLoad] = useState(true)
 
   useEffect(() => {
     const debouncedHandleResize = debounce(
@@ -34,19 +36,22 @@ const Hero = () => {
         }
       }, 250)
 
+    if(resizeOnLoad) {
+      debouncedHandleResize()
+      setResizeOnLoad(false)
+    }
+
     window.addEventListener('resize', debouncedHandleResize)
 
     return _ => {
       window.removeEventListener('resize', debouncedHandleResize)
     }
-  })
+  }, [resizeOnLoad, setResizeOnLoad])
 
   return (
     <div id="hero">
       <HeroContent>
-        <div id="hero-content">
-          <img src={heroImage} alt="Greetings From Martha's Vineyard" />
-        </div>
+        <HeroImage src={heroImage} alt="Greetings From Martha's Vineyard" />
       </HeroContent>
     </div>
   )
@@ -56,4 +61,9 @@ export default Hero
 
 const HeroContent = styled(Content)`
   padding-top: 0;
+`
+
+const HeroImage = styled.img`
+  width: 100%;
+  height: auto;
 `

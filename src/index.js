@@ -9,6 +9,7 @@ import {Global, css} from '@emotion/core'
 
 import woodBg from './images/backgrounds/resources-background.png'
 
+import NotificationBar from './components/notification-bar'
 import Footer from './components/footer'
 
 import Home from './pages/home'
@@ -40,22 +41,26 @@ const App = () => {
         }
       `} />
 
-      <Switch>
-        <Route path="/itinerary">
-          <Itinerary />
-        </Route>
-        <Route path="/privacy-policy">
-          <PrivacyPolicy />
-        </Route>
-        <Route path="/favorites">
-          <OurFavorites />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <NotificationBar />
 
-      <Footer />
+      <div style={{position: 'relative'}}>
+        <Switch>
+          <Route path="/itinerary">
+            <Itinerary />
+          </Route>
+          <Route path="/privacy-policy">
+            <PrivacyPolicy />
+          </Route>
+          <Route path="/favorites">
+            <OurFavorites />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </div>
     </Router>
   )
 }
