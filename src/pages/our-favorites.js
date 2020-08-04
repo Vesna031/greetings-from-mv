@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import {Helmet} from 'react-helmet'
 
 import Content from '../components/content'
 
@@ -63,6 +64,12 @@ const ourFavorites = [{
 
 const OurFavorites = () => (
   <OurFavoritesContent>
+    <Helmet>
+      <title>Our Favorites | Greetings from Martha's Vineyard Tours</title>
+      <link rel="canonical" href="https://toursmv.com" />
+      <meta name="description" content="Through the years of touring the Island, we've compiled a list of our favorite places to visit, things to do, and restaurants and bakeries to eat." />
+    </Helmet>
+
     <h1>Our Favorites</h1>
 
     <h2>Through the years of touring the Island, we've compiled a list of our favorite places to visit, things to do, and restaurants and bakeries to eat:</h2>

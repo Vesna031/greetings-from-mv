@@ -104,5 +104,15 @@ const Text = styled.div`
 
   font-family: 'Ubuntu', sans-serif;
   font-size: 92.5%;
+
+  a {
+    color: #77878d;
+    text-decoration: none;
+
+    &:hover {
+      color: #77878d;
+      text-decoration: underline;
+    }
+  }
 `
 

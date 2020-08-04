@@ -45,7 +45,7 @@ const App = () => {
 
       <div style={{position: 'relative'}}>
         <Switch>
-          <Route path="/itinerary">
+          <Route path="/marthas-vineyard-tour-itinerary">
             <Itinerary />
           </Route>
           <Route path="/privacy-policy">

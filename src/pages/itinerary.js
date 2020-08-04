@@ -1,25 +1,32 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import {Helmet} from 'react-helmet'
 
 import Content from '../components/content'
 
 const Itinerary = () => (
   <ItineraryContent>
-    <h1>Tour Itinerary</h1>
+    <Helmet>
+      <title>Martha's Vineyard Tour Itinerary | Greetings from Martha's Vineyard Tours</title>
+      <link rel="canonical" href="https://toursmv.com/marthas-vineyard-tour-itinerary/" />
+      <meta name="description" content="Take our 4-hour tour of the beautiful island of Martha’s Vineyard. Touring this special place is made even better with convenient pick-up service." />
+    </Helmet>
 
-    <p>Take our 4-hour of the beautiful island of Martha’s Vineyard.  This is the minimum time you will want to spend to see our 100 sq. mile island. We will experience six diverse towns and explore unique places. By the end of our journey, we will have traveled 60 miles and it goes by fast.</p>
+    <h1>Take our 4-hour of the beautiful island of Martha’s Vineyard.</h1>
+
+    <p>This is the minimum time you will want to spend to see our 100 sq. mile island. We will experience six diverse towns and explore unique places. By the end of our journey, we will have traveled 60 miles and it goes by fast.</p>
 
     <p>Touring this special place is made even better with convenient pick-up service from wherever you stay in our comfortable and air-conditioned vans.</p>
 
-    <p>In <strong>Oak Bluffs</strong>, we’ll walk among the story-book gingerbread cottages and see the oldest carousel in America, where if you grab the brass ring, you get a free ride! We’ll stroll along the lively little harbor or meander through Ocean Park.</p>
+    <p>In <strong>Oak Bluffs</strong>, we’ll walk among the story-book gingerbread cottages and see the oldest carousel in America. Here, if you grab the brass ring, you get a free ride! We’ll stroll along the lively little harbor or meander through Ocean Park.</p>
 
-    <p><strong>Vineyard Haven</strong> is a quaint New England shopping village where you can go for a sunset sail on a large schooner.  Wander up and down Main Street, which is filled with cute shops and restaurants.</p>
+    <p><strong>Vineyard Haven</strong> is a quaint New England shopping village where you can go for a sunset sail on a large schooner. Wander up and down Main Street, which is filled with cute shops and restaurants.</p>
 
-    <p><strong>West Tisbury</strong> is home to the oldest store on-island; Alley’s General Store, which first opened in 1858. We’ll pick up some fresh fruit in the farm stand out back to snack on as we peruse the art at the Field Gallery across the road.</p>
+    <p><strong>West Tisbury</strong> is home to the oldest store on-island; Alley’s General Store, which first opened in 1858. We’ll pick up some fresh fruit in the farm stand out back to snack on as we peruse the art at the <a href="https://fieldgallery.com/" target="_blank" rel="noopener noreferrer">Field Gallery</a> across the road.</p>
 
-    <p><strong>Edgartown</strong> is surreal, with a harbor and waterfront edged by stately white Greek Revival houses built by whaling captains.  The Old Whaling Church stands tall thanks to six massive columns, and along with the Edgartown Harbor Lighthouse and the historic Harborview Hotel, Edgartown really belongs in a museum!</p>
+    <p><strong>Edgartown</strong> is surreal, with a harbor and waterfront edged by stately white Greek Revival houses built by whaling captains. <a href="https://vineyardtrust.org/property/old-whaling-church/" target="_blank" rel="noopener noreferrer">The Old Whaling Church</a> stands tall thanks to six massive columns, and along with the Edgartown Harbor Lighthouse and the historic Harborview Hotel, Edgartown really belongs in a museum!</p>
 
-    <p>Onwards to <strong>Menemsha</strong>, we drive past rolling hills that run to the sea, dotted with sheep and horses and framed by the miles of British-style stone walls. A stop at Chilmark Chocolates is a must, but don’t spoil your appetite until we have our seafood picnic on the docks. We’ll provide you with a complimentary bottle of wine that works well with a hot lobster roll, fresh fish, or the best oysters ever! We also offer a sunset tour, where we wine and dine while watching the sunset into the ocean, followed by boat horns and the applause of the appreciative on-lookers.</p>
+    <p>Onwards to <strong>Menemsha</strong>, we drive past rolling hills that run to the sea, dotted with sheep and horses and framed by the miles of British-style stone walls. A stop at Chilmark Chocolates is a must; but don’t spoil your appetite until we have our seafood picnic on the docks. We’ll provide you with a complimentary bottle of wine that works well with a hot lobster roll, fresh fish, or the best oysters ever! We also offer a sunset tour, where we wine and dine while watching the sunset into the ocean, followed by boat horns and the applause of the appreciative on-lookers.</p>
 
     <p>In <strong>Aquinnah</strong>, the end of the island, witness our magnificent colorful clay cliffs. Look down on the spectacular beaches and scour the horizon for the Elizabeth Islands off in the distance. Visit the unique shops owned by the Wampanoag tribe to purchase a piece of wampum jewelry. If you’re feeling energetic climb to the top of the Gayhead lighthouse, which we moved a couple of years ago so it wouldn’t fall into the sea!</p>
 

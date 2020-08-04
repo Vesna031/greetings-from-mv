@@ -63,10 +63,10 @@ const Gallery = () => {
   return (
     <div id="gallery">
       <GalleryContent>
-        <PostcardImage src={photoBoat} />
-        <PostcardImage src={photoLighthouse} />
-        <PostcardImage src={photoMenemshaHarbor} />
-        <PostcardImage src={photoSunset} />
+        <PostcardImage src={photoBoat} alt="Martha's Vineyard white sailboat on the sound" />
+        <PostcardImage src={photoLighthouse} alt="East Chop lighthouse Martah's Vineyard at sunset" />
+        <PostcardImage src={photoMenemshaHarbor} alt="Oak Bluffs harbor with sailboats at sunset" />
+        <PostcardImage src={photoSunset} alt="Martha's Vineyard sailboat moored at sunset" />
 
         <ViewGalleryButton onClick={openModal} />
 

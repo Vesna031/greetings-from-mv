@@ -11,6 +11,7 @@ const Map = () => {
   const imageMapResize = require('image-map-resizer')
   const [displayPopup, setPopupDisplay] = useState(false)
   const [popupTitle, setPopupTitle] = useState(null)
+  const [popupLink, setPopupLink] = useState(null)
   const [popupDesc, setPopupDesc] = useState(null)
 
   useEffect(() => {
@@ -20,33 +21,40 @@ const Map = () => {
   const popups = {
     oakBluffs: {
       title: 'Oak Bluffs',
-      description: 'A Victorian-styled yet exciting town on the tip of our island.  There are so many ice cream shops in Oak Bluffs, there is no doubt your stomach will ache if you try to taste them all!  Circuit Avenue and the harbour are filled with wonderful bars, shops, and restaurants, and are flanked by the iconic Campground on one side and Ocean Park on the other.'
+      link: 'https://www.oakbluffsma.gov/',
+      description: 'A Victorian-styled yet exciting town on the tip of our island. There are so many ice cream shops in Oak Bluffs, there is no doubt your stomach will ache if you try to taste them all! Circuit Avenue and the harbour are filled with wonderful bars, shops, and restaurants, and are flanked by the iconic Campground on one side and Ocean Park on the other.'
     },
     vineyardHaven: {
       title: 'Vineyard Haven',
-      description: 'Filled with shops and restaurants, Vineyard Haven is a harbour town home to many creatives.  Learn some maritime history, grab a coffee to go and head towards main street, or stop by Net Result for some fantastic seafood!'
+      link: 'https://en.wikipedia.org/wiki/Vineyard_Haven,_Massachusetts',
+      description: 'Filled with shops and restaurants, Vineyard Haven is a harbour town home to many creatives. Learn some maritime history, grab a coffee to go and head towards main street, or stop by <a href="https://www.mvseafood.com/" target="_blank" rel="noopener noreferrer">Net Result</a> for some fantastic seafood!'
     },
     westTisbury: {
       title: 'West Tisbury',
-      description: 'A small but beautiful town.  Check out Alley&rsquo;s General Store&rsquo;s vintage brass P.O. boxes amongst the thousands of items for sale.  &ldquo;If they don&rsquo;t have it, you probably don&rsquo;t need it!&rdquo; one fellow on our tour said.  Home of the farmer&rsquo;s market and some remarkable artwork.'
+      link: 'https://en.wikipedia.org/wiki/West_Tisbury,_Massachusetts',
+      description: 'A small but beautiful town. Check out Alley’s General Store’s vintage brass P.O. boxes amongst the thousands of items for sale. “If they don’t have it, you probably don’t need it!” one fellow on our tour said. Home of the farmer’s market and some remarkable artwork.'
     },
     menemsha: {
       title: 'Menemsha',
-      description: 'Every dreamed about watching a sunset and eating fresh seafood with a glass of wine?  If you did, you dreamed of Menemsha.  A small fishing harbour featuring seafood shops and a beach that looks off to the west.  Martha&rsquo;s Vineyard sunsets are already great, but if you want front-row seats, go to Menemsha.'
+      link: 'https://en.wikipedia.org/wiki/Menemsha,_Massachusetts',
+      description: 'Every dreamed about watching a sunset and eating fresh seafood with a glass of wine? If you did, you dreamed of Menemsha. A small fishing harbour featuring seafood shops and a beach that looks off to the west. Martha’s Vineyard sunsets are already great, but if you want front-row seats, go to Menemsha.'
     },
     edgartown: {
       title: 'Edgartown',
-      description: 'Cruise the narrow streets with whaling captain&rsquo;s houses on one side and the picturesque harbor on the other filled with beautiful classic sailboats and multi-million dollar yachts. Hear how whale oil money helped build this town and pause to photograph the majestic Harborview Hotel atop the hill. Make it to the steps of the Harborview and turn around to capture the great lighthouse with Chappaquiddick Island as your panoramic backdrop.'
+      link: 'https://www.edgartown-ma.us/',
+      description: 'Cruise the narrow streets with whaling captain’s houses on one side and the picturesque harbor on the other filled with beautiful classic sailboats and multi-million dollar yachts. Hear how whale oil money helped build this town and pause to photograph the majestic <a href="https://www.harborviewhotel.com/" target="_blank" rel="noopener noreferrer">Harborview Hotel</a> atop the hill. Make it to the steps of the Harborview and turn around to capture the great lighthouse with Chappaquiddick Island as your panoramic backdrop.'
     },
     aquinnah: {
       title: 'Aquinnah',
-      description: 'It might take a bit longer to get to the tip of the island, not that the drive is anything but enjoyable as you wind under bows of oak and past homes of artists and novelists, but standing on the clay cliffs and looking down on pristine beaches makes the drive even more worth it.  If you&rsquo;re lucky, you might even catch surfers off of Moshop Beach!'
+      link: 'https://en.wikipedia.org/wiki/Aquinnah,_Massachusetts',
+      description: 'It might take a bit longer to get to the tip of the island, not that the drive is anything but enjoyable as you wind under bows of oak and past homes of artists and novelists, but standing on the clay cliffs and looking down on pristine beaches makes the drive even more worth it. If you’re lucky, you might even catch surfers off of Moshop Beach!'
     }
   }
 
   const showPopup = (town) => {
     setPopupTitle(popups[town].title)
     setPopupDesc(popups[town].description)
+    setPopupLink(popups[town].link)
     setPopupDisplay(true)
   }
 
@@ -58,7 +66,7 @@ const Map = () => {
     <div id="map">
       <Content>
         <MapContainer>
-          <MapImage src={map} useMap="#mapiconslocations_1200" alt="Map of Martha's Vineyard" onClick={closePopup} />
+          <MapImage src={map} useMap="#mapiconslocations_1200" alt="Vintage map of Martha's Vineyard" onClick={closePopup} />
 
           <map id="mapiconslocations_1200" name="mapiconslocations_1200">  
             <area shape="circle" coords="857,158,75" alt="Oak Bluffs" onClick={() => showPopup('oakBluffs')} />
@@ -72,9 +80,9 @@ const Map = () => {
           <PopUp display={displayPopup ? 'block' : 'none'}>
             <CloseButton onClick={closePopup}/>
 
-            <h1>{popupTitle}</h1>
+            <h1>{popupTitle} <TownLink href={popupLink} rel="noopener noreferrer" target="_blank" /></h1>
 
-            <p dangerouslySetInnerHTML={{__html: popupDesc}} />
+            <Description dangerouslySetInnerHTML={{__html: popupDesc}} />
           </PopUp>
         </MapContainer>
 
@@ -119,6 +127,36 @@ const PopUp = styled.div`
   color: #f0eccf;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
+`
+
+const TownLink = styled.a`
+  &:after {
+    display: inline-block;
+    content: 'i';
+    height: 1.5rem;
+    width: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    background: #f0eccf;
+    border-radius: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: -0.33rem;
+  }
+`
+
+const Description = styled.p`
+  a {
+    color: #77878d;
+    text-decoration: none;
+
+    &:hover {
+      color: #77878d;
+      text-decoration: underline;
+    }
+  }
 `
 
 const CloseButton = styled.button`

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import ScrollToTop from 'react-scroll-to-top'
+import {Helmet} from 'react-helmet'
 
 import Header from '../components/header'
 import Hero from './home/hero'
@@ -15,6 +16,12 @@ import scrollToTop from '../images/icons/scroll-to-top.png'
 
 const Home = () => (
   <>
+    <Helmet>
+      <title>Welcome to Greetings from Martha's Vineyard Tours</title>
+      <meta name="description" content="Greetings from Martha's Vineyard Tours! Our tour guides will show you our towns so you'll understand why we are all drawn to this magical island!" />
+      <link rel="canonical" href="https://toursmv.com" />
+    </Helmet>
+
     <ScrollToTop smooth component={<ScrollToTopIcon />} style={{backgroundColor: 'transparent', boxShadow: 'none', width: '2rem', height: '2rem'}} />
     
     <Header />

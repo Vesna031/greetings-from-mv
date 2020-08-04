@@ -3,6 +3,6 @@
     { "source": "/index.php", "destination": "/" },
     { "source": "/favorites.php", "destination": "/favorites" },
     { "source": "/privacypolicy.html", "destination": "/privacy-policy" },
-    { "source": "/itinerary.php", "destination": "/itinerary" }
+    { "source": "/itinerary.php", "destination": "/marthas-vineyard-tour-itinerary" }
   ]
 }

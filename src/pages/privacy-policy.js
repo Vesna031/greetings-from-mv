@@ -1,10 +1,17 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import {Helmet} from 'react-helmet'
 
 import Content from '../components/content'
 
 const PrivacyPolicy = () => (
   <PrivacyPolicyContent>
+    <Helmet>
+      <title>Privacy Policy | Greetings from Martha's Vineyard Tours</title>
+      <link rel="canonical" href="https://toursmv.com" />
+      <meta name="description" content="Learn how Greeting's from Martha's Vineyard Tours uses (or doesn't) your private, sensitive information." />
+    </Helmet>
+
     <a class="pull-left" href="/">{'<<'} Go back to site</a>
     <br/>
 

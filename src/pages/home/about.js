@@ -9,27 +9,27 @@ import aboutBgDesktop from '../../images/about-contact/about-postcard.png'
 const About = () => (
   <div id="about">
     <AboutContent>
-      <DesktopBackground src={aboutBgDesktop} alt="About" />
+      <DesktopBackground src={aboutBgDesktop} alt="Martha's Vineyard postcard" />
 
-      <MobileBackground src={aboutBgMobile} alt="About" />
+      <MobileBackground src={aboutBgMobile} alt="Martha's Vineyard postcard" />
 
       <TextContainer>
         <NoIndentP>Hello friends,</NoIndentP>
 
         <p>Greetings From Martha's Vineyard! Our tour guides show you our 6 towns; each with a unique history and feel. See where celebrities stay and stand on the sets of Jaws. Understand why we are all drawn to this magical island!</p>
 
-        <p>Relax in our luxurious air conditioned vans on comfy leather captain chairs as we cruise alongside beautiful beaches and quaint seaside towns with whaling captains&rsquo; houses and stone walls framing rolling fields dotted with sheep all the way down to the sea!</p>
+        <p>Relax in our luxurious air conditioned vans on comfy leather captain chairs as we cruise alongside beautiful beaches and quaint seaside towns with whaling captains’ houses and stone walls framing rolling fields dotted with sheep all the way down to the sea!</p>
 
-        <p>Explore the gingerbread cottages, shop the island&rsquo;s first general store, climb lighthouses, and view the colorful 200&rsquo; Clay cliffs!</p>
+        <p>Explore the gingerbread cottages, shop the island’s first general store, climb lighthouses, and view the colorful 200’ Clay cliffs!</p>
 
-        <p>Finally, we&rsquo;ll have a picnic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, with a complimentary bottle of wine!</p>
+        <p>Finally, we’ll have a picnic in Menemsha and dine on the freshest seafood on the docks next to the working fishing boats, with a complimentary bottle of wine!</p>
 
-        <NoIndentP>We pick up customers and drop off friends.  Wish you were here!</NoIndentP>
+        <NoIndentP>We pick up customers and drop off friends. Wish you were here!</NoIndentP>
 
         <NoIndentP alignRight={true}>Greeting From Martha&rsquo;s Vineyard Tours</NoIndentP>
 
         <ViewItineraryContainer>
-          <GreenButton href="/itinerary/">View Itinerary</GreenButton>
+          <GreenButton href="/marthas-vineyard-tour-itinerary/">View Itinerary</GreenButton>
         </ViewItineraryContainer>
       </TextContainer>
     </AboutContent>
