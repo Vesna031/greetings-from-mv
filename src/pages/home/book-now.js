@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import window from 'global'
 
 import Content from '../../components/content'
 
@@ -8,7 +9,9 @@ import bookNowSprite from '../../images/buttons/book-now-sprite.png'
 const BookNow = () => {
   return(
     <BookNowContent>
-      <BookNowButton href="https://fareharbor.com/embeds/book/greetingsfrommarthasvineyard/?full-items=yes" />
+      <BookNowButton href="https://fareharbor.com/embeds/book/greetingsfrommarthasvineyard/?full-items=yes" onClick={() => {
+        return !(window.FH && window.FH.open({ shortname: 'greetingsfrommarthasvineyard', fallback: 'simple', fullItems: 'yes', view: 'items' }))
+       }} />
     </BookNowContent>
   )
 }
