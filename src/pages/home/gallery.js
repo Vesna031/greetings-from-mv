@@ -139,6 +139,7 @@ const ViewGalleryButton = styled.button`
 const PostcardImage = styled.img`
   width: 50%;
   display: block;
+  height: 66.3%;
 `
 
 const ModalContent = styled.div`

@@ -66,4 +66,9 @@ const HeroContent = styled(Content)`
 const HeroImage = styled.img`
   width: 100%;
   height: auto;
+  height: 150%;
+
+  @media (min-width: 641px) {
+    height: 66.67%
+  }
 `
