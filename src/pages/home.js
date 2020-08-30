@@ -46,8 +46,8 @@ const HomeContainer = styled.div`
 `
 
 const ScrollToTopIcon = styled.div`
-  width: 3rem;
-  padding-bottom: 3rem;
+  width: 2rem;
+  padding-bottom: 2rem;
 
   background-image: url(${scrollToTop});
   background-repeat: no-repeat;
