@@ -35,10 +35,10 @@ const NotificationBar = () => {
     setBarDisplay(false)
   }
 
-  // const openModal = () => {
-  //   setModalDisplay(true)
-  //   disableScroll.on()
-  // }
+  const openModal = () => {
+    setModalDisplay(true)
+    disableScroll.on()
+  }
 
   const closeModal = () => {
     setModalDisplay(false)
@@ -48,7 +48,7 @@ const NotificationBar = () => {
   return (
     <>
       <StyledNotificationBar display={displayBar ? 'block' : 'none'}>
-        <OpenPopup>I'll be back on island Monday 8/31 but I'll be happy to book your tour from then on!</OpenPopup> <NotificationCloseButton clickHandler={hideNotificationBar} />
+        <OpenPopup onClick={openModal}>Message about Covid 19</OpenPopup> <NotificationCloseButton clickHandler={hideNotificationBar} />
       </StyledNotificationBar>
 
       <Modal
