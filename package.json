@@ -14,7 +14,7 @@
     "fbgraph": "^1.4.4",
     "global": "^4.4.0",
     "image-map-resizer": "^1.0.10",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "react": "^16.13.1",
     "react-bootstrap-icons": "^1.0.3-alpha5",
     "react-burger-menu": "^2.7.0",
